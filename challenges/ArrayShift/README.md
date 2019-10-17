@@ -35,7 +35,7 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 Program Result
 
-![Alt execution capture](/array-shift/result.JPG)
+![Alt execution capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/array_shift_result.JPG)
 
 White-Boarding
 
