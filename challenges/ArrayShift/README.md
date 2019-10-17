@@ -10,6 +10,7 @@ Challenge 01 - Array Shift
 
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
+
 Challenge 01 - Array Shift: The function called insertShiftArray takes in an array and a value and insert the value to the middle position of the array.
 
 ## Getting Started
