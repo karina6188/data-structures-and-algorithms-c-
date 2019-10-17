@@ -56,3 +56,4 @@ Application End
 ## Change Log
 
 1.1: Set up the program, added Table of Contents to README, and added codes to the program from white-boarding. - 2019 Oct 17
+1.2: Debugged original codes. - 2019 Oct 17
