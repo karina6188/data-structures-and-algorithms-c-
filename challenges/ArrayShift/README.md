@@ -39,11 +39,11 @@ Program Result
 
 White-Boarding
 
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/1.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/2.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/3.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/4.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/5.jpg)
+![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/code02_1.jpg)
+![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/code02_2.jpg)
+![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/code02_3.jpg)
+![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/code02_4.jpg)
+![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/code02_5.jpg)
 
 ## Change Log
 
