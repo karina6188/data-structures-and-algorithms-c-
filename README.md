@@ -47,6 +47,9 @@ White-Boarding
 ## Change Log
 
 1.1: Set up the program, add Table of Contents to README, and add codes to the program from white-boarding. - 2019 Oct 17
+
 1.2: Debug original codes. - 2019 Oct 17
+
 1.3: Build unit testing program. - 2019 Oct 17
+
 1.4: All tests are passed. The program is completed. - 2019 Oct 17
