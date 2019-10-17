@@ -32,28 +32,21 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 ## Visuals
 
-Application Start
+Program Result
 
-![Alt execution capture]()
+![Alt execution capture](/array-shift/result.JPG)
 
+White-Boarding
 
-Using the Application
-
-![Alt execution capture]()
-
-Using the Application
-
-![Alt execution capture]()
-
-Using the Application
-
-![Alt execution capture]()
-
-Application End
-
-![Alt execution capture]()
+![Alt whiteboarding capture](/assets/1.JPG)
+![Alt whiteboarding capture](/assets/2.JPG)
+![Alt whiteboarding capture](/assets/3.JPG)
+![Alt whiteboarding capture](/assets/4.JPG)
+![Alt whiteboarding capture](/assets/5.JPG)
 
 ## Change Log
 
-1.1: Set up the program, added Table of Contents to README, and added codes to the program from white-boarding. - 2019 Oct 17
-1.2: Debugged original codes. - 2019 Oct 17
+1.1: Set up the program, add Table of Contents to README, and add codes to the program from white-boarding. - 2019 Oct 17
+1.2: Debug original codes. - 2019 Oct 17
+1.3: Build unit testing program. - 2019 Oct 17
+1.4: All tests are passed. The program is completed. - 2019 Oct 17
