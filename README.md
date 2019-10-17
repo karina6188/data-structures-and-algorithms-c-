@@ -9,8 +9,8 @@ Author: Karina Chen
 Challenge 01 - Array Shift
 
 ## Description
-This is a daily code challenges Challenge 01 - Array Shift.
-The function called insertShiftArray takes in an array and a value and insert the value to the middle position of the array.
+This is a daily code challenges project that includes various challenges. See Table of Contents above.
+Challenge 01 - Array Shift: The function called insertShiftArray takes in an array and a value and insert the value to the middle position of the array.
 
 ## Getting Started
 Clone this repository to your local machine.
@@ -22,9 +22,9 @@ Select File -> Open -> Project/Solution
 
 Next navigate to the location you cloned the Repository.
 
-Double click on the challenges directory then click on ArrayShift directory.
+Double click on the challenges directory.
 
-Then select and open ArrayShift.sln
+Then select and open the challenges that you want to view.
 
 ## To Run This Program
 Open the program using Visual Studio and click "Start" button to run this program.
@@ -38,11 +38,11 @@ Program Result
 
 White-Boarding
 
-![Alt whiteboarding capture](/assets/1.JPG)
-![Alt whiteboarding capture](/assets/2.JPG)
-![Alt whiteboarding capture](/assets/3.JPG)
-![Alt whiteboarding capture](/assets/4.JPG)
-![Alt whiteboarding capture](/assets/5.JPG)
+![Alt whiteboarding capture](assets/1.JPG)
+![Alt whiteboarding capture](assets/2.JPG)
+![Alt whiteboarding capture](assets/3.JPG)
+![Alt whiteboarding capture](assets/4.JPG)
+![Alt whiteboarding capture](assets/5.JPG)
 
 ## Change Log
 
