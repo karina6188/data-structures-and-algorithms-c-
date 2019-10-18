@@ -2,20 +2,28 @@
 
 namespace BinarySearch
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             int[] array = new int[] { 15, 32, 37, 41, 58 };
-            int key = 85;
-            //int key = 50;
-            Console.WriteLine("running");
+            int key = 41;
 
-            int Output = BinarySearch(array, key);
-            Console.WriteLine(Output);
+            if (array.Length < 1)
+            {
+                int defaultIndex = -1;
+                Console.WriteLine(defaultIndex);
+                return defaultIndex;
+            }
+            else
+            {
+                int Output = Binary_Search(array, key);
+                Console.WriteLine(Output);
+                return Output;
+            }
         }
 
-        public static int BinarySearch(int[] array, int key)
+        public static int Binary_Search(int[] array, int key)
         {
             int start = 0;
             int end = array.Length - 1;
