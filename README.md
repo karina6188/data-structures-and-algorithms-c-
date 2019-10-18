@@ -7,7 +7,7 @@ Author: Karina Chen
 
 ## Table of Contents
 Challenge 01 - Array Shift
-Challenge 02 - Binary Search
+
 Challenge 02 - Binary Search
 
 ## Description
