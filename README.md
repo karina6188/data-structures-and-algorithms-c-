@@ -8,6 +8,7 @@ Author: Karina Chen
 ## Table of Contents
 Challenge 01 - Array Shift
 Challenge 02 - Binary Search
+Challenge 02 - Binary Search
 
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
