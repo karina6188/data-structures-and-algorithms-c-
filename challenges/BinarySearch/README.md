@@ -34,18 +34,18 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 Program Result
 
-![Alt execution capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/array-binary-search/assets/binary_search_result.JPG)
+![Alt execution capture](/assets/binary_search_result.JPG)
 
 White-Boarding
 
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/array-binary-search/assets/code03_1.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/array-binary-search/assets/code03_2.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/array-binary-search/assets/code03_3.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/array-binary-search/assets/code03_4.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/array-binary-search/assets/code03_5.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/array-binary-search/assets/code03_6.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/array-binary-search/assets/code03_7.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/array-binary-search/assets/code03_8.jpg)
+![Alt whiteboarding capture](/assets/code03_1.jpg)
+![Alt whiteboarding capture](/assets/code03_2.jpg)
+![Alt whiteboarding capture](/assets/code03_3.jpg)
+![Alt whiteboarding capture](/assets/code03_4.jpg)
+![Alt whiteboarding capture](/assets/code03_5.jpg)
+![Alt whiteboarding capture](/assets/code03_6.jpg)
+![Alt whiteboarding capture](/assets/code03_7.jpg)
+![Alt whiteboarding capture](/assets/code03_8.jpg)
 
 ## Change Log
 
