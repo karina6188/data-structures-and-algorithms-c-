@@ -38,14 +38,14 @@ Program Result
 
 White-Boarding
 
-![Alt whiteboarding capture](/assets/code03_1.jpg)
-![Alt whiteboarding capture](/assets/code03_2.jpg)
-![Alt whiteboarding capture](/assets/code03_3.jpg)
-![Alt whiteboarding capture](/assets/code03_4.jpg)
-![Alt whiteboarding capture](/assets/code03_5.jpg)
-![Alt whiteboarding capture](/assets/code03_6.jpg)
-![Alt whiteboarding capture](/assets/code03_7.jpg)
-![Alt whiteboarding capture](/assets/code03_8.jpg)
+![Alt whiteboarding capture](/Assets/code03_1.jpg)
+![Alt whiteboarding capture](/Assets/code03_2.jpg)
+![Alt whiteboarding capture](/Assets/code03_3.jpg)
+![Alt whiteboarding capture](/Assets/code03_4.jpg)
+![Alt whiteboarding capture](/Assets/code03_5.jpg)
+![Alt whiteboarding capture](/Assets/code03_6.jpg)
+![Alt whiteboarding capture](/Assets/code03_7.jpg)
+![Alt whiteboarding capture](/Assets/code03_8.jpg)
 
 ## Change Log
 
