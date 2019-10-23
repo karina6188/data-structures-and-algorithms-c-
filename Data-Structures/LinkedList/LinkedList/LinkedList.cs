@@ -48,9 +48,9 @@ namespace LinkedLists
             {
                 Node previous = Head;
                 Node current = Head.Next;
-                while (current != null && current.Data != value)
+                while (current!= null && current.Data != value)
                 {
-                    previous = current;
+                    current = current.Next;
                 }
                 if (current.Data == value)
                 {
@@ -104,14 +104,9 @@ namespace LinkedLists
         {
             if (current.Data == value)
             {
-                if (previous.Next == newNode)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                previous.Next = newNode;
+                newNode.Next = current;
+                return true;
             }
             else
             {

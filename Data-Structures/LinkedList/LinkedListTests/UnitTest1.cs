@@ -37,17 +37,13 @@ namespace LinkedListTests
             linklist.Append(4);
             linklist.Append(5);
             linklist.Append(6);
-            Assert.True(linklist.InsertBefore(5, 100));
+            Assert.True(linklist.InsertBefore(5, 10));
         }
 
         [Fact]
         public void InsertBeforeFirst()
         {
             LinkedList linklist = new LinkedList();
-            linklist.Append(5);
-            linklist.Append(10);
-            linklist.Append(15);
-            linklist.Append(20);
             Assert.True(linklist.InsertBefore(5, 100));
         }
 

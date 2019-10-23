@@ -25,12 +25,7 @@ Then select and open the LinkedList folder to view this program.
 ## To Run This Program
 Open the program using Visual Studio and click "Start" button to run this program.
 
-
 ## Visuals
-
-Program Result
-
-![Alt execution capture]()
 
 White-Boarding
 
@@ -40,7 +35,6 @@ White-Boarding
 ![Alt whiteboarding capture](/Assets/code06_4.jpg)
 ![Alt whiteboarding capture](/Assets/code06_5.jpg)
 ![Alt whiteboarding capture](/Assets/code06_6.jpg)
-
 
 ## Change Log
 
@@ -52,4 +46,6 @@ White-Boarding
 
 1.4: Add InsertBefore() method. - 2019 Oct 22
 
-1.5: Add unit testing.
+1.5: Add unit testing. - 2019 Oct 22
+
+1.6: Fix bugs and pass all tests. The program is completed. - 2019 Oct 22
