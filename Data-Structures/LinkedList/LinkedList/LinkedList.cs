@@ -6,26 +6,58 @@ namespace LinkedList
 {
     class LinkedList
     {
-        public LinkedList Head { get; set; }
+        public Node Head { get; set; }
 
         public LinkedList()
         {
             Head = null;
         }
 
-        public static void append(int value)
+        public void Append(int value)
+        {
+            Node newNode = new Node(value);
+
+            if (Head == null)
+            {
+                Head = newNode;
+            }
+            else
+            {
+                Node current = Head;
+                while(current.Next != null)
+                {
+                    current = current.Next;
+                }
+                current.Next = newNode;
+            }
+        }
+
+        public void InsertBefore(int value, int newVal)
         {
 
         }
 
-        public static void insertBefore(int value, int newValue)
+        public void InsertAfter(int value, int newVal)
         {
+            Node newNode = new Node(newVal);
 
-        }
-
-        public static void insertAfter(int value, int newValue)
-        {
-
+            if(Head == null)
+            {
+                Head = newNode;
+            }
+            else
+            {
+                Node current = Head;
+                while(current != null && current.Data != value)
+                {
+                    current = current.Next;
+                }
+                if (current.Data == value)
+                {
+                    current.Next = newNode;
+                    newNode.Next = current.Next;
+                }
+            }
         }
     }
 }
