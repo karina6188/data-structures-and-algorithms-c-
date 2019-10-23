@@ -34,14 +34,13 @@ Program Result
 
 White-Boarding
 
-![Alt whiteboarding capture](/../../../../Assets/code06_1.jpg)
-![Alt whiteboarding capture]()
-![Alt whiteboarding capture]()
-![Alt whiteboarding capture]()
-![Alt whiteboarding capture]()
-![Alt whiteboarding capture]()
-![Alt whiteboarding capture]()
-![Alt whiteboarding capture]()
+![Alt whiteboarding capture](/Assets/code06_1.jpg)
+![Alt whiteboarding capture](/Assets/code06_2.jpg)
+![Alt whiteboarding capture](/Assets/code06_3.jpg)
+![Alt whiteboarding capture](/Assets/code06_4.jpg)
+![Alt whiteboarding capture](/Assets/code06_5.jpg)
+![Alt whiteboarding capture](/Assets/code06_6.jpg)
+
 
 ## Change Log
 
