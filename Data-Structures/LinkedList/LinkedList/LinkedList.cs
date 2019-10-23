@@ -10,5 +10,15 @@ namespace LinkedList
         {
 
         }
+
+        public static void insertBefore(int value, int newValue)
+        {
+
+        }
+
+        public static void insertAfter(int value, int newValue)
+        {
+
+        }
     }
 }

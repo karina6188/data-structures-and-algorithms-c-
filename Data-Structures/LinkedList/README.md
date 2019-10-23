@@ -16,7 +16,7 @@ $ git clone [https://github.com/karina6188/data-structures-and-algorithms-c-.git
 To run the program from Visual Studio:
 Select File -> Open -> Project/Solution
 
-Next navigate to the location you cloned the Repository.
+Next navigate to the location you cloned the repository.
 
 Double click on the data-structure-and-algorithm directory.
 
@@ -34,7 +34,7 @@ Program Result
 
 White-Boarding
 
-![Alt whiteboarding capture]()
+![Alt whiteboarding capture](/../../../../Assets/code06_1.jpg)
 ![Alt whiteboarding capture]()
 ![Alt whiteboarding capture]()
 ![Alt whiteboarding capture]()
@@ -47,4 +47,4 @@ White-Boarding
 
 1.1: Set up the program, README, and LinkList classes. - 2019 Oct 22
 
-1.2:
+1.2: 
