@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LinkedList
+namespace LinkedLists
 {
-    class Node : LinkedList
+    public class Node : LinkedList
     {
         public int Data { get; set; }
 
