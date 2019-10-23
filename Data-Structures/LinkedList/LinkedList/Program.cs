@@ -8,7 +8,6 @@ namespace LinkedList
         static void Main(string[] args)
         {
             LinkedList linklist = new LinkedList();
-
         }
     }
 }

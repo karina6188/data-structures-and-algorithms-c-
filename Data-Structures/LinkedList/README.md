@@ -48,4 +48,8 @@ White-Boarding
 
 1.2: Add properties to class Node and class LinkedList. Instantiate Node and LinkedList instances. - 2019 Oct 22
 
-1.3: 
+1.3: Add Append() method and InsertAfter() method. - 2019 Oct 22
+
+1.4: Add InsertBefore() method. - 2019 Oct 22
+
+1.5: Add unit testing.

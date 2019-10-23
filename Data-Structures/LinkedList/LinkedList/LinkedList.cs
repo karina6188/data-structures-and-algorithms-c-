@@ -34,7 +34,26 @@ namespace LinkedList
 
         public void InsertBefore(int value, int newVal)
         {
+            Node newNode = new Node(newVal);
 
+            if (Head == null)
+            {
+                Head = newNode;
+            }
+            else
+            {
+                Node previous = Head;
+                Node current = Head.Next;
+                while(current != null && current.Data != value)
+                {
+                    previous = current;
+                }
+                if (current.Data == value)
+                {
+                    previous.Next = newNode;
+                    newNode.Next = current;
+                }
+            }
         }
 
         public void InsertAfter(int value, int newVal)
