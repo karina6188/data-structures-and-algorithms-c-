@@ -46,4 +46,6 @@ White-Boarding
 
 1.1: Set up the program, README, and LinkList classes. - 2019 Oct 22
 
-1.2: 
+1.2: Add properties to class Node and class LinkedList. Instantiate Node and LinkedList instances. - 2019 Oct 22
+
+1.3: 

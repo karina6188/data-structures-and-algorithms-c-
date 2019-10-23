@@ -6,6 +6,13 @@ namespace LinkedList
 {
     class LinkedList
     {
+        public LinkedList Head { get; set; }
+
+        public LinkedList()
+        {
+            Head = null;
+        }
+
         public static void append(int value)
         {
 
