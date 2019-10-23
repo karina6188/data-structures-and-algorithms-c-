@@ -6,9 +6,13 @@ Daily Code Challenges
 Author: Karina Chen
 
 ## Table of Contents
-Challenge 01 - Array Shift
+### Challenges:
+01 Array Shift
 
-Challenge 02 - Binary Search
+02 Binary Search
+
+### Data Structures and Algorithms
+01 Linked List
 
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
@@ -23,9 +27,9 @@ Select File -> Open -> Project/Solution
 
 Next navigate to the location you cloned the Repository.
 
-Double click on the challenges directory.
+Double click on the challenges or data-structure-and-algorithms directory.
 
-Then select and open the challenges that you want to view.
+Then select and open the program you want to view.
 
 ## To Run This Program
 Open the program using Visual Studio and click "Start" button to run this program.
