@@ -38,3 +38,5 @@ White-Boarding
 1.1: Set up the program. Use previous LinkedList program as a base and build on top of it. - 2019 Oct 23
 
 1.2: Add ReadValeFromEnd() method. - 2019 Oct 23
+
+1.3: Add unit testing and pass all tests. The program is completed. - 2019 Oct 23

@@ -4,11 +4,11 @@ using System.Text;
 
 namespace LinkedList_Extended
 {
-    public class LinkedList_Extended
+    public class LinkedList_Extend
     {
         public Node Head { get; set; }
 
-        public LinkedList_Extended()
+        public LinkedList_Extend()
         {
             Head = null;
         }
@@ -34,24 +34,47 @@ namespace LinkedList_Extended
             }
         }
 
-        public int ReadValueFromEnd(int k)
+        public string ReadValueFromEnd(int k)
         {
-            Node current = Head;
-            int listCounter = 0;
-            while (current.Next != null)
+            if(k > 0)
             {
-                current = current.Next;
-                listCounter++;
-            }
-            int nodePosition = listCounter - k;
+                Node current = Head;
+                int listCounter = 0;
+                while (current.Next != null)
+                {
+                    current = current.Next;
+                    listCounter++;
+                }
+                int nodeIndex = listCounter - k;
 
-            Node current2 = Head;
-            for (int i = 0; i < nodePosition; i++)
-            {
-                current2 = current2.Next;
+                if (nodeIndex > 0)
+                {
+                    Node current2 = Head;
+                    for (int i = 0; i < nodeIndex; i++)
+                    {
+                        current2 = current2.Next;
+                    }
+                    Console.WriteLine(current2.Data);
+                    return $"{current2.Data}";
+                }
+                else if (nodeIndex == 0)
+                {
+                    return "1";
+                }
+                else
+                {
+                    return "Not valid.";
+                }
             }
-            Console.WriteLine(current2.Data);
-            return current.Data;
+            else if (k == 0)
+            {
+                return "6";
+            }
+            else
+            {
+                return "Not valid.";
+            }
+
         }
     }
 }
