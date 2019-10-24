@@ -14,6 +14,8 @@ Author: Karina Chen
 ### Data Structures and Algorithms
 01 Linked List
 
+02 Linked List Extended
+
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
 
