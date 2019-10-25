@@ -26,9 +26,12 @@ namespace LLMerge
             list2.Append(19);
             list2.Append(20);
 
-            LinkedList list3 = new LinkedList();
+            MergeLists(list1, list2);
+        }
 
-            list3.MergeLists(list1, list2);
+        public static Node MergeLists(LinkedList list1, LinkedList list2)
+        {
+            while()
         }
     }
 }
