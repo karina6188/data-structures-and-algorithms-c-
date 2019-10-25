@@ -11,6 +11,8 @@ Author: Karina Chen
 
 02 Binary Search
 
+03 Merge Linked Lists
+
 ### Data Structures and Algorithms
 01 Linked List
 
