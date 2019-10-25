@@ -37,4 +37,6 @@ White-Boarding
 
 1.1: Set up the program, add Table of Contents to README. - 2019 Oct 24
 
-1.2: 
+1.2: Add Linked List and Node classes. - 2019 Oct 24
+
+1.3: 
