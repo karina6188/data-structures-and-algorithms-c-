@@ -39,4 +39,4 @@ White-Boarding
 
 1.2: Add Linked List and Node classes. - 2019 Oct 24
 
-1.3: 
+1.3: Add MergeLists() method. Debugging. - 2019 Oct 24
