@@ -35,9 +35,9 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 ## Visuals
 
-Result
+insert():
 
-![Alt whiteboarding capture]()
+![Alt whiteboarding capture](/Assets/code05_1.JPG)
 
 ## Change Log
 
