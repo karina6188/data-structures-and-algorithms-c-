@@ -26,12 +26,17 @@ namespace LLMerge
             list2.Append(19);
             list2.Append(20);
 
-            MergeLists(list1, list2);
-        }
+            Console.WriteLine("List 1: ");
+            list1.PrintList();
+            Console.WriteLine("");
+            Console.WriteLine("List 2: ");
+            list2.PrintList();
 
-        public static Node MergeLists(LinkedList list1, LinkedList list2)
-        {
-            while()
+            EmptyClass list3 = new EmptyClass();
+            list1.Head = list3.MergeLists(list1.Head, list2.Head);
+            Console.WriteLine("");
+            Console.WriteLine("Merged List: ");
+            list1.PrintList();
         }
     }
 }
