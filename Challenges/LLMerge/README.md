@@ -36,6 +36,9 @@ White-Boarding
 Result
 ![Alt whiteboarding capture](/Assets/code08_4.JPG)
 
+## Resources
+https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/
+
 ## Change Log
 
 1.1: Set up the program, add Table of Contents to README. - 2019 Oct 24
