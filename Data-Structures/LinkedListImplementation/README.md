@@ -39,6 +39,14 @@ insert():
 
 ![Alt whiteboarding capture](/Assets/code05_1.JPG)
 
+includes():
+
+![Alt whiteboarding capture](/Assets/code05_2.JPG)
+
+toString():
+
+![Alt whiteboarding capture](/Assets/code05_3.JPG)
+
 ## Change Log
 
 1.1: Set up the program. - 2019 Oct 27
@@ -48,3 +56,5 @@ insert():
 1.3: Add includes() method. - 2019 Oct 27
 
 1.4: Add toString() method. - 2019 Oct 27
+
+1.5: 
