@@ -6,7 +6,15 @@ Data Structure and Algorithm
 Author: Karina Chen
 
 ## Description
-This is a data structure and algorithm challenge associated with Linked List.
+This is a data structure and algorithm challenge associated with Linked List Implementation.
+
+Three methods are demonstrated in this program:
+
+insert(): takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
+
+includes(): takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
+
+toString(): takes in no arguments and returns a string representing all the values in the Linked List.
 
 ## Getting Started
 Clone this repository to your local machine.
@@ -27,16 +35,16 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 ## Visuals
 
-White-Boarding
+insert():
 
-![Alt whiteboarding capture](/Assets/code07_1.jpg)
-![Alt whiteboarding capture](/Assets/code07_2.jpg)
-![Alt whiteboarding capture](/Assets/code07_3.jpg)
+![Alt whiteboarding capture](/Assets/code05_1.JPG)
 
 ## Change Log
 
-1.1: Set up the program. Use previous LinkedList program as a base and build on top of it. - 2019 Oct 23
+1.1: Set up the program. - 2019 Oct 27
 
-1.2: Add ReadValeFromEnd() method. - 2019 Oct 23
+1.2: Add insert() method. - 2019 Oct 27
 
-1.3: Add unit testing and pass all tests. The program is completed. - 2019 Oct 23
+1.3: Add includes() method. - 2019 Oct 27
+
+1.4: Add toString() method. - 2019 Oct 27
