@@ -7,9 +7,13 @@ Author: Karina Chen
 
 ## Description
 This is a data structure and algorithm challenge associated with Linked List Implementation.
+
 Three methods are demonstrated in this program:
+
 insert(): takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
+
 includes(): takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
+
 toString(): takes in no arguments and returns a string representing all the values in the Linked List.
 
 ## Getting Started
