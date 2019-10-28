@@ -12,6 +12,12 @@ namespace LinkedListImplementation
             list1.Append(3);
             list1.Append(4);
             list1.Append(5);
+
+            Console.WriteLine("Use toString() method to represent all values: ");
+            list1.toString();
+            Console.WriteLine(list1.toString());
+            Console.WriteLine("");
+
             Console.WriteLine("Find 23 in linked list? ");
             list1.PrintList();
             list1.Includes(23);
@@ -23,7 +29,6 @@ namespace LinkedListImplementation
             list1.Insert(10);
             Console.WriteLine("Insert to Head: ");
             list1.PrintList();
-
         }
     }
 }

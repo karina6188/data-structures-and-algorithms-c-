@@ -47,4 +47,4 @@ insert():
 
 1.3: Add includes() method. - 2019 Oct 27
 
-1.4: 
+1.4: Add toString() method. - 2019 Oct 27

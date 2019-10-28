@@ -54,6 +54,26 @@ namespace LinkedListImplementation
             }
         }
 
+        public string toString()
+        {
+            if (Head == null)
+            {
+                return "The linked list is empty.";
+            }
+            else
+            {
+                Node current = Head;
+                string result = "";
+                while (current.Next != null)
+                {
+                    result += current.Data.ToString() + " --> ";
+                    current = current.Next;
+                }
+                result += current.Data.ToString();
+                return result;
+            }
+        }
+
         public bool Append(int value)
         {
             Node newNode = new Node(value);
