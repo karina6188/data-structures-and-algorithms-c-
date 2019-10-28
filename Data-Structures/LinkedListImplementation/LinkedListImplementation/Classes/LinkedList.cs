@@ -13,7 +13,7 @@ namespace LinkedListImplementation
             Head = null;
         }
 
-        public void Insert(int value)
+        public int Insert(int value)
         {
             try
             {
@@ -22,6 +22,7 @@ namespace LinkedListImplementation
                 if (Head == null)
                 {
                     Head = newNode;
+                    return Head.Data;
                 }
                 else
                 {
@@ -32,12 +33,36 @@ namespace LinkedListImplementation
                     {
                         current = current.Next;
                     }
+                    return Head.Data;
                 }
             }
             catch (FormatException e)
             {
                 Console.WriteLine(e.Message);
                 Console.WriteLine("The argument format is not valid.");
+                return 0;
+            }
+        }
+
+        public int InsertTest(int value)
+        {
+            Node newNode = new Node(value);
+
+            if (Head == null)
+            {
+                Head = newNode;
+                return Head.Data;
+            }
+            else
+            {
+                Node current = Head;
+                Head = newNode;
+                Head.Next = current;
+                while (current.Next != null)
+                {
+                    current = current.Next;
+                }
+                return Head.Next.Data;
             }
         }
 
@@ -118,9 +143,8 @@ namespace LinkedListImplementation
                         current = current.Next;
                     }
                     current.Next = newNode;
-                    //TestAppend(newNode);
-                    //return TestAppend(newNode);
-                    return true;
+                    TestAppend(newNode);
+                    return TestAppend(newNode);
                 }
             }
             catch (FormatException e)
@@ -151,6 +175,18 @@ namespace LinkedListImplementation
                 Console.WriteLine(e.Message);
                 Console.WriteLine("There is no value in the linked list to be printed out.");
                 return 0;
+            }
+        }
+
+        public bool TestAppend(Node newNode)
+        {
+            if (newNode.Next == null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
