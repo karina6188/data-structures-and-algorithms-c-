@@ -37,15 +37,18 @@ namespace LLMerge
             }
         }
 
-        public void PrintList()
+        public int PrintList()
         {
             Node current = Head;
+            int numberOfNodes = 1;
             while(current.Next != null)
             {
                 Console.Write(current.Data + " --> ");
                 current = current.Next;
+                numberOfNodes++;
             }
             Console.WriteLine(current.Data);
+            return numberOfNodes;
         }
     }
 

@@ -48,4 +48,4 @@ Result
 
 1.5: Print merged list result into console. - 2019 Oct 27
 
-1.6: Add unit testing.
+1.6: Add unit testing. Pass all tests. - 2019 Oct 27
