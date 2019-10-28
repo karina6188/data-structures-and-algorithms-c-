@@ -18,6 +18,8 @@ Author: Karina Chen
 
 02 Linked List Extended
 
+03 Linked List Implementation
+
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
 

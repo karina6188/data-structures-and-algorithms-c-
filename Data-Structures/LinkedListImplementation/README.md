@@ -5,7 +5,7 @@ Data Structure and Algorithm
 
 Author: Karina Chen
 
-## Description
+## Description - Singly Linked List
 This is a data structure and algorithm challenge associated with Linked List Implementation.
 
 Three methods are demonstrated in this program:
