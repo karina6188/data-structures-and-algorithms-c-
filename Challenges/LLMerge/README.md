@@ -34,7 +34,7 @@ White-Boarding
 ![Alt whiteboarding capture](/Assets/code08_3.jpg)
 
 Result
-![Alt whiteboarding capture](/Assets/code08_4.jpg)
+![Alt whiteboarding capture](/Assets/code08_4.JPG)
 
 ## Change Log
 
