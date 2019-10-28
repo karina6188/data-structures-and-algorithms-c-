@@ -42,3 +42,9 @@ insert():
 ## Change Log
 
 1.1: Set up the program. - 2019 Oct 27
+
+1.2: Add insert() method. - 2019 Oct 27
+
+1.3: Add includes() method. - 2019 Oct 27
+
+1.4: 

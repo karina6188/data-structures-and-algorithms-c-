@@ -33,6 +33,27 @@ namespace LinkedListImplementation
             }
         }
 
+        public bool Includes(int value)
+        {
+            if (Head == null)
+            {
+                return false;
+            }
+            else
+            {
+                Node current = Head;
+                while (current.Next != null)
+                {
+                    if(current.Data == value)
+                    {
+                        return true;
+                    }
+                    current = current.Next;
+                }
+                return false;
+            }
+        }
+
         public bool Append(int value)
         {
             Node newNode = new Node(value);
