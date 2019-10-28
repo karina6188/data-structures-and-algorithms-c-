@@ -33,6 +33,9 @@ White-Boarding
 ![Alt whiteboarding capture](/Assets/code08_2.jpg)
 ![Alt whiteboarding capture](/Assets/code08_3.jpg)
 
+Result
+![Alt whiteboarding capture](/Assets/code08_4.jpg)
+
 ## Change Log
 
 1.1: Set up the program, add Table of Contents to README. - 2019 Oct 24
@@ -40,3 +43,9 @@ White-Boarding
 1.2: Add Linked List and Node classes. - 2019 Oct 24
 
 1.3: Add MergeLists() method. Debugging. - 2019 Oct 24
+
+1.4: Merge two linked list together. - 2019 Oct 27
+
+1.5: Print merged list result into console. - 2019 Oct 27
+
+1.6: Add unit testing. Pass all tests. - 2019 Oct 27
