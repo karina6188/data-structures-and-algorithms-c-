@@ -8,6 +8,11 @@ Author: Karina Chen
 ## Description
 This is a daily code challenges. The task is to implement a queue using two stacks.
 
+## Approach
+enqueue(value) method: First, pop all the values from stack1 and push them into stack2. Then, enqueue the new value into stack1. Pop all the values from stack2 and push all back to stack1. Return all the values in stack1. If the stack is empty, only the new value is enqueued into stack1 and returned.
+
+dequeue() method: this method removes the last value from stack1. Use peek() method to know the what the last value on stack1 is, then pop it out from stack1. Return the dequeued value.
+
 ## Getting Started
 Clone this repository to your local machine.
 
@@ -36,7 +41,7 @@ White-Boarding
 ![Alt whiteboarding capture](/Assets/code11_3.jpg)
 
 Result
-![Alt whiteboarding capture](/Assets/code11_4.jpg)
+![Alt whiteboarding capture](/Assets/code11_4.JPG)
 
 ## Change Log
 
