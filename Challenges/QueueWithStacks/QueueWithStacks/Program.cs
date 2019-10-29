@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace QueueWithStacks
 {
@@ -6,7 +7,11 @@ namespace QueueWithStacks
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PseudoQuene queue = new PseudoQuene();
+
+            queue.enqueue(10);
+            queue.dequeue();
+
         }
     }
 }

@@ -37,4 +37,6 @@ Result
 
 1.1: Set up the program, add Table of Contents to README. - 2019 Oct 28
 
-1.2:
+1.2: Add enqueue(value) method. - 2019 Oct 28
+
+1.3: Add dequeue() method. - 2019 Oct 28
