@@ -37,10 +37,14 @@ White-Boarding
 ![Alt whiteboarding capture](/Assets/code12_2.jpg)
 
 Result
-![Alt whiteboarding capture](/Assets/code11_4.JPG)
+![Alt whiteboarding capture](/Assets/code12_3.JPG)
 
 ## Change Log
 
 1.1: Set up the program, add Table of Contents to README. - 2019 Oct 29
 
-1.2: 
+1.2: Add enqueue(animal) method. - 2019 Oct 29
+
+1.3: Add dequeue(pref) method. - 2019 Oct 29
+
+1.4: 
