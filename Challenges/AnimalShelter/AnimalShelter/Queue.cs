@@ -58,7 +58,7 @@ namespace AnimalShelter
             if (pref != "dog" && pref != "cat")
             {
                 Console.WriteLine("null");
-                return null;
+                return "null";
             }
 
             if (stack1.Count < 1)

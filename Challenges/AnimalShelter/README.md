@@ -47,4 +47,4 @@ Result
 
 1.3: Add dequeue(pref) method. - 2019 Oct 29
 
-1.4: 
+1.4: Add unit testing. Pass all tests. The program is completed. - 2019 Oct 29
