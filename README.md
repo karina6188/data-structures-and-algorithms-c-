@@ -15,6 +15,8 @@ Author: Karina Chen
 
 04 Queue With Stacks
 
+05 Animal Shelter
+
 ### Data Structures and Algorithms
 01 Linked List
 
