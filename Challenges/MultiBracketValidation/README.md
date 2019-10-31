@@ -32,6 +32,7 @@ White-Boarding
 ![Alt whiteboarding capture](/Assets/code13_2.jpg)
 
 App Execution
+
 ![Alt app execution capture](/Assets/code13_3.JPG)
 ![Alt app execution capture](/Assets/code13_4.JPG)
 
@@ -45,5 +46,5 @@ App Execution
 
 1.4: After all the characters have been looped through, check if there is any opening brackets left in the stack. If yes, return false. If no, return true. - 2019 Oct 30
 
-1.5: Add unit testing.
+1.5: Add unit testing. Pass all tests. The program is completed. - 2019 Oct 30
 

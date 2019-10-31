@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
 
-namespace MultiBracketValidation
+namespace MultiBracketValidations
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
