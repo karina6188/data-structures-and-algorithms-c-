@@ -35,5 +35,7 @@ White-Boarding
 
 1.1: Set up the program, add Table of Contents to README. - 2019 Oct 30
 
-1.2: 
+1.2: Add codes to split the input string into characters and loop through characters to find opening brackets. - 2019 Oct 30
+
+1.3: 
 
