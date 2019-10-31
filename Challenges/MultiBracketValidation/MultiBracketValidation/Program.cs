@@ -10,6 +10,14 @@ namespace MultiBracketValidation
             Console.WriteLine("Enter a string to validate if brackets are balanced: ");
             string input = Console.ReadLine();
             MultiBracketValidation(input);
+            if (MultiBracketValidation(input))
+            {
+                Console.WriteLine("The string has balanced brackets.");
+            }
+            else
+            {
+                Console.WriteLine("The string does not have balanced brackets.");
+            }
         }
         public static bool MultiBracketValidation(string input)
         {
@@ -17,17 +25,35 @@ namespace MultiBracketValidation
             char[] characters = input.ToCharArray();
             for (int i = 0; i < characters.Length; i++)
             {
-                if(characters[i] == '(' || characters[i] == '[' || characters[i] == '{')
+                if (characters[i] == '(' || characters[i] == '[' || characters[i] == '{')
                 {
                     stack.Push(characters[i]);
                 }
                 else
                 {
-
+                    if (stack.Count > 0)
+                    {
+                        char lastOnStack = stack.Peek().ToString()[0];
+                        if (characters[i] == ')' && lastOnStack != '(' ||
+                           characters[i] == ']' && lastOnStack != '[' ||
+                           characters[i] == '}' && lastOnStack != '{')
+                        {
+                            return false;
+                        }
+                        if (characters[i] == ')' && lastOnStack == '(' ||
+                            characters[i] == ']' && lastOnStack == '[' ||
+                            characters[i] == '}' && lastOnStack == '{')
+                        {
+                            stack.Pop();
+                        }
+                    }
                 }
             }
-
-            return true;
+            if (stack.Count == 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         //        function peek(stack)

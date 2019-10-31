@@ -31,11 +31,19 @@ White-Boarding
 ![Alt whiteboarding capture](/Assets/code13_1.jpg)
 ![Alt whiteboarding capture](/Assets/code13_2.jpg)
 
+App Execution
+![Alt app execution capture](/Assets/code13_3.jpg)
+![Alt app execution capture](/Assets/code13_4.jpg)
+
 ## Change Log
 
 1.1: Set up the program, add Table of Contents to README. - 2019 Oct 30
 
 1.2: Add codes to split the input string into characters and loop through characters to find opening brackets. - 2019 Oct 30
 
-1.3: 
+1.3: Add codes to method MultiBracketValidation(input) if find opening brackets in characters, push the opening brackets into the stack. When find closing brackets in the characters, compare if the last item in the stack matches the closing bracket. If not, the string does not have balanced brackets and return false. If yes, pop the matching opening bracket from the stack and move on to the next character. - 2019 Oct 30
+
+1.4: After all the characters have been looped through, check if there is any opening brackets left in the stack. If yes, return false. If no, return true. - 2019 Oct 30
+
+1.5: Add unit testing.
 
