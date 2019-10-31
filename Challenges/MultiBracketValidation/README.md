@@ -32,8 +32,8 @@ White-Boarding
 ![Alt whiteboarding capture](/Assets/code13_2.jpg)
 
 App Execution
-![Alt app execution capture](/Assets/code13_3.jpg)
-![Alt app execution capture](/Assets/code13_4.jpg)
+![Alt app execution capture](/Assets/code13_3.JPG)
+![Alt app execution capture](/Assets/code13_4.JPG)
 
 ## Change Log
 

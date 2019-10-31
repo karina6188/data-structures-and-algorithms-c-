@@ -17,6 +17,8 @@ Author: Karina Chen
 
 05 Animal Shelter
 
+06 Multi-Bracket Validation
+
 ### Data Structures and Algorithms
 01 Linked List
 
