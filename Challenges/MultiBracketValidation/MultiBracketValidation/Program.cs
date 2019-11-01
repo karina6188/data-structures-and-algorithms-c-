@@ -19,6 +19,18 @@ namespace MultiBracketValidations
                 Console.WriteLine("The string does not have balanced brackets.");
             }
         }
+        /// <summary>
+        /// First, create a new empty stack. Then split the string input into a char array.
+        /// Use for loop to loop through each character and check if it is one the of opening brackets.
+        /// If yes, add that opening bracket into the stack then move to the next character in the for loop.
+        /// Keep adding the opening brackets into the stack when you find it.
+        /// If you find one of the closing brackets, check to see if it matches with the last opening bracket in the stack.
+        /// If no, the string input does not have balanced brackets. If yes, pop the opening bracket from the stack.
+        /// Keep checking the last opening bracket in the stack every time you find a closing bracket in the for loop until you loop through all the characters in the char array.
+        /// Then check if there is any opening brackets left in the stack. If yes, the string does not have balanced brackets. If not, the string has balanced brackets.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public static bool MultiBracketValidation(string input)
         {
             Stack stack = new Stack();
@@ -55,42 +67,5 @@ namespace MultiBracketValidations
             }
             return false;
         }
-
-        //        function peek(stack)
-        //        {
-        //            let top = stack[stack.length - 1];
-        //            return top
-        //}
-        //        function isBalanced(string)
-        //        {
-        //            let leftCharacterStack = [];
-        //            let splitString = string.split('');
-        //            for (let i = 0; i < splitString.length; i++)
-        //            {
-        //                if (splitString[i] === '(' || splitString[i] === '{' || splitString[i] === '[')
-        //                {
-        //                    leftCharacterStack.push(splitString[i]);
-        //                }
-        //                else
-        //                {
-        //                    if (splitString[i] === ')' && peek(leftCharacterStack) != '(' ||
-        //                        splitString[i] === '}' && peek(leftCharacterStack) != '{' ||
-        //                        splitString[i] === ']' && peek(leftCharacterStack) != '[')
-        //                    {
-        //                        console.log('false');
-        //                        return false
-        //                    }
-        //                    leftCharacterStack.pop();
-        //                }
-        //            }
-        //            if (leftCharacterStack.length === 0)
-        //            {
-        //                console.log('true');
-        //                return true
-        //            }
-        //        }
-        //        isBalanced('{{[]}}')
-        //        isBalanced('{}{}[{]')
-        //        isBalanced('[[{}]]')
     }
 }
