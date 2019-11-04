@@ -52,6 +52,24 @@ namespace StacksAndQueues
         }
 
         /// <summary>
+        /// Check if queue count is zero. If yes, throw a new InvalidOperationException and send a message that the queue is empty. If the queue has value, get the front node's value, assign the front node to be front node.Next, then deduct queue count by 1. Return the front node value that is dequeued.
+        /// </summary>
+        /// <returns></returns>
+        public int Dequeue()
+        {
+            if (this.count == 0)
+            {
+                throw new InvalidOperationException("This queue is empty.");
+            }
+            else
+            {
+                int dequeued = this.front.Value;
+                this.front = this.front.Next;
+                this.count--;
+                return dequeued;
+            }
+        }
+        /// <summary>
         /// Print out all the node values on the queue. Set the current node to be queue fron node. While node.Next is not null, keep printing out the node value and go to be next node on the queue until it reaches to the end of the nodes.
         /// </summary>
         /// <returns></returns>

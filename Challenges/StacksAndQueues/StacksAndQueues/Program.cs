@@ -34,13 +34,20 @@ namespace StacksAndQueues
 
 
             Queue queueOne = new Queue();
-            queueOne.Enqueue(1);
-            queueOne.Enqueue(2);
-            queueOne.Enqueue(3);
-            queueOne.Enqueue(4);
-            queueOne.Enqueue(5);
+            queueOne.Enqueue(20);
+            queueOne.Enqueue(21);
+            queueOne.Enqueue(22);
+            queueOne.Enqueue(23);
+            queueOne.Enqueue(24);
+            queueOne.Enqueue(25);
             Console.WriteLine("");
             Console.WriteLine("Enqueue new values to the queue: ");
+            queueOne.PrintQueue();
+
+            queueOne.Dequeue();
+            queueOne.Dequeue();
+            Console.WriteLine("");
+            Console.WriteLine("Dequeue values from the queue: ");
             queueOne.PrintQueue();
         }
     }
