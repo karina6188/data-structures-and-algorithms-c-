@@ -35,7 +35,7 @@ namespace StacksAndQueues
         /// If yes, add a new node with the value and points to the stack top because this new node will be the top node. Then the top node starts to point the new node.
         /// </summary>
         /// <param name="value"></param>
-        public void Push(int value)
+        public int Push(int value)
         {
             if (this.top == null)
             {
@@ -47,6 +47,7 @@ namespace StacksAndQueues
                 this.top = newNode;
             }
             this.count++;
+            return count;
         }
 
         /// <summary>
