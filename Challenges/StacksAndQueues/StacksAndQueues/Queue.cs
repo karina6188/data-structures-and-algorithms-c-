@@ -4,10 +4,10 @@ using System.Text;
 
 namespace StacksAndQueues
 {
-    class Queue
+    public class Queue
     {
-        private Node front;
-        private int count;
+        public Node front;
+        public int count;
 
         /// <summary>
         /// A constructor to initialize a queue with the front property set to be null and count to be zero.

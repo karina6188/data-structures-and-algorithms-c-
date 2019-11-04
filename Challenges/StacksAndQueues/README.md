@@ -63,5 +63,5 @@ Result
 
 1.2: Add Node, Stack, and Queue classes. Add properties and constructor methods to each class. - 2019 Nov 03
 
-1.3: 
+1.3: Add Push() method for Stack class. Add PrintStack() method to print out all the values on the stack. - 2019 Nov 03
 
