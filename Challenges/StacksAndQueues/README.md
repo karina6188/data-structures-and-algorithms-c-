@@ -14,20 +14,32 @@ Declare methods that allow the stack and queue to push/enqueue a new node, pop/d
 ##### push() method:
 Take a value and create a new node with the value. Then points the node.Next to the top of the stack. Point the stack top to the new node.
 
+Big O: O(1)
+
 ##### pop() method: 
 Get the top node on the stack and reads its value. Point the stack top to the node.Next then deduct the stack count by 1. Return the node value.
+
+Big O: O(1)
 
 ##### enqueue() method:
 Take a value and create a new node with the value. Then points the node.Next to the front of the queue. Point the queue front to the new node.
 
+Big O: O(1)
+
 ##### dequeue() method: 
 Get the front node on the queue and reads its value. Point the queue front to the node.Next then deduct the queue count by 1. Return the node value.
 
+Big O: O(1)
+
 ##### peek() method:
-Get the top node on the stack or the front node of the queue and reads its value. Return the value. 
+Get the top node on the stack or the front node of the queue and reads its value. Return the value.
+
+Big O: O(1)
 
 ##### isEmpty() method: 
 Get the stack or queue count to see if there are anything on the stack or queue. Return true or false.
+
+Big O: O(1)
 
 ## Getting Started
 Clone this repository to your local machine.
@@ -83,4 +95,6 @@ Result
 1.8: Add Peek() method to Queue class. - 2019 Nov 03
 
 1.9: Add isEmpty() method to Queue class. - 2019 Nov 03
+
+1.10: Add unit testing. Pass all tests. The program is completed. - 2019 Nov 03
 

@@ -36,7 +36,7 @@ namespace StacksAndQueues
         /// If the queue is not empty, create a new node with the value and assign the queue back to be the new node. Then add the queue count by 1.
         /// </summary>
         /// <param name="value"></param>
-        public void Enqueue(int value)
+        public int Enqueue(int value)
         {
             if (this.front == null)
             {
@@ -49,6 +49,7 @@ namespace StacksAndQueues
                 this.back = newNode;
             }
             this.count++;
+            return count;
         }
 
         /// <summary>
