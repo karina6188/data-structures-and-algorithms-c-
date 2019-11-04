@@ -82,7 +82,7 @@ namespace StacksAndQueues
         }
 
         /// <summary>
-        /// Check is stack count is equal to zero. If yes, the stack is empty, return true. Otherwise, return false.
+        /// Check if stack count is equal to zero. If yes, the stack is empty, return true. Otherwise, return false.
         /// </summary>
         /// <returns></returns>
         public bool isEmpty()

@@ -69,6 +69,36 @@ namespace StacksAndQueues
                 return dequeued;
             }
         }
+
+        /// <summary>
+        /// Check if queue count is zero. If yes, throw a new InvalidOperationException and send a message that the queue is empty. If the queue has value, get the front node's value then return it. 
+        /// </summary>
+        /// <returns></returns>
+        public int Peek()
+        {
+            if (this.count == 0)
+            {
+                throw new InvalidOperationException("The stack is empty.");
+            }
+            return this.front.Value;
+        }
+
+        /// <summary>
+        /// Check if queue count is equal to zero. If yes, the queue is empty, return true. Otherwise, return false.
+        /// </summary>
+        /// <returns></returns>
+        public bool isEmpty()
+        {
+            if (this.count == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         /// <summary>
         /// Print out all the node values on the queue. Set the current node to be queue fron node. While node.Next is not null, keep printing out the node value and go to be next node on the queue until it reaches to the end of the nodes.
         /// </summary>

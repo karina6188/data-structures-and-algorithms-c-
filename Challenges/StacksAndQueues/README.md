@@ -48,6 +48,7 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 ## Resource
 https://denisrizov.com/2013/05/26/dynamic-stack-implementation-c/
+https://denisrizov.com/2013/05/27/dynamic-queue-implementation-c/
 
 ## Visuals
 
@@ -59,6 +60,7 @@ White-Boarding
 
 Result
 ![Alt execution capture](/Assets/code10_5.JPG)
+![Alt execution capture](/Assets/code10_6.JPG)
 
 ## Change Log
 
@@ -75,4 +77,8 @@ Result
 1.6: Add another Node class for Queue class with differen construtor method. Add Enqueue() method to Queue class. - 2019 Nov 03
 
 1.7: Add Dequeue() method to Queue class. - 2019 Nov 03
+
+1.8: Add Peek() method to Queue class. - 2019 Nov 03
+
+1.9: Add isEmpty() method to Queue class. - 2019 Nov 03
 

@@ -49,6 +49,14 @@ namespace StacksAndQueues
             Console.WriteLine("");
             Console.WriteLine("Dequeue values from the queue: ");
             queueOne.PrintQueue();
+
+            Console.WriteLine("");
+            Console.WriteLine("Peek the front value from the queue: ");
+            Console.WriteLine(queueOne.Dequeue());
+
+            Console.WriteLine("");
+            Console.WriteLine("Is it true that the queue is empty?");
+            Console.WriteLine(queueOne.isEmpty());
         }
     }
 }
