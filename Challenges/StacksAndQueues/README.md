@@ -48,6 +48,7 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 ## Resource
 https://denisrizov.com/2013/05/26/dynamic-stack-implementation-c/
+
 https://denisrizov.com/2013/05/27/dynamic-queue-implementation-c/
 
 ## Visuals
@@ -59,6 +60,7 @@ White-Boarding
 ![Alt whiteboarding capture](/Assets/code10_4.jpg)
 
 Result
+
 ![Alt execution capture](/Assets/code10_5.JPG)
 ![Alt execution capture](/Assets/code10_6.JPG)
 
