@@ -80,23 +80,39 @@ namespace StacksAndQueues
             }
             return this.top.Value;
         }
-    
-    /// <summary>
-    /// Print out all the node values on the stack. Set the current node to be stack top node. While node.Next is not null, keep printing out the node value and go to be next node on the stack until it reaches to the end of the nodes.
-    /// </summary>
-    /// <returns></returns>
-    public int PrintStack()
-    {
-        Node current = this.top;
-        int numberOfNodes = 1;
-        while (current.Next != null)
+
+        /// <summary>
+        /// Check is stack count is equal to zero. If yes, the stack is empty, return true. Otherwise, return false.
+        /// </summary>
+        /// <returns></returns>
+        public bool isEmpty()
         {
-            Console.WriteLine("__" + current.Value + "__");
-            current = current.Next;
-            numberOfNodes++;
+            if (this.count == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-        Console.WriteLine("__" + current.Value + "__");
-        return numberOfNodes;
+
+        /// <summary>
+        /// Print out all the node values on the stack. Set the current node to be stack top node. While node.Next is not null, keep printing out the node value and go to be next node on the stack until it reaches to the end of the nodes.
+        /// </summary>
+        /// <returns></returns>
+        public int PrintStack()
+        {
+            Node current = this.top;
+            int numberOfNodes = 1;
+            while (current.Next != null)
+            {
+                Console.WriteLine("__" + current.Value + "__");
+                current = current.Next;
+                numberOfNodes++;
+            }
+            Console.WriteLine("__" + current.Value + "__");
+            return numberOfNodes;
+        }
     }
-}
 }

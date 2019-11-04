@@ -27,6 +27,10 @@ namespace StacksAndQueues
             Console.WriteLine("");
             Console.WriteLine("Peek the top value from the stack: ");
             Console.WriteLine(stackOne.Pop());
+
+            Console.WriteLine("");
+            Console.WriteLine("Is it true that the stack is empty?");
+            Console.WriteLine(stackOne.isEmpty());
         }
     }
 }

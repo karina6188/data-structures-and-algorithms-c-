@@ -46,6 +46,9 @@ Then select and open the challenges that you want to view.
 ## To Run This Program
 Open the program using Visual Studio and click "Start" button to run this program.
 
+## Resource
+https://denisrizov.com/2013/05/26/dynamic-stack-implementation-c/
+
 ## Visuals
 
 White-Boarding
@@ -66,4 +69,6 @@ Result
 1.3: Add Push() method to Stack class. Add PrintStack() method to print out all the values on the stack. - 2019 Nov 03
 
 1.4: Add Pop() and Peek() method to Stack class. - 2019 Nov 03
+
+1.5: Add isEmpty() method to Stack class. - 2019 Nov 03
 
