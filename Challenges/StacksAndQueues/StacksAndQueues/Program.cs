@@ -15,7 +15,7 @@ namespace StacksAndQueues
             stackOne.Push(5);
             stackOne.Push(6);
             stackOne.Push(7);
-            Console.WriteLine("Push new values to stack: ");
+            Console.WriteLine("Push new values to the stack: ");
             stackOne.PrintStack();
 
             stackOne.Pop();
@@ -31,6 +31,17 @@ namespace StacksAndQueues
             Console.WriteLine("");
             Console.WriteLine("Is it true that the stack is empty?");
             Console.WriteLine(stackOne.isEmpty());
+
+
+            Queue queueOne = new Queue();
+            queueOne.Enqueue(1);
+            queueOne.Enqueue(2);
+            queueOne.Enqueue(3);
+            queueOne.Enqueue(4);
+            queueOne.Enqueue(5);
+            Console.WriteLine("");
+            Console.WriteLine("Enqueue new values to the queue: ");
+            queueOne.PrintQueue();
         }
     }
 }

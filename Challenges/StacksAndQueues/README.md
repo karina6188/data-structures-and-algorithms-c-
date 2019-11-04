@@ -72,3 +72,7 @@ Result
 
 1.5: Add isEmpty() method to Stack class. - 2019 Nov 03
 
+1.6: Add another Node class for Queue class with differen construtor method. Add Enqueue() method to Queue class. - 2019 Nov 03
+
+1.7: 
+
