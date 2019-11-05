@@ -19,14 +19,14 @@ Author: Karina Chen
 
 06 Multi-Bracket Validation
 
-07 Stacks and Queues
-
 ### Data Structures and Algorithms
 01 Linked List
 
 02 Linked List Extended
 
 03 Linked List Implementation
+
+04 Stacks and Queues
 
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
