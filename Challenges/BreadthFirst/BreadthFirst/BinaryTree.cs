@@ -19,7 +19,7 @@ namespace Tree
         }
 
         /// <summary>
-        /// Create a List to store values from nodes. Call PreOrder method to recursively check if a node has a left child and get the value. Keep doing this until there is no left child then go to the right child and get the values.
+        /// Create a List to store values from nodes. Call PreOrder method to recursively traverse to nodes and add the values. Then check if the node has a left child and get the value. Keep doing this until there is no left child then go back to the previous node to check the right child and get the values.
         /// </summary>
         /// <param name="node"></param>
         /// <returns></returns>
@@ -45,7 +45,7 @@ namespace Tree
         }
 
         /// <summary>
-        /// 
+        /// Create a List to store values from nodes. Call InOrder method to recursively traverse to nodes and check if the node has a left child and get the value. Keep doing this until there is no left child then go back to the previous node and add the node's value. Then go check the node's  right child and get the values.
         /// </summary>
         /// <returns></returns>
         public List<T> InOrder(Node<T> node)
@@ -70,6 +70,11 @@ namespace Tree
             }
         }
 
+        /// <summary>
+        /// Create a List to store values from nodes. Call PostOrder method to recursively traverse to nodes and check if the node has a left child and get the value. Keep doing this until there is no left child then go back to the previous node to check the node's right child and get the values. Then go back to the previous node and add the node's value.
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
         public List<T> PostOrder(Node<T> node)
         {
             List<T> traversal = new List<T>();
