@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Tree
 {
-    class BinarySearchTree<T>
+    class BinarySearchTree
     {
-        public Node<T> Root { get; set; }
+        public Node<int> Root { get; set; }
 
-        public BinarySearchTree(T value)
+        public BinarySearchTree(int value)
         {
-            Root = new Node<T>(value);
+            Root = new Node<int>(value);
         }
 
         public BinarySearchTree()
@@ -18,9 +18,41 @@ namespace Tree
 
         }
 
-        public List<T> Add()
+        public Node<int> add(Node<int> node, int value)
         {
+            if (node == null)
+            {
+                node = new Node<int>(value);
+            }
+            else if (value < node.Value)
+            {
+                node.LeftChild = add(node.LeftChild, value);
+            }
+            else
+            {
+                node.RightChild = add(node.RightChild, value);
+            }
+            return node;
+        }
 
+        List<int> traversal = new List<int>();
+        //traversal.Add(node.Value);
+        public List<int> traverseBinarySearch(Node<int> node)
+        {
+            if (node != null)
+            {
+                if (node.LeftChild != null)
+                {
+                    traversal.Add(node.LeftChild.Value);
+                }
+                if (node.RightChild != null)
+                {
+                    traversal.Add(node.RightChild.Value);
+                }
+                traverseBinarySearch(node.LeftChild);
+                traverseBinarySearch(node.RightChild);
+            }
+            return traversal;
         }
     }
 }

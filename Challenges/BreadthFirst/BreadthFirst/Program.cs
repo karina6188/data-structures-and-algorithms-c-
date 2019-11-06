@@ -7,7 +7,8 @@ namespace Tree
     {
         static void Main(string[] args)
         {
-            TraverseBinaryTree();
+            //TraverseBinaryTree();
+            TraverseBinarySearchTree();
         }
 
         static void TraverseBinaryTree()
@@ -47,6 +48,31 @@ namespace Tree
             Console.WriteLine("PostOrder:");
             List<int> postOrder = binaryTree.PostOrder(binaryTree.Root);
             Console.WriteLine(string.Join(',', postOrder));
+            Console.WriteLine();
+        }
+
+        static void TraverseBinarySearchTree()
+        {
+            BinarySearchTree binarySearchTree = new BinarySearchTree(60);
+
+            Node<int> node2 = new Node<int>(25);
+            Node<int> node3 = new Node<int>(90);
+            Node<int> node4 = new Node<int>(10);
+            Node<int> node5 = new Node<int>(70);
+            Node<int> node6 = new Node<int>(120);
+
+
+            binarySearchTree.Root.LeftChild = node2;
+            binarySearchTree.Root.RightChild = node3;
+            node2.LeftChild = node4;
+            node3.LeftChild = node5;
+            node3.RightChild = node6;
+
+            Console.WriteLine("Breadth First Binary Search:");
+            List<int> breadth = binarySearchTree.traverseBinarySearch(binarySearchTree.Root);
+            string rootValue = binarySearchTree.Root.Value.ToString();
+            string breadthTraverse = string.Join(',', breadth);
+            Console.WriteLine($"{rootValue},{breadthTraverse}");
             Console.WriteLine();
         }
     }
