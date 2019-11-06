@@ -1,12 +1,12 @@
 # data-structures-and-algorithms-c#
 
 ## About This Program
-Challenge - Breadth First Binary Tree
+Challenge - Trees
 
 Author: Karina Chen
 
 ## Description
-This is a daily code challenges. The task is to traverse through a binary tree using breadth first traversal.
+This is a daily code challenges. The task is to traverse through a binary tree using pre-order, in-order, and post-order traversals to return an array of values. Create a method to add values to a binary search tree and write another method to return a boolean if a value is in the tree.
 
 ## Getting Started
 Clone this repository to your local machine.
@@ -27,10 +27,6 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 ## Visuals
 
-White-Boarding
-![Alt whiteboarding capture]()
-![Alt whiteboarding capture]()
-
 App Execution
 
 ![Alt app execution capture]()
@@ -40,4 +36,5 @@ App Execution
 
 1.1: Set up the program, add Table of Contents to README. - 2019 Nov 06
 
+1.2: Create a Node class. - 2019 Nov 06
 

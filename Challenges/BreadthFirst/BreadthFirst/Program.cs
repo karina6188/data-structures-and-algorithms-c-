@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BreadthFirst
+namespace Tree
 {
     class Program
     {
