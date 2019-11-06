@@ -38,3 +38,8 @@ App Execution
 
 1.2: Create a Node class. - 2019 Nov 06
 
+1.3: Create a BinaryTree class. - 2019 Nov 06
+
+1.4: Add PreOrder(), InOrder(), and PostOrder() methods. - 2019 Nov 06
+
+1.5: Create a TraverseBinaryTree() method. - 2019 Nov 06
