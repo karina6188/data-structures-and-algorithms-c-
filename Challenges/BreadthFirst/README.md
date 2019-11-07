@@ -82,4 +82,6 @@ Result
 
 1.9: Add contains() method to check if a value exists on the tree. - 2019 Nov 06
 
-1.10: Add unit testing. Pass all the tests. The program is completed. - 2019 Nov 06
+1.10: Add try and catch blocks. - 2019 Nov 06
+
+1.11: Add unit testing. Pass all the tests. The program is completed. - 2019 Nov 06
