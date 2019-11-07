@@ -38,7 +38,7 @@ White-Boarding
 
 Result
 
-![Alt app execution capture]()
+![Alt app execution capture](/Assets/code16_1.JPG)
 
 ## Change Log
 
@@ -47,3 +47,11 @@ Result
 1.2: Create Node class. - 2019 Nov 07
 
 1.3: Create Tree class. - 2019 Nov 07
+
+1.4: Scaffold FizzBuzzTree() method. - 2019 Nov 07
+
+1.5: Create PreOrder() method to traverse throught the nodes on the tree. - 2019 Nov 07
+
+1.6: Add codes to PreOrder() method and replace values to be "Fizz", "Buzz", and "FizzBuzz" if the value is divisible by 3, 5, or 15. - 2019 Nov 07
+
+1.7: 
