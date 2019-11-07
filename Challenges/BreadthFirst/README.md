@@ -78,4 +78,6 @@ Result
 
 1.7: Create a traverseBinarySearch() method to traverse each node in the binary search tree using breadth first traversal. - 2019 Nov 06
 
-1.8: 
+1.8: Add add() method to add a new node with a value to the correct position on the tree. - 2019 Nov 06
+
+1.9: Add contains() method to check if a value exists on the tree. - 2019 Nov 06
