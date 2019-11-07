@@ -6,11 +6,11 @@ namespace FizzBuzzTree
 {
     public class Node<T>
     {
-        public T Value { get; set; }
-        public Node<T> LeftChild { get; set; }
-        public Node<T> RightChild { get; set; }
+        public object Value { get; set; }
+        public Node<object> LeftChild { get; set; }
+        public Node<object> RightChild { get; set; }
 
-        public Node(T value)
+        public Node(object value)
         {
             Value = value;
         }
