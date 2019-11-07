@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Tree
 {
-    class BinarySearchTree
+    public class BinarySearchTree
     {
         public Node<int> Root { get; set; }
 
