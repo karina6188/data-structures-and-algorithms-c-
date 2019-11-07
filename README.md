@@ -21,6 +21,8 @@ Author: Karina Chen
 
 07 Binary Tree and Binary Search Tree
 
+08 Fizz Buzz Tree
+
 ### Data Structures and Algorithms
 01 Linked List
 
