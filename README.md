@@ -19,7 +19,7 @@ Author: Karina Chen
 
 06 Multi-Bracket Validation
 
-07 Breadth First Binary Tree
+07 Binary Tree and Binary Search Tree
 
 ### Data Structures and Algorithms
 01 Linked List
