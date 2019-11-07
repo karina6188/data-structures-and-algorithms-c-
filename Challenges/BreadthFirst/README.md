@@ -35,6 +35,9 @@ Create an empty List to store node values on the tree. Create an empty queue and
 Big O Time: O(n); Big O Space: O(n).
 
 ##### contains():
+Take the tree's root node and the value that is to be searched then use Contains() method to check if the List contains the value.
+
+Big O Time: O(n); Big O Space: O(n).
 
 ## Getting Started
 Clone this repository to your local machine.
