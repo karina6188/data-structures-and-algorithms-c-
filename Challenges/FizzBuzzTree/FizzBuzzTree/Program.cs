@@ -11,6 +11,9 @@ namespace FizzBuzzTree
             FizzBuzzBinaryTree();
         }
 
+        /// <summary>
+        /// Create an empty tree and add nodes to it. Assign the relationships between the nodes.
+        /// </summary>
         static void FizzBuzzBinaryTree()
         {
             Tree<object> tree = new Tree<object>(30);
@@ -38,6 +41,7 @@ namespace FizzBuzzTree
             Console.WriteLine("Fizz Buzz Tree:");
             List<object> binaryTree = tree.FizzBuzzTree(tree);
             Console.WriteLine(string.Join(',', binaryTree));
+            Console.WriteLine($"There are {tree.totalNodes} nodes on the tree.");
             Console.WriteLine();
         }
     }

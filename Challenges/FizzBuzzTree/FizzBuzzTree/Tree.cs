@@ -20,20 +20,30 @@ namespace Tree
         }
 
         /// <summary>
-        /// 
+        /// Create an empty List to store the nodes values on the tree. Call PreOrder() method to traverse throught the nodes.
         /// </summary>
         /// <param name="node"></param>
         /// <returns></returns>
+        public int totalNodes;
         public List<object> FizzBuzzTree(Tree<object> tree)
         {
             List<object> traversal = new List<object>();
-            int totalNodes = PreOrder(tree.Root, traversal);
+            totalNodes = PreOrder(tree.Root, traversal);
             return traversal;
         }
 
+        /// <summary>
+        /// Traverse throught the nodes and count how many nodes are on the tree.
+        /// When traversing through the node, check if the node's value is divisible by 3, 5, or 15.
+        /// If yes, replace the values to be "Fizz", "Buzz", and "FizzBuzz" before save the value to List.
+        /// Keep doing this if the node has children and keep checking, replacing, and saving values to List.
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="traversal"></param>
+        /// <returns></returns>
+        public int count = 0;
         public int PreOrder(Node<object> node, List<object> traversal)
         {
-            int count = 0;
             try
             {
                 if (Convert.ToInt32(node.Value) % 15 == 0)
