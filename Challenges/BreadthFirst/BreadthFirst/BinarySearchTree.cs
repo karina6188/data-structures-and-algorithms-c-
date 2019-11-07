@@ -57,5 +57,11 @@ namespace Tree
             }
             return traversal;
         }
+
+        public bool contains(Node<int> node, int value)
+        {
+            List<int> traversal = traverseBinarySearch(node);
+            return traversal.Contains(value);
+        }
     }
 }

@@ -7,7 +7,7 @@ namespace Tree
     {
         static void Main(string[] args)
         {
-            //TraverseBinaryTree();
+            TraverseBinaryTree();
             TraverseBinarySearchTree();
         }
 
@@ -83,6 +83,9 @@ namespace Tree
             List<int> breadth2 = binarySearchTree.traverseBinarySearch(binarySearchTree.Root);
             Console.WriteLine(string.Join(',', breadth2));
             Console.WriteLine();
+
+            Console.WriteLine("Does the binary search tree contains 38?");
+            Console.WriteLine(binarySearchTree.contains(binarySearchTree.Root, 38));
         }
     }
 }

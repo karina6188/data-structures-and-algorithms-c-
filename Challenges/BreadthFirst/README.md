@@ -27,10 +27,9 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 ## Visuals
 
-App Execution
+Result
 
-![Alt app execution capture]()
-![Alt app execution capture]()
+![Alt app execution capture](/Assets/code15_1.JPG)
 
 ## Change Log
 
