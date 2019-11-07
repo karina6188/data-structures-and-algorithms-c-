@@ -35,10 +35,10 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 White-Boarding
 
-![Alt white-boarding capture](/Assets/code16_2.JPG)
-![Alt white-boarding capture](/Assets/code16_3.JPG)
-![Alt white-boarding capture](/Assets/code16_4.JPG)
-![Alt white-boarding capture](/Assets/code16_5.JPG)
+![Alt white-boarding capture](/Assets/code16_2.jpg)
+![Alt white-boarding capture](/Assets/code16_3.jpg)
+![Alt white-boarding capture](/Assets/code16_4.jpg)
+![Alt white-boarding capture](/Assets/code16_5.jpg)
 
 Result
 
