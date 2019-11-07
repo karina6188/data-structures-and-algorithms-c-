@@ -44,3 +44,6 @@ Result
 
 1.1: Set up the program, add Table of Contents to README. - 2019 Nov 06
 
+1.2: Create Node class. - 2019 Nov 07
+
+1.3: Create Tree class. - 2019 Nov 07
