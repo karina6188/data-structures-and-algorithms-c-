@@ -35,7 +35,7 @@ namespace Tree
         /// <summary>
         /// Traverse throught the nodes and count how many nodes are on the tree.
         /// When traversing through the node, check if the node's value is divisible by 3, 5, or 15.
-        /// If yes, replace the values to be "Fizz", "Buzz", and "FizzBuzz" before save the value to List.
+        /// If yes, replace the values to be "Fizz", "Buzz", and "FizzBuzz" before saving the value to List.
         /// Keep doing this if the node has children and keep checking, replacing, and saving values to List.
         /// </summary>
         /// <param name="node"></param>

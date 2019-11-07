@@ -10,8 +10,9 @@ This is a daily code challenges. The task is to traverse through a binary tree a
 
 ## Approach & Efficiency
 ##### FizzBuzzTree():
+Take in a tree and create an empty List to store the nodes values on the tree. Call PreOrder() method to traverse throught the nodes. PreOrder() method traverses throught the nodes and count how many nodes are on the tree. While traversing, check if the node's value is divisible by 3, 5, or 15. If yes, replace the values to be "Fizz", "Buzz", and "FizzBuzz" before saving the value to List. Keep doing this if the node has children and keep checking, replacing, and saving values to List.
 
-Big O Time: ; Big O Space: 
+Big O Time: O(n) ; Big O Space: O(w) width of the tree.
 
 ## Getting Started
 Clone this repository to your local machine.
@@ -54,4 +55,4 @@ Result
 
 1.6: Add codes to PreOrder() method and replace values to be "Fizz", "Buzz", and "FizzBuzz" if the value is divisible by 3, 5, or 15. - 2019 Nov 07
 
-1.7: Add unit testing.
+1.7: Add unit testing. Pass all the tests. The program is completed. - 2019 Nov 07
