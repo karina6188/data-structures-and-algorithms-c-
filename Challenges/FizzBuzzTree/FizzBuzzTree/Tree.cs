@@ -20,22 +20,33 @@ namespace Tree
         }
 
         /// <summary>
-        /// Create a List to store values from nodes. Call PreOrder method to recursively traverse to nodes and add the values. Then check if the node has a left child and get the value. Keep doing this until there is no left child then go back to the previous node to check the right child and get the values.
+        /// 
         /// </summary>
         /// <param name="node"></param>
         /// <returns></returns>
-        public List<T> PreOrder(Node<T> node)
+        public List<object> FizzBuzzTree(Tree<T> tree)
         {
             List<T> traversal = new List<T>();
-            PreOrder(node, traversal);
+            int totalNodes = PreOrder(tree.Root, traversal);
+
+            for (int i = 0; i < totalNodes; i++)
+            {
+                if (int.Parse(traversal[i]) % 15 == 0)
+                {
+
+                }
+            }
+
             return traversal;
         }
 
-        public void PreOrder(Node<T> node, List<T> traversal)
+        public int PreOrder(Node<T> node, List<T> traversal)
         {
+            int count = 0;
             try
             {
                 traversal.Add(node.Value);
+                count ++;
 
                 if (node.LeftChild != null)
                 {
@@ -45,11 +56,13 @@ namespace Tree
                 {
                     PreOrder(node.RightChild, traversal);
                 }
+                return count;
             }
             catch (NullReferenceException e)
             {
                 Console.WriteLine("The tree is empty.");
                 Console.WriteLine(e.Message);
+                return count;
             }
         }
     }
