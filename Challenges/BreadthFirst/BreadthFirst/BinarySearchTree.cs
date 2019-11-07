@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -36,21 +37,23 @@ namespace Tree
         }
 
         List<int> traversal = new List<int>();
-        //traversal.Add(node.Value);
         public List<int> traverseBinarySearch(Node<int> node)
         {
-            if (node != null)
+            Queue<Node<int>> breadth = new Queue<Node<int>>();
+            breadth.Enqueue(node);
+
+            while(breadth.Count > 0)
             {
-                if (node.LeftChild != null)
+                Node<int> front = breadth.Dequeue();
+                traversal.Add(front.Value);
+                if(front.LeftChild != null)
                 {
-                    traversal.Add(node.LeftChild.Value);
+                    breadth.Enqueue(front.LeftChild);
                 }
-                if (node.RightChild != null)
+                if (front.RightChild != null)
                 {
-                    traversal.Add(node.RightChild.Value);
+                    breadth.Enqueue(front.RightChild);
                 }
-                traverseBinarySearch(node.LeftChild);
-                traverseBinarySearch(node.RightChild);
             }
             return traversal;
         }

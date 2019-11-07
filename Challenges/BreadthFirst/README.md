@@ -43,3 +43,9 @@ App Execution
 1.4: Add PreOrder(), InOrder(), and PostOrder() methods. - 2019 Nov 06
 
 1.5: Create a TraverseBinaryTree() method. - 2019 Nov 06
+
+1.6: Add BinarySearchTree class. - 2019 Nov 06
+
+1.7: Create a traverseBinarySearch() method to traverse each node in the binary search tree using breadth first traversal. - 2019 Nov 06
+
+1.8: 

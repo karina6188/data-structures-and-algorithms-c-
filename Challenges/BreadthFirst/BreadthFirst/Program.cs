@@ -60,19 +60,21 @@ namespace Tree
             Node<int> node4 = new Node<int>(10);
             Node<int> node5 = new Node<int>(70);
             Node<int> node6 = new Node<int>(120);
-
+            Node<int> node7 = new Node<int>(3);
+            Node<int> node8 = new Node<int>(131);
 
             binarySearchTree.Root.LeftChild = node2;
             binarySearchTree.Root.RightChild = node3;
             node2.LeftChild = node4;
             node3.LeftChild = node5;
             node3.RightChild = node6;
+            node4.LeftChild = node7;
+            node6.RightChild = node8;
 
             Console.WriteLine("Breadth First Binary Search:");
             List<int> breadth = binarySearchTree.traverseBinarySearch(binarySearchTree.Root);
             string rootValue = binarySearchTree.Root.Value.ToString();
-            string breadthTraverse = string.Join(',', breadth);
-            Console.WriteLine($"{rootValue},{breadthTraverse}");
+            Console.WriteLine(string.Join(',', breadth));
             Console.WriteLine();
         }
     }
