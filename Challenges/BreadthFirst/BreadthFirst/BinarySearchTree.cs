@@ -36,17 +36,17 @@ namespace Tree
             return node;
         }
 
-        List<int> traversal = new List<int>();
         public List<int> traverseBinarySearch(Node<int> node)
         {
+            List<int> traversal = new List<int>();
             Queue<Node<int>> breadth = new Queue<Node<int>>();
             breadth.Enqueue(node);
 
-            while(breadth.Count > 0)
+            while (breadth.Count > 0)
             {
                 Node<int> front = breadth.Dequeue();
                 traversal.Add(front.Value);
-                if(front.LeftChild != null)
+                if (front.LeftChild != null)
                 {
                     breadth.Enqueue(front.LeftChild);
                 }

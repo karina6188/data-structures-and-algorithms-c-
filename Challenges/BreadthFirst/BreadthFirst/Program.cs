@@ -71,10 +71,17 @@ namespace Tree
             node4.LeftChild = node7;
             node6.RightChild = node8;
 
-            Console.WriteLine("Breadth First Binary Search:");
+            Console.WriteLine("Breadth First Binary Search");
             List<int> breadth = binarySearchTree.traverseBinarySearch(binarySearchTree.Root);
-            string rootValue = binarySearchTree.Root.Value.ToString();
             Console.WriteLine(string.Join(',', breadth));
+            Console.WriteLine();
+
+            Console.WriteLine("Add new nodes 40, 115, and 44: ");
+            binarySearchTree.add(binarySearchTree.Root, 40);
+            binarySearchTree.add(binarySearchTree.Root, 115);
+            binarySearchTree.add(binarySearchTree.Root, 44);
+            List<int> breadth2 = binarySearchTree.traverseBinarySearch(binarySearchTree.Root);
+            Console.WriteLine(string.Join(',', breadth2));
             Console.WriteLine();
         }
     }
