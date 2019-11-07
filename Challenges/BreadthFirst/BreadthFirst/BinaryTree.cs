@@ -15,7 +15,7 @@ namespace Tree
 
         public BinaryTree()
         {
-          
+
         }
 
         /// <summary>
@@ -32,15 +32,23 @@ namespace Tree
 
         public void PreOrder(Node<T> node, List<T> traversal)
         {
-            traversal.Add(node.Value);
+            try
+            {
+                traversal.Add(node.Value);
 
-            if(node.LeftChild != null)
-            {
-                PreOrder(node.LeftChild, traversal);
+                if (node.LeftChild != null)
+                {
+                    PreOrder(node.LeftChild, traversal);
+                }
+                if (node.RightChild != null)
+                {
+                    PreOrder(node.RightChild, traversal);
+                }
             }
-            if(node.RightChild != null)
+            catch (NullReferenceException e)
             {
-                PreOrder(node.RightChild, traversal);
+                Console.WriteLine("The tree is empty.");
+                Console.WriteLine(e.Message);
             }
         }
 
@@ -50,21 +58,31 @@ namespace Tree
         /// <returns></returns>
         public List<T> InOrder(Node<T> node)
         {
-            List<T> traversal = new List<T>();
-            InOrder(node, traversal);
-            return traversal;
+            try
+            {
+                List<T> traversal = new List<T>();
+                InOrder(node, traversal);
+                return traversal;
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine("The tree is empty.");
+                Console.WriteLine(e.Message);
+                List<T> empty = new List<T>();
+                return empty;
+            }
         }
 
         public void InOrder(Node<T> node, List<T> traversal)
         {
-            if(node.LeftChild != null)
+            if (node.LeftChild != null)
             {
                 InOrder(node.LeftChild, traversal);
             }
 
             traversal.Add(node.Value);
 
-            if(node.RightChild != null)
+            if (node.RightChild != null)
             {
                 InOrder(node.RightChild, traversal);
             }
@@ -77,18 +95,28 @@ namespace Tree
         /// <returns></returns>
         public List<T> PostOrder(Node<T> node)
         {
-            List<T> traversal = new List<T>();
-            PostOrder(node, traversal);
-            return traversal;
+            try
+            {
+                List<T> traversal = new List<T>();
+                PostOrder(node, traversal);
+                return traversal;
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine("The tree is empty.");
+                Console.WriteLine(e.Message);
+                List<T> empty = new List<T>();
+                return empty;
+            }
         }
 
         public void PostOrder(Node<T> node, List<T> traversal)
         {
-            if(node.LeftChild != null)
+            if (node.LeftChild != null)
             {
                 PostOrder(node.LeftChild, traversal);
             }
-            if(node.RightChild != null)
+            if (node.RightChild != null)
             {
                 PostOrder(node.RightChild, traversal);
             }

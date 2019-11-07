@@ -69,15 +69,23 @@ namespace Tree
 
             while (breadth.Count > 0)
             {
-                Node<int> front = breadth.Dequeue();
-                traversal.Add(front.Value);
-                if (front.LeftChild != null)
+                try
                 {
-                    breadth.Enqueue(front.LeftChild);
+                    Node<int> front = breadth.Dequeue();
+                    traversal.Add(front.Value);
+                    if (front.LeftChild != null)
+                    {
+                        breadth.Enqueue(front.LeftChild);
+                    }
+                    if (front.RightChild != null)
+                    {
+                        breadth.Enqueue(front.RightChild);
+                    }
                 }
-                if (front.RightChild != null)
+                catch (NullReferenceException e)
                 {
-                    breadth.Enqueue(front.RightChild);
+                    Console.WriteLine("The tree is empty.");
+                    Console.WriteLine(e.Message);
                 }
             }
             return traversal;
