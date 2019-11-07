@@ -1,0 +1,46 @@
+# data-structures-and-algorithms-c#
+
+## About This Program
+Challenge - Fizz Buzz Tree
+
+Author: Karina Chen
+
+## Description
+This is a daily code challenges. The task is to traverse through a binary tree and if a node's value is divisible by 3, 5, or both, replace the value with "Fizz", "Buzz", and "FizzBuzz". At the end, return the tree with its new values.
+
+## Approach & Efficiency
+##### FizzBuzzTree():
+
+Big O Time: ; Big O Space: 
+
+## Getting Started
+Clone this repository to your local machine.
+
+$ git clone [https://github.com/karina6188/data-structures-and-algorithms-c-.git]
+
+To run the program from Visual Studio:
+Select File -> Open -> Project/Solution
+
+Next navigate to the location you cloned the Repository.
+
+Double click on the challenges directory.
+
+Then select and open the challenges that you want to view.
+
+## To Run This Program
+Open the program using Visual Studio and click "Start" button to run this program.
+
+## Visuals
+
+White-Boarding
+
+![Alt white-boarding capture]()
+
+Result
+
+![Alt app execution capture]()
+
+## Change Log
+
+1.1: Set up the program, add Table of Contents to README. - 2019 Nov 06
+
