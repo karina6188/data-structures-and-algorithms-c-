@@ -19,9 +19,7 @@ Author: Karina Chen
 
 06 Multi-Bracket Validation
 
-07 Binary Tree and Binary Search Tree
-
-08 Fizz Buzz Tree
+07 Fizz Buzz Tree
 
 ### Data Structures and Algorithms
 01 Linked List
@@ -31,6 +29,8 @@ Author: Karina Chen
 03 Linked List Implementation
 
 04 Stacks and Queues
+
+05 Binary Tree and Binary Search Tree
 
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
