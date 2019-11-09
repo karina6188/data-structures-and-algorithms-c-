@@ -19,6 +19,8 @@ Author: Karina Chen
 
 06 Multi-Bracket Validation
 
+07 Fizz Buzz Tree
+
 ### Data Structures and Algorithms
 01 Linked List
 
