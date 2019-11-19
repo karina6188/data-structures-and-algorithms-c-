@@ -8,11 +8,23 @@ namespace InsertionSort
         {
             int[] array1 = new int[] { 8, 4, 23, 42, 16, 15 };
             InsertionSort(array1);
-            Console.WriteLine("Sort array [8, 4, 23, 42, 16, 15] using insertion sort:");
-            for (int i = 0; i < array1.Length; i++)
-            {
-                Console.WriteLine();
-            }
+            Console.WriteLine("Use insertion sort to sort array [8, 4, 23, 42, 16, 15]:");
+            PrintArray(array1);
+
+            int[] array2 = new int[] { 20, 18, 12, 8, 5, -2 };
+            InsertionSort(array2);
+            Console.WriteLine("Use insertion sort to sort array [20, 18, 12, 8, 5, -2]:");
+            PrintArray(array2);
+
+            int[] array3 = new int[] { 5, 12, 7, 5, 5, 7 };
+            InsertionSort(array3);
+            Console.WriteLine("Use insertion sort to sort array [5, 12, 7, 5, 5, 7]:");
+            PrintArray(array3);
+
+            int[] array4 = new int[] { 2, 3, 5, 7, 13, 11 };
+            InsertionSort(array4);
+            Console.WriteLine("Use insertion sort to sort array [2, 3, 5, 7, 13, 11]:");
+            PrintArray(array4);
         }
 
         static void InsertionSort(int[] arr)
@@ -29,6 +41,16 @@ namespace InsertionSort
                     arr[j + 1] = temp;
                 }
             }
+        }
+
+        static void PrintArray(int[] arr)
+        {
+            Console.Write("[");
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                Console.Write($"{arr[i]}, ");
+            }
+            Console.Write($"{arr[arr.Length - 1]}]");
         }
     }
 }
