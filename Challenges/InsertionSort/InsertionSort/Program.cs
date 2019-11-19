@@ -10,16 +10,22 @@ namespace InsertionSort
             InsertionSort(array1);
             Console.WriteLine("Use insertion sort to sort array [8, 4, 23, 42, 16, 15]:");
             PrintArray(array1);
+            Console.WriteLine("");
+            Console.WriteLine("");
 
             int[] array2 = new int[] { 20, 18, 12, 8, 5, -2 };
             InsertionSort(array2);
             Console.WriteLine("Use insertion sort to sort array [20, 18, 12, 8, 5, -2]:");
             PrintArray(array2);
+            Console.WriteLine("");
+            Console.WriteLine("");
 
             int[] array3 = new int[] { 5, 12, 7, 5, 5, 7 };
             InsertionSort(array3);
             Console.WriteLine("Use insertion sort to sort array [5, 12, 7, 5, 5, 7]:");
             PrintArray(array3);
+            Console.WriteLine("");
+            Console.WriteLine("");
 
             int[] array4 = new int[] { 2, 3, 5, 7, 13, 11 };
             InsertionSort(array4);
