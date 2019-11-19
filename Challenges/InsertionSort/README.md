@@ -33,7 +33,7 @@ Sample Array:
 `
 
 **Progress:**
-![Alt app execution capture](/Assets/code15_1.JPG)
+![Alt app execution capture](/Assets/code26_1.jpg)
 
 **Pass 1:**
 
@@ -47,26 +47,10 @@ Sample Array:
 
 **Pass 6:**
 
-## Change Log
+## Efficency
 
-1.1: Set up the program, add Table of Contents to README. - 2019 Nov 06
+* **Time: O(n^2)**
+  * Since insertion sort is comparing each element to the next adjacent element, then if the next element is smaller than the current element, the next element is moved to the current index and the current element is moved to the next index position. The worse case scenario is that every element in the array is to be moved to another index position. Therefore the Big O time is O(n^2).
 
-1.2: Create a Node class. - 2019 Nov 06
-
-1.3: Create a BinaryTree class. - 2019 Nov 06
-
-1.4: Add PreOrder(), InOrder(), and PostOrder() methods. - 2019 Nov 06
-
-1.5: Create a TraverseBinaryTree() method. - 2019 Nov 06
-
-1.6: Add BinarySearchTree class. - 2019 Nov 06
-
-1.7: Create a traverseBinarySearch() method to traverse each node in the binary search tree using breadth first traversal. - 2019 Nov 06
-
-1.8: Add add() method to add a new node with a value to the correct position on the tree. - 2019 Nov 06
-
-1.9: Add contains() method to check if a value exists on the tree. - 2019 Nov 06
-
-1.10: Add try and catch blocks. - 2019 Nov 06
-
-1.11: Add unit testing. Pass all the tests. The program is completed. - 2019 Nov 06
+* **Space: O(1)**
+  * The array is being sorted in place so the Big O space is always going to be the size of the array.
