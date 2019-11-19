@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace InsertionSort
+namespace Insertion_Sort
 {
-    class Program
+    public class Program
     {
         /// <summary>
         /// Call InsertionSort method to sort number arrays.
         /// Call PrintArray method to print out the initial and sorted arrays.
         /// </summary>
         /// <param name="args"></param>
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int[] array1 = new int[] { 8, 4, 23, 42, 16, 15 };
             InsertionSort(array1);
@@ -48,7 +48,7 @@ namespace InsertionSort
         /// Keep doing this until the method reaches to the last number of the array and completes the sorting.
         /// </summary>
         /// <param name="arr"></param>
-        static void InsertionSort(int[] arr)
+        public static void InsertionSort(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
             {
@@ -68,7 +68,7 @@ namespace InsertionSort
         /// This method takes in a number array and print it out in a format of an array.
         /// </summary>
         /// <param name="arr"></param>
-        static void PrintArray(int[] arr)
+        public static void PrintArray(int[] arr)
         {
             Console.Write("[");
             for (int i = 0; i < arr.Length - 1; i++)
