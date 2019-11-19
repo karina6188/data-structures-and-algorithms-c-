@@ -11,6 +11,9 @@ This is a daily code challenges. The task is to create a method that takes in a 
 ## Insertion Sort
 Insertion sort is a simple sorting algorithm that sort an array by comparing two adjacent elements at a time.This sorting algorithm is easy to implement and efficient for sorting small data sets.
 
+## Result
+![Alt app execution capture](/Assets/code26_2.JPG)
+
 ## Pseudocode
 ```
 InsertionSort(int[] arr)

@@ -31,6 +31,7 @@ namespace InsertionSort
             InsertionSort(array4);
             Console.WriteLine("Use insertion sort to sort array [2, 3, 5, 7, 13, 11]:");
             PrintArray(array4);
+            Console.WriteLine("");
         }
 
         static void InsertionSort(int[] arr)
