@@ -38,7 +38,7 @@ namespace InsertionSortTests
         }
 
         [Fact]
-        public void CanSortNearlySorted()
+        public void SortNearlySorted()
         {
             int[] array = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, -10, 0 };
             InsertionSort(array);
