@@ -18,7 +18,7 @@ namespace InsertionSortTests
         }
 
         [Fact]
-        public void CanSortSameValues()
+        public void SortSameValues()
         {
             int[] array = new int[] { 15, 11, 18, 6, 11, 3, 13, 3, 5 };
             InsertionSort(array);
