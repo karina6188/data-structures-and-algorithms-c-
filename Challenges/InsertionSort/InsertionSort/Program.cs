@@ -4,6 +4,11 @@ namespace InsertionSort
 {
     class Program
     {
+        /// <summary>
+        /// Call InsertionSort method to sort number arrays.
+        /// Call PrintArray method to print out the initial and sorted arrays.
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             int[] array1 = new int[] { 8, 4, 23, 42, 16, 15 };
@@ -34,6 +39,15 @@ namespace InsertionSort
             Console.WriteLine("");
         }
 
+        /// <summary>
+        /// This method takes in a number array then compare the numbers starting at index 0.
+        /// A variable named temp is used to store the next number after the current number.
+        /// If temp is smaller than the current number, the two numbers swap their index positions.
+        /// Use a while loop to keep comparing the two adjacent numbers together.
+        /// Inside the while loop, temp value and the current number are changed accordingly to be the previous index positions to check if every number is sorted to be at their correct position before the current index position.
+        /// Keep doing this until the method reaches to the last number of the array and completes the sorting.
+        /// </summary>
+        /// <param name="arr"></param>
         static void InsertionSort(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
@@ -50,6 +64,10 @@ namespace InsertionSort
             }
         }
 
+        /// <summary>
+        /// This method takes in a number array and print it out in a format of an array.
+        /// </summary>
+        /// <param name="arr"></param>
         static void PrintArray(int[] arr)
         {
             Console.Write("[");
