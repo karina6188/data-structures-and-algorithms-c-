@@ -36,6 +36,14 @@ Sample Array:
 ![Alt app execution capture](/Assets/code26_1.jpg)
 
 **Pass 1:**
+In the first pass through of the insertion sort, the method evaluates if there are any number that is smaller then the current number at index position 0. A variable named "temp" is used to store the number that is at the next index position. For the first pass, temp is the second number in the array that is going to be compared with the first number in the array. If temp number is less than the current number, the two numbers swap their index positions.
+
+ In the first pass, temp value (index position 1, number 4) is smaller than the current value (index position 0, number 8), the two numbers swap their index positions.
+
+Array after first pass:
+`
+[4, 8, 23, 42, 16, 15]
+`
 
 **Pass 2:**
 
@@ -50,7 +58,7 @@ Sample Array:
 ## Efficency
 
 * **Time: O(n^2)**
-  * Since insertion sort is comparing each element to the next adjacent element, then if the next element is smaller than the current element, the next element is moved to the current index and the current element is moved to the next index position. The worse case scenario is that every element in the array is to be moved to another index position. Therefore the Big O time is O(n^2).
+  * Since insertion sort is comparing the current number to the rest of the number in the array, if there is a number that is smaller than the current number, the smaller number is then moved to the current index position and the current number is then moved to the next index position. The worse case scenario is that every number in the array is to be moved to another index position. Therefore the Big O time is O(n^2).
 
 * **Space: O(1)**
   * The array is being sorted in place so the Big O space is always going to be the size of the array.
