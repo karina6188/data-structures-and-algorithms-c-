@@ -8,7 +8,7 @@ namespace InsertionSortTests
     public class UnitTest1
     {
         [Fact]
-        public void CanSortUniqueArray()
+        public void SortUniqueArray()
         {
             int[] array = new int[] { 41, 29, 15, 7, 13, 24, 33, 36 };
             InsertionSort(array);
