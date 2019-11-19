@@ -28,7 +28,7 @@ namespace InsertionSortTests
         }
 
         [Fact]
-        public void CanSortReservedArray()
+        public void SortReservedArray()
         {
             int[] array = new int[] { 65, 60, 55, 50, 45, 40, 35, 30 };
             InsertionSort(array);
