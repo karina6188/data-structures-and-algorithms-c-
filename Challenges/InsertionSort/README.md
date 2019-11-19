@@ -37,7 +37,7 @@ Sample Array:
 
 **Pass 1:**
 
-In the first pass through of the insertion sort, the method evaluates if there are any number that is smaller then the current number at index position 0. A variable named "temp" is used to store the number that is at the next index position. For the first pass, temp is the second number in the array that is going to be compared with the first number in the array. If temp number is smaller than the current number, the two numbers swap their index positions.
+In the first pass of the insertion sort, the method evaluates if there are any number that is smaller then the current number at index position 0. A variable named "temp" is used to store the number that is at the next index position. For the first pass, temp is the second number in the array that is going to be compared with the first number in the array. If temp number is smaller than the current number, the two numbers swap their index positions.
 
  In the first pass, temp value (index position 1, number 4) is smaller than the current value (index position 0, number 8), the two numbers swap their index positions.
 
@@ -59,9 +59,9 @@ Array after 2nd pass:
 
 **Pass 3:**
 
-For the third pass, the current index becomes 2 (number 23) and the temp becomes 42 which is at index position 3. The method compares number 23 with 42. Since temp value (42) is not smaller than the current value (23), no swap occurs at the third pass either. 
+For the third pass, the current index becomes 2 (number 23) and the temp becomes 42 which is at index position 3. The method compares number 23 with 42. Since temp value (42) is not smaller than the current value (23), no swap occurs at the third pass. 
 
-Array after 3rd pass:
+Array after 2nd pass:
 
 `
 [4, 8, 23, 42, 16, 15]
@@ -87,7 +87,30 @@ Array after 4th pass:
 
 **Pass 5:**
 
-**Pass 6:**
+For the fifth pass, the current index is 4, which is number 42. The temp becomes 15, which is at index position 5. The method compares number 15 with 16. The temp value (15) is smaller than the current value (42), the two numbers are swapped. 
+
+At this point the array becomes this:
+
+`
+[4, 8, 16, 23, 15, 42]
+`
+
+Inside the method, the while loop is still comparing the numbers. The temp value now becomes the number at index position 4, which is number 15. The current value now becomes the number at index position 3. Compare the two numbers together. The temp value (15) is smaller than the current value (23), so another swap occurs. 
+
+At this point the array becomes this:
+
+`
+[4, 8, 16, 15, 23, 42]
+`
+
+The while loop then changes the temp to be the value at index position 3, which is number 15. The current value now becomes the number at index position 2. Compare the two numbers together. The temp value (15) is smaller than the current value (16), a third swap occurs for this pass.
+ 
+Array after 5th pass:
+
+`
+[4, 8, 15, 16, 23, 42]
+`
+
 
 ## Efficency
 
