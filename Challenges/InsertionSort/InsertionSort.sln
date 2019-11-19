@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "InsertionSort\InsertionSort.csproj", "{718FBF2B-4A68-4322-944A-1279F3510830}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSortTests", "InsertionSortTests\InsertionSortTests.csproj", "{B324BCBA-A679-4337-A72B-C05029DC7C4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{718FBF2B-4A68-4322-944A-1279F3510830}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{718FBF2B-4A68-4322-944A-1279F3510830}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{718FBF2B-4A68-4322-944A-1279F3510830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B324BCBA-A679-4337-A72B-C05029DC7C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B324BCBA-A679-4337-A72B-C05029DC7C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B324BCBA-A679-4337-A72B-C05029DC7C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B324BCBA-A679-4337-A72B-C05029DC7C4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
