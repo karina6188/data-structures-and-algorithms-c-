@@ -31,9 +31,8 @@ InsertionSort(int[] arr)
 ```
 ## Trace
 Sample Array:
-`
 [8,4,23,42,16,15]
-`
+
 
 **Progress:**
 ![Alt app execution capture](/Assets/code26_1.jpg)
@@ -46,9 +45,8 @@ In the first pass of the insertion sort, the method evaluates if there are any n
 
 Array after 1st pass:
 
-`
-[4, 8, 23, 42, 16, 15]
-`
+[_**4**_, _**8**_, 23, 42, 16, 15]
+
 
 **Pass 2:**
 
@@ -56,9 +54,8 @@ For the second pass, the current index becomes 1 (number 8) and the temp becomes
 
 Array after 2nd pass:
 
-`
 [4, 8, 23, 42, 16, 15]
-`
+
 
 **Pass 3:**
 
@@ -66,9 +63,8 @@ For the third pass, the current index becomes 2 (number 23) and the temp becomes
 
 Array after 2nd pass:
 
-`
 [4, 8, 23, 42, 16, 15]
-`
+
 
 **Pass 4:**
 
@@ -76,17 +72,15 @@ For the fourth pass, the current index is now 3, which is number 42. The temp be
 
 At this point the array becomes this:
 
-`
-[4, 8, 23, 16, 42, 15]
-`
+[4, 8, 23, _**16**_, _**42**_, 15]
+
 
 Inside the method, the while loop is still comparing the numbers. The temp value now becomes the number at index position 3, which is number 16. The current value now becomes the number at index position 2. Compare the two numbers together. The temp value (16) is smaller than the current value (23), so another swap occurs. 
 
 Array after 4th pass:
 
-`
-[4, 8, 16, 23, 42, 15]
-`
+[4, 8, _**16**_, _**23**_, 42, 15]
+
 
 **Pass 5:**
 
@@ -94,25 +88,21 @@ For the fifth pass, the current index is 4, which is number 42. The temp becomes
 
 At this point the array becomes this:
 
-`
-[4, 8, 16, 23, 15, 42]
-`
+[4, 8, 16, 23, _**15**_, _**42**_]
+
 
 Inside the method, the while loop is still comparing the numbers. The temp value now becomes the number at index position 4, which is number 15. The current value now becomes the number at index position 3. Compare the two numbers together. The temp value (15) is smaller than the current value (23), so another swap occurs. 
 
 At this point the array becomes this:
 
-`
-[4, 8, 16, 15, 23, 42]
-`
+[4, 8, 16, _**15**_, _**23**_, 42]
+
 
 The while loop then changes the temp to be the value at index position 3, which is number 15. The current value now becomes the number at index position 2. Compare the two numbers together. The temp value (15) is smaller than the current value (16), a third swap occurs for this pass.
  
 Array after 5th pass:
 
-`
-[4, 8, 15, 16, 23, 42]
-`
+[4, 8, _**15**_, _**16**_, 23, 42]
 
 
 ## Efficency
