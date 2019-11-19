@@ -21,6 +21,8 @@ Author: Karina Chen
 
 07 Fizz Buzz Tree
 
+08 Insertion Sort
+
 ### Data Structures and Algorithms
 01 Linked List
 
@@ -51,4 +53,3 @@ Then select and open the program you want to view.
 
 ## To Run This Program
 Open the program using Visual Studio and click "Start" button to run this program.
-
