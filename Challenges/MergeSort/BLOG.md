@@ -70,8 +70,8 @@ Then it moves to the right sub array and does the same thing until there is only
 
 **Pass 2:**
 
-The initial array is split into left and right sub array. From the pseudocode, Mergesort(left) is called first. This is a recursion that the array will be splited into halves and the method goes to the left sub array and do this over and over until the left sub array's length is 1.
-Then it moves to the right sub array and does the same thing until there is only one number left in the right sub array.
+Once MergeSort method is done spliting the left half of the initial array, it moves to MergeSort(right) and recursively spliting the right half of the initial array into sub arrays. The recursion ends when there is only 1 number left in the sub array.
+After that it moves to the right sub array of the sub arrays and does the same thing until there is only one number left in the right sub array which is the very bottom of the recursion height.
 
 ![Alt app execution capture](/Assets/code27_6.jpg)
 ![Alt app execution capture](/Assets/code27_7.jpg)
