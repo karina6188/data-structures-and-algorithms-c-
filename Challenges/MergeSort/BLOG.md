@@ -49,7 +49,6 @@ MergeSort is a divide-and-conquer algorithm that splits an array into two parts 
        set remaining entries in arr to remaining values in right
     else
        set remaining entries in arr to remaining values in left
-
 ```
 ## Trace
 Sample Array:
@@ -60,57 +59,35 @@ Sample Array:
 
 **Pass 1:**
 
-![Alt app execution capture](/Assets/code26_1.jpg)
+![Alt app execution capture](/Assets/code27_1.jpg)
 
 
-Array after 1st pass:
 
-[_**4**_, _**8**_, 23, 42, 16, 15]
 
 
 **Pass 2:**
 
-![Alt app execution capture](/Assets/code26_1.jpg)
+![Alt app execution capture](/Assets/code27_2.jpg)
 
-
-Array after 2nd pass:
-
-[4, 8, 23, 42, 16, 15]
 
 
 **Pass 3:**
 
-![Alt app execution capture](/Assets/code26_1.jpg)
+![Alt app execution capture](/Assets/code27_3.jpg)
 
-
-Array after 2nd pass:
-
-[4, 8, 23, 42, 16, 15]
 
 
 **Pass 4:**
 
-![Alt app execution capture](/Assets/code26_1.jpg)
+![Alt app execution capture](/Assets/code27_4.jpg)
 
 
-At this point the array becomes this:
-
-[4, 8, 23, _**16**_, _**42**_, 15]
-
- 
-
-Array after 4th pass:
-
-[4, 8, _**16**_, _**23**_, 42, 15]
 
 
 **Pass 5:**
 
- ![Alt app execution capture](/Assets/code26_1.jpg)
+ ![Alt app execution capture](/Assets/code27_5.jpg)
 
-At this point the array becomes this:
-
-[4, 8, 16, 23, _**15**_, _**42**_]
 
 
 
