@@ -54,7 +54,6 @@ MergeSort is a divide-and-conquer algorithm that splits an array into two parts 
 Sample Array:
 [8,4,23,42,16,15]
 
-
 **Progress:**
 
 **Part 1:**
@@ -101,7 +100,14 @@ After Merge method is done sorting and merging the left sub arrays, it now moves
 
 **Pass 5:**
 
+Finally, the last step is to merge the sorted left half array with the sorted right half array. This is the same as previous steps. The method compares the numbers at the same index position of left and right half arrays then adds the smaller number into the final result array until all the numbers are sorted and merged into one single final result array. Then the merge sort is completed.
 
+![Alt app execution capture](/Assets/code27_18.jpg)
+![Alt app execution capture](/Assets/code27_19.jpg)
+![Alt app execution capture](/Assets/code27_20.jpg)
+![Alt app execution capture](/Assets/code27_21.jpg)
+![Alt app execution capture](/Assets/code27_22.jpg)
+![Alt app execution capture](/Assets/code27_23.jpg)
 
 ## Efficency
 
