@@ -59,39 +59,36 @@ Sample Array:
 
 **Pass 1:**
 
+The initial array is split into left and right sub array. From the pseudocode, Mergesort(left) is called first. This is a recursion that the array will be splited into halves and the method goes to the left sub array and do this over and over until the left sub array's length is 1.
+Then it moves to the right sub array and does the same thing until there is only one number left in the right sub array.
+
 ![Alt app execution capture](/Assets/code27_1.jpg)
 ![Alt app execution capture](/Assets/code27_2.jpg)
 ![Alt app execution capture](/Assets/code27_3.jpg)
 ![Alt app execution capture](/Assets/code27_4.jpg)
- ![Alt app execution capture](/Assets/code27_5.jpg)
-The initial array is split into left and right sub array. From the pseudocode, Mergesort(left) is called first. This is a recursion that the array will be splited into halves and the method goes to the left sub array and do this over and over until the left sub array's length is 1.
-
-
-
+![Alt app execution capture](/Assets/code27_5.jpg)
 
 **Pass 2:**
 
-![Alt app execution capture](/Assets/code27_2.jpg)
+The initial array is split into left and right sub array. From the pseudocode, Mergesort(left) is called first. This is a recursion that the array will be splited into halves and the method goes to the left sub array and do this over and over until the left sub array's length is 1.
+Then it moves to the right sub array and does the same thing until there is only one number left in the right sub array.
 
-
+![Alt app execution capture](/Assets/code27_6.jpg)
+![Alt app execution capture](/Assets/code27_7.jpg)
+![Alt app execution capture](/Assets/code27_8.jpg)
+![Alt app execution capture](/Assets/code27_9.jpg)
+![Alt app execution capture](/Assets/code27_10.jpg)
+![Alt app execution capture](/Assets/code27_11.jpg)
 
 **Pass 3:**
-
-![Alt app execution capture](/Assets/code27_3.jpg)
 
 
 
 **Pass 4:**
 
-![Alt app execution capture](/Assets/code27_4.jpg)
-
-
 
 
 **Pass 5:**
-
- ![Alt app execution capture](/Assets/code27_5.jpg)
-
 
 
 
