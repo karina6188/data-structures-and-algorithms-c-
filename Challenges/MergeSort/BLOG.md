@@ -83,7 +83,9 @@ After that it moves to the right sub array of the sub arrays and does the same t
 **Part 3:**
 
 Now that every single number in the initial array has be splited into its own array that contains only one number. MergeSort method then calls an ouside method called Merge.
+Merge method declares three index trackers. They are tracking index of left sub array, index of right sub array, and index of the final result array. Before the first pass, every tracker is set to be at index position 0.
 
+Merge method compares the two numbers at the same index position of left and right sub arrays. Merge method then picks the number that is smaller and adds the number into the final result array. Whichever the sub array that has a number being picked by the Merge method needs to increase its index tracker by 1. The other sub array that is not being picked does not need to change its index tracker. The final result array needs to increase its index tracker by 1 because a number is added and now the index needs to move to the next one so the next number comes after the pervious number and does not replace the previous number.
 
 ![Alt app execution capture](/Assets/code27_12.jpg)
 ![Alt app execution capture](/Assets/code27_13.jpg)
@@ -91,6 +93,7 @@ Now that every single number in the initial array has be splited into its own ar
 
 **Pass 4:**
 
+After Merge method is done sorting and merging the left sub arrays, it now moves to the right half of the sub arrays and does the same thing. Once the index trackers reach to the end of the sub arrays, it breaks out from the while loop.
 
 ![Alt app execution capture](/Assets/code27_15.jpg)
 ![Alt app execution capture](/Assets/code27_16.jpg)
