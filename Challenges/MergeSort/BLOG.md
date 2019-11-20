@@ -57,7 +57,7 @@ Sample Array:
 
 **Progress:**
 
-**Pass 1:**
+**Part 1:**
 
 The initial array is split into left and right sub array. From the pseudocode, Mergesort(left) is called first. This is a recursion that the array will be splited into halves and the method goes to the left sub array and do this over and over until the left sub array's length is 1.
 Then it moves to the right sub array and does the same thing until there is only one number left in the right sub array.
@@ -68,9 +68,9 @@ Then it moves to the right sub array and does the same thing until there is only
 ![Alt app execution capture](/Assets/code27_4.jpg)
 ![Alt app execution capture](/Assets/code27_5.jpg)
 
-**Pass 2:**
+**Part 2:**
 
-Once MergeSort method is done spliting the left half of the initial array, it moves to MergeSort(right) and recursively spliting the right half of the initial array into sub arrays. The recursion ends when there is only 1 number left in the sub array.
+Once MergeSort(left) method is done spliting the left half of the initial array, it moves to MergeSort(right) and recursively spliting the right half of the initial array into sub arrays. The recursion ends when there is only 1 number left in the sub array.
 After that it moves to the right sub array of the sub arrays and does the same thing until there is only one number left in the right sub array which is the very bottom of the recursion height.
 
 ![Alt app execution capture](/Assets/code27_6.jpg)
@@ -80,13 +80,21 @@ After that it moves to the right sub array of the sub arrays and does the same t
 ![Alt app execution capture](/Assets/code27_10.jpg)
 ![Alt app execution capture](/Assets/code27_11.jpg)
 
-**Pass 3:**
+**Part 3:**
+
+Now that every single number in the initial array has be splited into its own array that contains only one number. MergeSort method then calls an ouside method called Merge.
 
 
+![Alt app execution capture](/Assets/code27_12.jpg)
+![Alt app execution capture](/Assets/code27_13.jpg)
+![Alt app execution capture](/Assets/code27_14.jpg)
 
 **Pass 4:**
 
 
+![Alt app execution capture](/Assets/code27_15.jpg)
+![Alt app execution capture](/Assets/code27_16.jpg)
+![Alt app execution capture](/Assets/code27_17.jpg)
 
 **Pass 5:**
 
