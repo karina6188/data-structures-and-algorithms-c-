@@ -60,7 +60,11 @@ Sample Array:
 **Pass 1:**
 
 ![Alt app execution capture](/Assets/code27_1.jpg)
-
+![Alt app execution capture](/Assets/code27_2.jpg)
+![Alt app execution capture](/Assets/code27_3.jpg)
+![Alt app execution capture](/Assets/code27_4.jpg)
+ ![Alt app execution capture](/Assets/code27_5.jpg)
+The initial array is split into left and right sub array. From the pseudocode, Mergesort(left) is called first. This is a recursion that the array will be splited into halves and the method goes to the left sub array and do this over and over until the left sub array's length is 1.
 
 
 
