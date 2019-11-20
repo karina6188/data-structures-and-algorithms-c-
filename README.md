@@ -23,6 +23,8 @@ Author: Karina Chen
 
 08 Insertion Sort
 
+09 Merge Sort
+
 ### Data Structures and Algorithms
 01 Linked List
 
