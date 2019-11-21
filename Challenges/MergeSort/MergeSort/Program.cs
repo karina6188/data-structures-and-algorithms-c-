@@ -8,5 +8,15 @@ namespace MergeSort
         {
             
         }
+
+        static void MergeSort(int[] arr)
+        {
+
+        }
+
+        static void Merge(int[] left, int[] right, int[] arr)
+        {
+
+        }
     }
 }
