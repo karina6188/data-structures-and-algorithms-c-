@@ -55,21 +55,82 @@ Sample Array:
 
 **Part 1:**
 
-
 ![Alt app execution capture](/Assets/code28_1.jpg)
+
+Select the first element as the pivot, then start comparing the left and right elements to the pivot value.
+
+[**8**, _*4*_, 23, 42, 16, _*15*_]
+
+Left: 4; Right: 15.
+
+4 < 8  && 15 > 8 ==> no swap
+
+Now moves to the next element in the array.
 
 **Part 2:**
 
+Compare next elements in the array.
+
+[**8**, 4, _*23*_, 42, _*16*_, 15]
+
+Left: 23; Right: 16.
+
+23 !< 8  && 16 > 8 ==> no swap
+
+Now moves to the next element in the array.
 
 **Part 3:**
 
+Compare next element in the array.
+
+[**8**, 4, 23, _*42*_, 16, 15]
+
+Left: 42.
+
+42 !< 8 ==> no swap
 
 **Pass 4:**
 
+Now the pivot is moved to be in between 4 and 23. The element on the left of the pivot is smaller than the pivot and the elements on the right side of the pivot are greater than the pivot.
 
+[4, **8**, 23, 42, 16, 15]
+
+The array has been partitioned into 3 parts:
+```
+|    <    | pivot |      >      |
+|    4    |   8   | 23 42 16 15 |
+```
 **Pass 5:**
 
+The left part only has one element so it is now sorted. The method then finds a new pivot on the right part and continue sorting. The first element on the right part (23) is selected to be the new pivot.
 
+It starts to compare the next elements of the right sub array.
+
+[4, 8, **23**, _*42*_, 16, _*15*_]
+
+Left: 42; Right: 15.
+
+42 !< 8  && 15 > 8 ==> swap 42 and 15
+
+**Pass 6:**
+
+The index tracker is now moved to the next element of the right sub array and compare it to the pivot.
+
+[4, 8, **23**, 15, _*16*_, 42]
+
+Left: 16.
+
+16 > 8 ==> stop
+
+The pivot is moved to be in between 16 and 42. The element on the left of the pivot is smaller than the pivot and the elements on the right side of the pivot are greater than the pivot.
+
+[4, 8, 15, 16, **23**, 42]
+
+The array is now sorted:
+```
+|     <     | pivot |   >  |
+| 4 8 15 16 |   23  |  42  |
+```
 
 ## Efficency
 
