@@ -26,46 +26,28 @@ namespace MergeSort
             {
                 return arr;
             }
-            if (n > 1)
+
+            int mid = n / 2;
+            int[] left = new int[mid];
+            int[] right = new int[n - mid];
+            int[] result = new int[n];
+
+            for (int i = 0; i < mid; i++)
             {
-                int mid = n / 2;
-                int[] left = new int[mid];
-                int[] right = new int[n - mid];
-                int[] result = new int[n];
-
-                for (int i = 0; i < mid; i++)
-                {
-                    left[i] = arr[i];
-                }
-
-                Console.Write("Left: [");
-                for (int i = 0; i < mid - 1; i++)
-                {
-                    Console.Write($"{left[i]}, ");
-                }
-                Console.Write($"{left[mid - 1]}] \n");
-
-                int x = 0;
-                for (int i = mid; i < arr.Length; i++)
-                {
-                    right[x] = arr[i];
-                    x++;
-                }
-
-                Console.Write("Right: [");
-                for (int i = 0; i < n - mid; i++)
-                {
-                    Console.Write($"{right[i]}, ");
-                }
-                Console.Write($"{right[n - mid - 1]}] \n");
-
-                Mergesort(left);
-
-                Mergesort(right);
-
-                //Merge(left, right, result);
+                left[i] = arr[i];
             }
-            return arr;
+
+            int x = 0;
+            for (int i = mid; i < arr.Length; i++)
+            {
+                right[x] = arr[i];
+                x++;
+            }
+
+            Mergesort(left);
+            Mergesort(right);
+            result = Merge(left, right, arr);
+            return result;
         }
 
         static int[] Merge(int[] left, int[] right, int[] arr)
