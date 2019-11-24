@@ -32,5 +32,14 @@ namespace MergeSortTests
             int[] resultArray = { 1, 3, 5, 7, 9, 11 };
             Assert.Equal(resultArray, Mergesort(testArray));
         }
+
+        [Fact]
+        public void CanSortAllZeros()
+        {
+            int[] testArray = { 0, 0, 0, 0, 0, 0, 0 };
+            Mergesort(testArray);
+            int[] resultArray = { 0, 0, 0, 0, 0, 0, 0 };
+            Assert.Equal(resultArray, Mergesort(testArray));
+        }
     }
 }
