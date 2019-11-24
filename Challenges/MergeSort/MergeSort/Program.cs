@@ -58,6 +58,24 @@ namespace MergeSort
         static void Merge(int[] left, int[] right, int[] arr)
         {
             int i = 0;
+            int j = 0;
+            int k = 0;
+
+            while (i < left.Length && j < right.Length)
+            {
+                if (left[i] <= right[i])
+                {
+                    arr[k] = left[i];
+                    i++;
+                }
+                else
+                {
+                    arr[k] = right[j];
+                    j++;
+                }
+                k++;
+            }
+            
         }
     }
 }
