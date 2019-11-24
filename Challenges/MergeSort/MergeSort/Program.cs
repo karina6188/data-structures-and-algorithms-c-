@@ -89,6 +89,14 @@ namespace MergeSort
                     k++;
                 }
             }
+
+            Console.WriteLine("Result: [");
+            for (int g = 0; g < arr.Length - 1; g++)
+            {
+                Console.WriteLine($"{arr[i]}, ");
+            }
+            Console.WriteLine($"{arr[arr.Length - 1]}]");
+
             return result;
         }
         static void PrintArray(int[] arr)
