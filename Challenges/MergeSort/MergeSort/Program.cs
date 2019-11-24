@@ -4,52 +4,79 @@ namespace MergeSort
 {
     class Program
     {
+        /// <summary>
+        /// Call Mergesort method to sort the array using quick sort.
+        /// Call PrintArray method to print out the array.
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             int[] array = { 8, 4, 23, 42, 16, 15 };
-            PrintArray(Mergesort(array));
+            PrintArray(MergeSort(array));
 
             int[] array2 = { 20, 18, 12, 8, 5, -2 };
-            //Mergesort(array2);
+            PrintArray(MergeSort(array2));
 
             int[] array3 = { 5, 12, 7, 5, 5, 7 };
-            //Mergesort(array3);
+            PrintArray(MergeSort(array3));
 
             int[] array4 = { 2, 3, 5, 7, 13, 11 };
-            //Mergesort(array4);
+            PrintArray(MergeSort(array4));
         }
 
-        static int[] Mergesort(int[] arr)
+        /// <summary>
+        /// Takes in an array and split the array into left and right sub arrays using mid point of the array length.
+        /// Call the method recursively until all the values inside the array are splited into left and right sub arrays.
+        /// Keep doing this until the sub array length is 1.
+        /// Then recursively call Merge method.
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns></returns>
+        static int[] MergeSort(int[] arr)
         {
             int n = arr.Length;
+            int[] result = new int[n];
             if (n <= 1)
             {
                 return arr;
             }
-
-            int mid = n / 2;
-            int[] left = new int[mid];
-            int[] right = new int[n - mid];
-            int[] result = new int[n];
-
-            for (int i = 0; i < mid; i++)
+            if (n > 1)
             {
-                left[i] = arr[i];
-            }
+                int mid = n / 2;
+                int[] left = new int[mid];
+                int[] right = new int[n - mid];
 
-            int x = 0;
-            for (int i = mid; i < arr.Length; i++)
-            {
-                right[x] = arr[i];
-                x++;
-            }
+                for (int i = 0; i < mid; i++)
+                {
+                    left[i] = arr[i];
+                }
 
-            Mergesort(left);
-            Mergesort(right);
-            result = Merge(left, right, arr);
+                int x = 0;
+                for (int i = mid; i < arr.Length; i++)
+                {
+                    right[x] = arr[i];
+                    x++;
+                }
+
+                left = MergeSort(left);
+                right = MergeSort(right);
+                result = Merge(left, right, arr);
+            }
             return result;
         }
 
+        /// <summary>
+        /// Takes in left and right sub arrays and takes in original array to get the length for result array.
+        /// Set index trackers to 0 for left, right , and result arrays.
+        /// Compare the left and right sub arrays index position 0. Assign the smaller value to be value of the result array at index position 0.
+        /// Then increase the index tracker of the result array and the sub array of the selected value to the next index.
+        /// Keep doing this until either the left or the right sub array has reached to the end of the array.
+        /// Then assign the remaining sub array to be the values after the current index position of the result array.
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <param name="arr"></param>
+        /// <returns></returns>
         static int[] Merge(int[] left, int[] right, int[] arr)
         {
             // left index
@@ -89,24 +116,22 @@ namespace MergeSort
                     k++;
                 }
             }
-
-            Console.WriteLine("Result: [");
-            for (int g = 0; g < result.Length - 1; g++)
-            {
-                Console.WriteLine($"{arr[i]}, ");
-            }
-            Console.WriteLine($"{arr[arr.Length - 1]}]");
-
             return result;
         }
+
+        /// <summary>
+        /// Takes in an array and use for loop to loop through each value inside the array and print to the console.
+        /// </summary>
+        /// <param name="arr"></param>
         static void PrintArray(int[] arr)
         {
-            Console.WriteLine("[");
+            Console.Write("[");
             for (int i = 0; i < arr.Length - 1; i++)
             {
-                Console.WriteLine($"{arr[i]}, ");
+                Console.Write($"{arr[i]}, ");
             }
-            Console.WriteLine($"{arr[arr.Length - 1]}]");
+            Console.Write($"{arr[arr.Length - 1]}]");
+            Console.WriteLine();
         }
     }
 }
