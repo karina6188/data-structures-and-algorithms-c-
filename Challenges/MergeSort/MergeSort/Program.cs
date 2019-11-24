@@ -91,7 +91,7 @@ namespace MergeSort
             }
 
             Console.WriteLine("Result: [");
-            for (int g = 0; g < arr.Length - 1; g++)
+            for (int g = 0; g < result.Length - 1; g++)
             {
                 Console.WriteLine($"{arr[i]}, ");
             }
