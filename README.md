@@ -25,6 +25,8 @@ Author: Karina Chen
 
 09 Merge Sort
 
+10 Quick Sort
+
 ### Data Structures and Algorithms
 01 Linked List
 
