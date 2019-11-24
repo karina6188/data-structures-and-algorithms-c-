@@ -56,7 +56,7 @@ Sample Array:
 **Part 1:**
 
 
-![Alt app execution capture](/Assets/code28_1.JPG)
+![Alt app execution capture](/Assets/code28_1.jpg)
 
 **Part 2:**
 
