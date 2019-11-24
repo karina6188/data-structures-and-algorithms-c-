@@ -2,7 +2,7 @@
 
 namespace MergeSort
 {
-    class Program
+    public class Program
     {
         /// <summary>
         /// Call Mergesort method to sort the array using quick sort.
@@ -12,16 +12,16 @@ namespace MergeSort
         static void Main(string[] args)
         {
             int[] array = { 8, 4, 23, 42, 16, 15 };
-            PrintArray(MergeSort(array));
+            PrintArray(Mergesort(array));
 
             int[] array2 = { 20, 18, 12, 8, 5, -2 };
-            PrintArray(MergeSort(array2));
+            PrintArray(Mergesort(array2));
 
             int[] array3 = { 5, 12, 7, 5, 5, 7 };
-            PrintArray(MergeSort(array3));
+            PrintArray(Mergesort(array3));
 
             int[] array4 = { 2, 3, 5, 7, 13, 11 };
-            PrintArray(MergeSort(array4));
+            PrintArray(Mergesort(array4));
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace MergeSort
         /// </summary>
         /// <param name="arr"></param>
         /// <returns></returns>
-        static int[] MergeSort(int[] arr)
+        public static int[] Mergesort(int[] arr)
         {
             int n = arr.Length;
             int[] result = new int[n];
@@ -58,8 +58,8 @@ namespace MergeSort
                     x++;
                 }
 
-                left = MergeSort(left);
-                right = MergeSort(right);
+                left = Mergesort(left);
+                right = Mergesort(right);
                 result = Merge(left, right, arr);
             }
             return result;
