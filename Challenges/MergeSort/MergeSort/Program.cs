@@ -8,6 +8,7 @@ namespace MergeSort
         {
             int[] array = { 8, 4, 23, 42, 16, 15 };
             Mergesort(array);
+            PrintArray()
 
             int[] array2 = { 20, 18, 12, 8, 5, -2 };
             //Mergesort(array2);
@@ -35,14 +36,14 @@ namespace MergeSort
                 for (int i = 0; i < mid; i++)
                 {
                     left[i] = arr[i];
-                    Console.WriteLine(left[i]);
+                    //Console.WriteLine(left[i]);
                 }
 
                 int x = 0;
                 for (int i = mid; i < arr.Length; i++)
                 {
                     right[x] = arr[i];
-                    Console.WriteLine(right[x]);
+                    //Console.WriteLine(right[x]);
                     x++;
                 }
 
@@ -55,15 +56,18 @@ namespace MergeSort
             return arr;
         }
 
-        static void Merge(int[] left, int[] right, int[] arr)
+        static int[] Merge(int[] left, int[] right, int[] arr)
         {
+            // left index
             int i = 0;
+            // right index
             int j = 0;
+            // result index
             int k = 0;
 
-            while (i < left.Length && j < right.Length)
+            if (i < left.Length && j < right.Length)
             {
-                if (left[i] <= right[i])
+                if (left[i] <= right[j])
                 {
                     arr[k] = left[i];
                     i++;
@@ -75,7 +79,28 @@ namespace MergeSort
                 }
                 k++;
             }
-            
+            else if (j < right.Length)
+            {
+                arr[k] = right[j];
+                k++;
+                j++;
+            }
+            else
+            {
+                arr[k] = left[j];
+                k++;
+                i++;
+            }
+            return arr;
+        }
+        static void PrintArray(int[] arr)
+        {
+            Console.WriteLine("[");
+            for (int i = 0; i < arr.Length-1; i++)
+            {
+                Console.WriteLine($"{arr[i]}, ");
+            }
+            Console.WriteLine($"{arr[arr.Length]}]");
         }
     }
 }
