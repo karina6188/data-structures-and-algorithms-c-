@@ -12,7 +12,7 @@ This is a daily code challenges. The task is to create a method that takes in a 
 MergeSort is a divide-and-conquer algorithm that splits an array into two parts then recursively sorts each sub array before merging the values back into one sorted array.
 
 ## Result
-![Alt app execution capture](/Assets/.JPG)
+![Alt app execution capture](/Assets/code27_24.JPG)
 
 ## Pseudocode
 ```

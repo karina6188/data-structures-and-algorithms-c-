@@ -12,15 +12,27 @@ namespace MergeSort
         static void Main(string[] args)
         {
             int[] array = { 8, 4, 23, 42, 16, 15 };
+            Console.Write("Array: ");
+            PrintArray(array);
+            Console.Write("Result: ");
             PrintArray(Mergesort(array));
 
             int[] array2 = { 20, 18, 12, 8, 5, -2 };
+            Console.Write("\nArray: ");
+            PrintArray(array2);
+            Console.Write("Result: ");
             PrintArray(Mergesort(array2));
 
             int[] array3 = { 5, 12, 7, 5, 5, 7 };
+            Console.Write("\nArray: ");
+            PrintArray(array3);
+            Console.Write("Result: ");
             PrintArray(Mergesort(array3));
 
             int[] array4 = { 2, 3, 5, 7, 13, 11 };
+            Console.Write("\nArray: ");
+            PrintArray(array4);
+            Console.Write("Result: ");
             PrintArray(Mergesort(array4));
         }
 
