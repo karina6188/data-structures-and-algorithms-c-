@@ -6,7 +6,7 @@ namespace MergeSort
     {
         static void Main(string[] args)
         {
-            int[] array = { 8, 4, 23, 42, 16, 15, 5 };
+            int[] array = { 8, 4, 23, 42, 16, 15 };
             Mergesort(array);
 
             int[] array2 = { 20, 18, 12, 8, 5, -2 };
@@ -19,35 +19,45 @@ namespace MergeSort
             //Mergesort(array4);
         }
 
-        static void Mergesort(int[] arr)
+        static int[] Mergesort(int[] arr)
         {
             int n = arr.Length;
+            if (n <= 0)
+            {
+                return arr;
+            }
             if (n > 1)
             {
                 int mid = n / 2;
                 int[] left = new int[mid];
                 int[] right = new int[n - mid];
 
-                //Mergesort(left);
-                //for (int i = 0; i < mid; i++)
-                //{
-                //    left[i] = arr[i];
-                //    Console.WriteLine(left[i]);
-                //}
+                for (int i = 0; i < mid; i++)
+                {
+                    left[i] = arr[i];
+                    Console.WriteLine(left[i]);
+                }
 
                 int x = 0;
                 for (int i = mid; i < arr.Length; i++)
                 {
                     right[x] = arr[i];
-                    x++;
                     Console.WriteLine(right[x]);
+                    x++;
                 }
+
+                Mergesort(left);
+
+                Mergesort(right);
+
+                Merge(left, right, arr);
             }
+            return arr;
         }
 
         static void Merge(int[] left, int[] right, int[] arr)
         {
-
+            int i = 0;
         }
     }
 }
