@@ -9,7 +9,7 @@ Author: Karina Chen
 This is a daily code challenges. The task is to create a method that takes in a number array then sort the array using quick sort. The elements of the array will be sorted from smaller values to larger values.
 
 ## Quick Sort
-Quick Sort is an effective sorting algorithm based on the divide and conquer approach. The quick sort algorithm partitions the array by making one of the array element to be a pivot. Therefore the array is partitioned into three parts: 1) the pivot element, 2) elements less than the pivot, and 3) element greater than the pivot.
+Quick Sort is an effective sorting algorithm based on the divide and conquer approach. The quick sort algorithm partitions the array by making one of the array element to be a pivot. Therefore the array is partitioned into three parts: 1) the pivot element, 2) elements less than the pivot, and 3) element greater than the pivot. By recursively moving the smaller elements to the left of the pivot and moving the larger elements to the right of the pivot, the array elements are sorted. Since this is a recrusive method, inside the sub arrays, a new pivot is selected and the elements inside the sub arrays are sorted based on the new pivot. At the end, the array is sorted.
 
 ## Result
 ![Alt app execution capture](/Assets/.JPG)
@@ -49,14 +49,14 @@ Quick Sort is an effective sorting algorithm based on the divide and conquer app
 ```
 ## Trace
 Sample Array:
-[8,4,23,42,16,15]
+[8, 4, 23, 42, 16, 15]
 
 **Progress:**
 
 **Part 1:**
 
 
-![Alt app execution capture](/Assets/code28_1.jpg)
+![Alt app execution capture](/Assets/code28_1.JPG)
 
 **Part 2:**
 
@@ -73,8 +73,9 @@ Sample Array:
 
 ## Efficency
 
-* **Time: O(nlogn)**
-  * The bio O time for merge sort is O(nlogn). The O(**n**logn) here is because of the while loop that keeps spliting all the values until there is only one value in the sub array. O(n**log**n) is because the array is splited into halves recursively. O(nlog**n**) the n here represents the height of the recursion.
+* **Time: O(n^2)**
+  * The worse case time complexity for quick sort is O(n^2).
+  * This happens when the partitioning is unbalanced. Depends on which elements are used for partitioning, if the element for partitioning is not a good pivot, the time complexity can be as bad as O(n^2).
 
 * **Space: O(n)**
-  * The array is not being sorted in-place. Every time a sub array is sorted, merge sort makes a copy of it. Therefore the big O space for merge sort is O(n).
+  * The array is being sorted in-place. The method recursively calls itself on the order of log(n) times. Every time when the method calls itself, the recursive method carrys the same size of data over and over again. Thus the space complexity is O(log(n)).
