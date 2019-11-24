@@ -7,8 +7,7 @@ namespace MergeSort
         static void Main(string[] args)
         {
             int[] array = { 8, 4, 23, 42, 16, 15 };
-            Mergesort(array);
-            PrintArray()
+            PrintArray(Mergesort(array));
 
             int[] array2 = { 20, 18, 12, 8, 5, -2 };
             //Mergesort(array2);
@@ -23,7 +22,7 @@ namespace MergeSort
         static int[] Mergesort(int[] arr)
         {
             int n = arr.Length;
-            if (n <= 0)
+            if (n <= 1)
             {
                 return arr;
             }
@@ -32,26 +31,39 @@ namespace MergeSort
                 int mid = n / 2;
                 int[] left = new int[mid];
                 int[] right = new int[n - mid];
+                int[] result = new int[n];
 
                 for (int i = 0; i < mid; i++)
                 {
                     left[i] = arr[i];
-                    //Console.WriteLine(left[i]);
                 }
+
+                Console.Write("Left: [");
+                for (int i = 0; i < mid - 1; i++)
+                {
+                    Console.Write($"{left[i]}, ");
+                }
+                Console.Write($"{left[mid - 1]}] \n");
 
                 int x = 0;
                 for (int i = mid; i < arr.Length; i++)
                 {
                     right[x] = arr[i];
-                    //Console.WriteLine(right[x]);
                     x++;
                 }
+
+                Console.Write("Right: [");
+                for (int i = 0; i < n - mid; i++)
+                {
+                    Console.Write($"{right[i]}, ");
+                }
+                Console.Write($"{right[n - mid - 1]}] \n");
 
                 Mergesort(left);
 
                 Mergesort(right);
 
-                Merge(left, right, arr);
+                //Merge(left, right, result);
             }
             return arr;
         }
@@ -64,43 +76,47 @@ namespace MergeSort
             int j = 0;
             // result index
             int k = 0;
+            int[] result = new int[arr.Length];
 
-            if (i < left.Length && j < right.Length)
+            while (i < left.Length || j < right.Length)
             {
-                if (left[i] <= right[j])
+                if (i < left.Length && j < right.Length)
                 {
-                    arr[k] = left[i];
+                    if (left[i] <= right[j])
+                    {
+                        result[k] = left[i];
+                        i++;
+                    }
+                    else
+                    {
+                        result[k] = right[j];
+                        j++;
+                    }
+                    k++;
+                }
+                else if (i < left.Length)
+                {
+                    result[k] = left[i];
                     i++;
+                    k++;
                 }
-                else
+                else if (j < right.Length)
                 {
-                    arr[k] = right[j];
+                    result[k] = right[j];
                     j++;
+                    k++;
                 }
-                k++;
             }
-            else if (j < right.Length)
-            {
-                arr[k] = right[j];
-                k++;
-                j++;
-            }
-            else
-            {
-                arr[k] = left[j];
-                k++;
-                i++;
-            }
-            return arr;
+            return result;
         }
         static void PrintArray(int[] arr)
         {
             Console.WriteLine("[");
-            for (int i = 0; i < arr.Length-1; i++)
+            for (int i = 0; i < arr.Length - 1; i++)
             {
                 Console.WriteLine($"{arr[i]}, ");
             }
-            Console.WriteLine($"{arr[arr.Length]}]");
+            Console.WriteLine($"{arr[arr.Length - 1]}]");
         }
     }
 }
