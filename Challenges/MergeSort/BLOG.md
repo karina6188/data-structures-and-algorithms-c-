@@ -12,7 +12,7 @@ This is a daily code challenges. The task is to create a method that takes in a 
 MergeSort is a divide-and-conquer algorithm that splits an array into two parts then recursively sorts each sub array before merging the values back into one sorted array.
 
 ## Result
-![Alt app execution capture](/Assets/.JPG)
+![Alt app execution capture](/Assets/code27_24.JPG)
 
 ## Pseudocode
 ```
@@ -56,7 +56,7 @@ Sample Array:
 
 **Progress:**
 
-**Part 1:**
+**Pass 1:**
 
 The initial array is split into left and right sub array. From the pseudocode, Mergesort(left) is called first. This is a recursion that the array will be splited into halves and the method goes to the left sub array and do this over and over until the left sub array's length is 1.
 Then it moves to the right sub array and does the same thing until there is only one number left in the right sub array.
@@ -67,7 +67,7 @@ Then it moves to the right sub array and does the same thing until there is only
 ![Alt app execution capture](/Assets/code27_4.jpg)
 ![Alt app execution capture](/Assets/code27_5.jpg)
 
-**Part 2:**
+**Pass 2:**
 
 Once MergeSort(left) method is done spliting the left half of the initial array, it moves to MergeSort(right) and recursively spliting the right half of the initial array into sub arrays. The recursion ends when there is only 1 number left in the sub array.
 After that it moves to the right sub array of the sub arrays and does the same thing until there is only one number left in the right sub array which is the very bottom of the recursion height.
@@ -79,7 +79,7 @@ After that it moves to the right sub array of the sub arrays and does the same t
 ![Alt app execution capture](/Assets/code27_10.jpg)
 ![Alt app execution capture](/Assets/code27_11.jpg)
 
-**Part 3:**
+**Pass 3:**
 
 Now that every single number in the initial array has be splited into its own array that contains only one number. MergeSort method then calls an ouside method called Merge.
 Merge method declares three index trackers. They are tracking index of left sub array, index of right sub array, and index of the final result array. Before the first pass, every tracker is set to be at index position 0.
@@ -112,7 +112,7 @@ Finally, the last step is to merge the sorted left half array with the sorted ri
 ## Efficency
 
 * **Time: O(nlogn)**
-  * The bio O time for merge sort is O(nlogn). The O(**n**logn) here is because of the while loop that keeps spliting all the values until there is only one value in the sub array. O(n**log**n) is because the array is splited into halves recursively. O(nlog**n**) the n here represents the height of the recursion.
+  * The big O time for merge sort is O(nlogn). The O(**n**logn) here is because of the while loop that keeps spliting all the values until there is only one value in the sub array. O(n**log**n) is because the array is splited into halves recursively. O(nlog**n**) the n here represents the height of the recursion.
 
 * **Space: O(n)**
   * The array is not being sorted in-place. Every time a sub array is sorted, merge sort makes a copy of it. Therefore the big O space for merge sort is O(n).
