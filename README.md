@@ -38,6 +38,8 @@ Author: Karina Chen
 
 05 Binary Tree and Binary Search Tree
 
+06 Hash Tables
+
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
 
