@@ -8,11 +8,23 @@ namespace HashTables
     {
         static void Add(string key, string value)
         {
-            int index = GetHash(key);
+            int index = Hash(key);
 
         }
 
-        static int GetHash(string key)
+        static string Get(string key)
+        {
+            string value = "";
+            return value;
+        }
+
+        static bool Contains(string key)
+        {
+            
+            return true;
+        }
+
+        static int Hash(string key)
         {
             int index = 0;
             return index;
