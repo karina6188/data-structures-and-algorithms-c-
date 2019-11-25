@@ -145,6 +145,3 @@ The array is now sorted:
 
 * **Space: O(n)**
   * The array is being sorted in-place. The method recursively calls itself on the order of log(n) times. Every time when the method calls itself, the recursive method carrys the same size of data over and over again. Thus the space complexity is O(log(n)).
-
-## Resource
-https://www.w3resource.com/csharp-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-9.php
