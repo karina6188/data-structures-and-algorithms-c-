@@ -12,7 +12,7 @@ This is a daily code challenges. The task is to create a method that takes in a 
 Quick Sort is an effective sorting algorithm based on the divide and conquer approach. The quick sort algorithm partitions the array by making one of the array element to be a pivot. Therefore the array is partitioned into three parts: 1) the pivot element, 2) elements less than the pivot, and 3) element greater than the pivot. By recursively moving the smaller elements to the left of the pivot and moving the larger elements to the right of the pivot, the array elements are sorted. Since this is a recrusive method, inside the sub arrays, a new pivot is selected and the elements inside the sub arrays are sorted based on the new pivot. At the end, the array is sorted.
 
 ## Result
-![Alt app execution capture](/Assets/.JPG)
+![Alt app execution capture](/Assets/code28_2.JPG)
 
 ## Pseudocode
 ```
