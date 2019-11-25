@@ -143,5 +143,5 @@ The array is now sorted:
   * The worse case time complexity for quick sort is O(n^2).
   * This happens when the partitioning is unbalanced. Depends on which elements are used for partitioning, if the element for partitioning is not a good pivot, the time complexity can be as bad as O(n^2).
 
-* **Space: O(n)**
+* **Space: O(log(n))**
   * The array is being sorted in-place. The method recursively calls itself on the order of log(n) times. Every time when the method calls itself, the recursive method carrys the same size of data over and over again. Thus the space complexity is O(log(n)).
