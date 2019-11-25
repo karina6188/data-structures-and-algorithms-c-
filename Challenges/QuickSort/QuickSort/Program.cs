@@ -7,8 +7,28 @@ namespace QuickSort
         static void Main(string[] args)
         {
             int[] array = new int[] { 8, 4, 23, 42, 16, 15 };
-
+            Console.Write("Array: ");
+            PrintArray(array);
+            Console.Write("Result: ");
             PrintArray(Quicksort(array, 0, array.Length - 1));
+
+            int[] array2 = new int[] { 20, 18, 12, 8, 5, -2 };
+            Console.Write("\nArray: ");
+            PrintArray(array2);
+            Console.Write("Result: ");
+            PrintArray(Quicksort(array2, 0, array2.Length - 1));
+
+            int[] array3 = new int[] { 5, 12, 7, 5, 5, 7 };
+            Console.Write("\nArray: ");
+            PrintArray(array3);
+            Console.Write("Result: ");
+            PrintArray(Quicksort(array3, 0, array3.Length - 1));
+
+            int[] array4 = new int[] { 2, 3, 5, 7, 13, 11 };
+            Console.Write("\nArray: ");
+            PrintArray(array4);
+            Console.Write("Result: ");
+            PrintArray(Quicksort(array4, 0, array4.Length - 1));
         }
 
         static int[] Quicksort(int[] arr, int left, int right)
