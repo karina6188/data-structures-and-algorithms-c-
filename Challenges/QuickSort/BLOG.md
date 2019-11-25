@@ -57,13 +57,13 @@ Sample Array:
 
 ![Alt app execution capture](/Assets/code28_1.jpg)
 
-Select the first element as the pivot, then start comparing the left and right elements to the pivot value.
+Select the last element as the pivot, then start comparing the left and right elements to the pivot value.
 
-[**8**, _*4*_, 23, 42, 16, _*15*_]
+[_*8*_, 4 23, 42, _*16*_, **15**]
 
-Left: 4; Right: 15.
+Left: 8; Right: 16.
 
-4 < 8  && 15 > 8 ==> no swap
+8 < 15 && 16 > 15 ==> no swap
 
 Now moves to the next element in the array.
 
@@ -71,11 +71,11 @@ Now moves to the next element in the array.
 
 Compare next elements in the array.
 
-[**8**, 4, _*23*_, 42, _*16*_, 15]
+[8, _*4*_, 23, _*42*_, 16, **15**]
 
-Left: 23; Right: 16.
+Left: 4; Right: 42.
 
-23 !< 8  && 16 > 8 ==> no swap
+4 < 15 && 42 > 15 ==> no swap
 
 Now moves to the next element in the array.
 
@@ -83,53 +83,58 @@ Now moves to the next element in the array.
 
 Compare next element in the array.
 
-[**8**, 4, 23, _*42*_, 16, 15]
+[8, 4, _*23*_, 42, 16, **15**]
 
-Left: 42.
+Left: 23.
 
-42 !< 8 ==> no swap
+23 !< 15 ==> stop
 
 **Pass 4:**
 
 Now the pivot is moved to be in between 4 and 23. The element on the left of the pivot is smaller than the pivot and the elements on the right side of the pivot are greater than the pivot.
 
-[4, **8**, 23, 42, 16, 15]
+[4, 8, **15**, 23, 42, 16]
 
 The array has been partitioned into 3 parts:
 ```
-|    <    | pivot |      >      |
-|    4    |   8   | 23 42 16 15 |
+|   <   | pivot |     >    |
+|  4 8  |   15  | 23 42 16 |
 ```
 **Pass 5:**
 
-The left part only has one element so it is now sorted. The method then finds a new pivot on the right part and continue sorting. The first element on the right part (23) is selected to be the new pivot.
+The method then finds a new pivot on the left sub array. The last element of the left sub array is selected to be the new pivot.
 
-It starts to compare the next elements of the right sub array.
+The method also finds a new pivot on the right sub array and continue sorting. The last element on the right sub array (16) is selected to be the new pivot.
 
-[4, 8, **23**, _*42*_, 16, _*15*_]
+It starts to compare the next elements of the sub arrays.
 
-Left: 42; Right: 15.
+[4, **8**, 15, 23, 42, **16**]
 
-42 !< 8  && 15 > 8 ==> swap 42 and 15
+Left sub array: [4, **8**,
+
+Previous pivot: 15, (This is now at the correct position)
+
+Right sub array: 23, 42, **16**]
+
+
+Left:
+
+4 < 8 ==> no swap
+
+Right:
+
+23 > 16 && 42 > 16 ==> stop
 
 **Pass 6:**
 
-The index tracker is now moved to the next element of the right sub array and compare it to the pivot.
+The pivot is moved to be in between 15 and 23. The element on the left of the pivot is smaller than the pivot and the elements on the right side of the pivot are greater than the pivot.
 
-[4, 8, **23**, 15, _*16*_, 42]
-
-Left: 16.
-
-16 > 8 ==> stop
-
-The pivot is moved to be in between 16 and 42. The element on the left of the pivot is smaller than the pivot and the elements on the right side of the pivot are greater than the pivot.
-
-[4, 8, 15, 16, **23**, 42]
+[4, 8, 15, **16**, 23, 42]
 
 The array is now sorted:
 ```
-|     <     | pivot |   >  |
-| 4 8 15 16 |   23  |  42  |
+|    <   | pivot |   >   |
+| 4 8 15 |   16  | 23 42 |
 ```
 
 ## Efficency
@@ -140,3 +145,6 @@ The array is now sorted:
 
 * **Space: O(n)**
   * The array is being sorted in-place. The method recursively calls itself on the order of log(n) times. Every time when the method calls itself, the recursive method carrys the same size of data over and over again. Thus the space complexity is O(log(n)).
+
+## Resource
+https://www.w3resource.com/csharp-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-9.php
