@@ -2,14 +2,14 @@
 
 namespace QuickSort
 {
-    class Program
+    public class Program
     {
         /// <summary>
         /// Call Quicksort method to sort the array and set the left and right points to be index 0 and the last index of the array.
         /// Call PrintArray method to print out arrays.
         /// </summary>
         /// <param name="args"></param>
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             int[] array = new int[] { 8, 4, 23, 42, 16, 15 };
             Console.Write("Array: ");
@@ -44,7 +44,7 @@ namespace QuickSort
         /// <param name="left"></param>
         /// <param name="right"></param>
         /// <returns></returns>
-        static int[] Quicksort(int[] arr, int left, int right)
+        public static int[] Quicksort(int[] arr, int left, int right)
         {
             if (left < right)
             {
@@ -107,15 +107,19 @@ namespace QuickSort
         /// Use a for loop to print out all the elements of an array.
         /// </summary>
         /// <param name="arr"></param>
-        static void PrintArray(int[] arr)
+        public static string PrintArray(int[] arr)
         {
+            string output = "[";
             Console.Write("[");
             for (int i = 0; i < arr.Length - 1; i++)
             {
                 Console.Write($"{arr[i]}, ");
+                output += $"{arr[i]}, ";
             }
             Console.Write($"{arr[arr.Length - 1]}]");
+            output += $"{arr[arr.Length - 1]}]";
             Console.WriteLine();
+            return output;
         }
     }
 }
