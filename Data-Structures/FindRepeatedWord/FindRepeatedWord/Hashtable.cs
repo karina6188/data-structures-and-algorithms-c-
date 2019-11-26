@@ -61,16 +61,41 @@ namespace FindRepeatedWord
                 Console.WriteLine($"The key \"{key}\" already exists in bucket No.{index}");
             }
         }
-        //public string Get(string key)
-        //{
-        //    string returnedText = "The key cannot be found";
-        //    int index = Hash(key);
-        //    if ()
-        //        return returnedText;
-        //}
 
         /// <summary>
         /// 
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public string Get(string key)
+        {
+            string returnedText = "The key cannot be found";
+            int index = Hash(key);
+            if (Node[index] == null) return returnedText;
+            if (Node[index] != null)
+            {
+                if (Node[index].Key == key)
+                {
+                    return Node[index].Value;
+                }
+                else
+                {
+                    while (Node[index].Next != null)
+                    {
+                        if (Node[index].Key == key) return Node[index].Value;
+                        Node[index] = Node[index].Next;
+                    }
+                }
+            }
+            return returnedText;
+        }
+
+        /// <summary>
+        /// Calls Hash() method first to get the index position inside the hashtable.
+        /// Check the node list at the index position. If the node list is empty, return false.
+        /// If not empty, check if the first node's key matches with the finding key. If yes, return true.
+        /// If not, while the node.Next is not empty, runs down the node list and check every node's key if it matches with the finding key. If yes, return true.
+        /// Otherwise, if all the nodes on the node list are checked and still not find the finding key, return false.
         /// </summary>
         /// <param name="key"></param>
         /// <returns></returns>
