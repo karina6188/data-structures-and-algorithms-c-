@@ -50,6 +50,9 @@ Result
 
 ![Alt app execution capture](/Assets/.JPG)
 
+## Resource
+https://stackoverflow.com/questions/400733/how-to-get-ascii-value-of-string-in-c-sharp/400738
+
 ## Change Log
 
 1.1: Set up the program, add Table of Contents to README. - 2019 Nov 25
@@ -58,4 +61,12 @@ Result
 
 1.3: Add Hashtable class and scaffold methods. - 2019 Nov 25
 
-1.4: 
+1.4: Add Node class. - 2019 Nov 25
+
+1.5: Complete Hash() method. - 2019 Nov 25
+
+1.6: Complete Add() method. - 2019 Nov 25
+
+1.7: Complete Contains() method. - 2019 Nov 26
+
+1.8: Complete Get() method. - 2019 Nov 26
