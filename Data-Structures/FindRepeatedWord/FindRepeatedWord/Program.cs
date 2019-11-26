@@ -8,7 +8,9 @@ namespace FindRepeatedWord
         {
             Hashtable hashtable = new Hashtable(5);
             int index = hashtable.Hash("dictionary");
-            hashtable.Add("dictionary", "dictionary");
+            hashtable.Add("applebee", "applebee");
+            hashtable.Add("applebee", "applebee");
+            hashtable.Add("beeapple", "beeapple");
         }
 
         static string RepeatedWord(string text)

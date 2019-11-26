@@ -61,4 +61,8 @@ https://stackoverflow.com/questions/400733/how-to-get-ascii-value-of-string-in-c
 
 1.3: Add Hashtable class and scaffold methods. - 2019 Nov 25
 
-1.4: 
+1.4: Add Node class. - 2019 Nov 25
+
+1.5: Complete Hash() method. - 2019 Nov 25
+
+1.6: Complete Add() method. - 2019 Nov 25

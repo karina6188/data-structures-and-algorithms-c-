@@ -30,7 +30,7 @@ namespace FindRepeatedWord
         /// <summary>
         /// Takes in a lengthy string and a key.
         /// First, it calls Hash() method and sends over the key to get an index position inside the hashtable.
-        /// Check if the index position already has the key. If yes, return the key. Otherwise, stores the key/value pair data to the corresponding index position and into the Node list.
+        /// Check if the index position already has the key. If yes, print to console window that the key already exists. Otherwise, stores the key/value pair data to the corresponding bucket and into the next available node.
         /// </summary>
         /// <param name="key"></param>
         /// <param name="value"></param>
@@ -61,36 +61,58 @@ namespace FindRepeatedWord
                 Console.WriteLine($"The key \"{key}\" already exists in bucket No.{index}");
             }
         }
-            //public string Get(string key)
-            //{
-            //    string returnedText = "The key cannot be found";
-            //    int index = Hash(key);
-            //    if ()
-            //        return returnedText;
-            //}
+        //public string Get(string key)
+        //{
+        //    string returnedText = "The key cannot be found";
+        //    int index = Hash(key);
+        //    if ()
+        //        return returnedText;
+        //}
 
-            public bool Contains(string key)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public bool Contains(string key)
+        {
+            int index = Hash(key);
+            if (Node[index] == null)
             {
                 return false;
             }
-
-            /// <summary>
-            /// Takes in a string key and get the ASCII numbers for the key and store the values into a byte array.
-            /// Loop through the byte array and adds up the values then times 1024 and modulus 1147 and modulus the number of buckets.
-            /// </summary>
-            /// <param name="key"></param>
-            /// <returns></returns>
-            public int Hash(string key)
+            else
             {
-                int index;
-                byte[] asciiBytes = Encoding.ASCII.GetBytes(key);
-                int letterNumber = 0;
-                for (int i = 0; i < asciiBytes.Length; i++)
+                if (Node[index].Key == key) return true;
+                while (Node[index].Next != null)
                 {
-                    letterNumber += asciiBytes[i];
+                    if (Node[index].Key == key)
+                    {
+                        return true;
+                    }
+                    Node[index] = Node[index].Next;
                 }
-                index = letterNumber * 1024 % 1147 % Buckets;
-                return index;
+                return false;
             }
         }
+
+        /// <summary>
+        /// Takes in a string key and get the ASCII numbers for the key and store the values into a byte array.
+        /// Loop through the byte array and adds up the values then times 1024 and modulus 1147 and modulus the number of buckets.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public int Hash(string key)
+        {
+            int index;
+            byte[] asciiBytes = Encoding.ASCII.GetBytes(key);
+            int letterNumber = 0;
+            for (int i = 0; i < asciiBytes.Length; i++)
+            {
+                letterNumber += asciiBytes[i];
+            }
+            index = letterNumber * 1024 % 1147 % Buckets;
+            return index;
+        }
     }
+}
