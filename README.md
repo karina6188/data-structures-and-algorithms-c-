@@ -40,6 +40,8 @@ Author: Karina Chen
 
 06 Hash Tables
 
+07 Find Repeated Word
+
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
 
