@@ -7,20 +7,19 @@ namespace FindRepeatedWord
         static void Main(string[] args)
         {
             Hashtable hashtable = new Hashtable(5);
-            int index = hashtable.Hash("dictionary");
-            hashtable.Add("applebee", "applebee");
-            hashtable.Add("applebee", "applebee");
             hashtable.Add("beeapple", "beeapple");
-            Console.WriteLine();
-            Console.WriteLine(hashtable.Get("beeapple"));
-            Console.WriteLine(hashtable.Get("abeeapple"));
+            hashtable.Add("beeeappl", "beeeappl");
+            hashtable.Add("applebee", "applebee");
+            //Console.WriteLine();
             Console.WriteLine(hashtable.Get("applebee"));
-            Console.WriteLine();
-            hashtable.Contains("beeapple");
-            hashtable.Contains("abeeapple");
-            Console.WriteLine();
-            hashtable.Hash("elephant");
-            hashtable.Hash("tiger");
+            Console.WriteLine(hashtable.Get("beeapple"));
+            Console.WriteLine(hashtable.Get("beeeappl"));
+            //Console.WriteLine();
+            //Console.WriteLine(hashtable.Contains("beeapple"));
+            //Console.WriteLine(hashtable.Contains("abeeapple"));
+            //Console.WriteLine();
+            //Console.WriteLine(hashtable.Hash("elephant"));
+            //Console.WriteLine(hashtable.Hash("tiger"));
         }
 
         static string RepeatedWord(string text)

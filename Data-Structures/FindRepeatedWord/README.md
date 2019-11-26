@@ -68,3 +68,5 @@ https://stackoverflow.com/questions/400733/how-to-get-ascii-value-of-string-in-c
 1.6: Complete Add() method. - 2019 Nov 25
 
 1.7: Complete Contains() method. - 2019 Nov 26
+
+1.8: Complete Get() method. - 2019 Nov 26

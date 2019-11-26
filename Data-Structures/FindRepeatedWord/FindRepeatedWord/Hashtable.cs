@@ -50,7 +50,7 @@ namespace FindRepeatedWord
                 {
                     while (Node[index].Next != null)
                     {
-                        Node[index].Next = Node[index];
+                        Node[index] = Node[index].Next;
                     }
                     Node[index].Next = newNode;
                     Console.WriteLine($"Added new key/value pair \"{key}/{value}\" in bucket No.{index}");
@@ -63,7 +63,12 @@ namespace FindRepeatedWord
         }
 
         /// <summary>
-        /// 
+        /// Set default string to return if the key is not found.
+        /// Call Hash() method to get the index position inside the hashtable.
+        /// If the node list in the bucket is empty, return default string.
+        /// If the node list is not empty, check if the first node has the finding key. If yes, return the node's value.
+        /// If not, while the node.Next is not null, keep looping through the node list and look for the finding key. If finds it, return that node's value.
+        /// If not, return the default string.
         /// </summary>
         /// <param name="key"></param>
         /// <returns></returns>
@@ -85,13 +90,14 @@ namespace FindRepeatedWord
                         if (Node[index].Key == key) return Node[index].Value;
                         Node[index] = Node[index].Next;
                     }
+                    if (Node[index].Key == key) return Node[index].Value;
                 }
             }
             return returnedText;
         }
 
         /// <summary>
-        /// Calls Hash() method first to get the index position inside the hashtable.
+        /// Call Hash() method first to get the index position inside the hashtable.
         /// Check the node list at the index position. If the node list is empty, return false.
         /// If not empty, check if the first node's key matches with the finding key. If yes, return true.
         /// If not, while the node.Next is not empty, runs down the node list and check every node's key if it matches with the finding key. If yes, return true.
