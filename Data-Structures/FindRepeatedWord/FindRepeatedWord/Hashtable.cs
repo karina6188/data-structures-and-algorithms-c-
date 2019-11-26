@@ -49,7 +49,7 @@ namespace FindRepeatedWord
             {
                 letterNumber += asciiBytes[i];
             }
-            index = letterNumber * 1024 % Buckets;
+            index = letterNumber * 1024 % 50;
             return index;
         }
     }
