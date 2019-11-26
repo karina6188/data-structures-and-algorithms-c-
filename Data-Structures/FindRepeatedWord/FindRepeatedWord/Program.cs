@@ -6,9 +6,9 @@ namespace FindRepeatedWord
     {
         static void Main(string[] args)
         {
-            Hashtable hashtable = new Hashtable(50);
+            Hashtable hashtable = new Hashtable(5);
             int index = hashtable.Hash("dictionary");
-            Console.WriteLine(index);
+            hashtable.Add("dictionary", "dictionary");
         }
 
         static string RepeatedWord(string text)
