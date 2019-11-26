@@ -4,15 +4,32 @@ using System.Text;
 
 namespace FindRepeatedWord
 {
-    class Node
+    public class Node
     {
-        public string Data { get; set; }
+        /// <summary>
+        /// Key of the key/value pair
+        /// </summary>
+        public string Key { get; set; }
 
+        /// <summary>
+        /// Value of the key/value pair
+        /// </summary>
+        public string Value { get; set; }
+
+        /// <summary>
+        /// Node's reference to the next node
+        /// </summary>
         public Node Next { get; set; }
 
-        public Node(string data)
+        /// <summary>
+        /// Node constructor to specify the data stored on the node and a reference to the next node
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        public Node(string key, string value)
         {
-            Data = data;
+            Key = key;
+            Value = value;
             Next = null;
         }
     }
