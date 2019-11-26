@@ -7,7 +7,7 @@ namespace FindRepeatedWord
         static void Main(string[] args)
         {
             Hashtable hashtable = new Hashtable(50);
-            int index = Hashtable.Hash("complication");
+            int index = hashtable.Hash("dictionary");
             Console.WriteLine(index);
         }
 
