@@ -10,7 +10,7 @@ This is a daily code challenges. The task is to create a method that takes in tw
  
 ## Approach & Efficiency
 ##### TreeIntersection():
-Takes in two binary trees and returns a set of values that are on bothe trees.
+Takes in two binary trees and returns a set of values that are on both trees.
 
 ##### Add():
 Accepts a key and a value. Then sends the key to Hash() method to generate a hash which is used to determine the index position where the key/value pair is to be stored in the hashtable. After Hash() method calculates the index, it returns an index to Add() method. Add() method then goes to the index position inside the hashtable and stores the key/value pair to the end of the linked list inside the bucket at the index position.
@@ -46,8 +46,8 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 ## Visuals
 
-![Alt app execution capture](/Assets/code32_1.JPG)
-![Alt app execution capture](/Assets/code32_2.JPG)
+![Alt app execution capture](/Assets/code32_1.jpg)
+![Alt app execution capture](/Assets/code32_2.jpg)
 
 
 ## Resource
