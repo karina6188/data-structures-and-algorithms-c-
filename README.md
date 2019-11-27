@@ -42,6 +42,8 @@ Author: Karina Chen
 
 07 Find Repeated Word
 
+08 Tree Intersection
+
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
 
