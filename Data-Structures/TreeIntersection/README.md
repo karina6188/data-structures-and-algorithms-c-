@@ -47,6 +47,7 @@ Open the program using Visual Studio and click "Start" button to run this progra
 ## Visuals
 
 ![Alt app execution capture](/Assets/code32_1.JPG)
+![Alt app execution capture](/Assets/code32_2.JPG)
 
 
 ## Resource
