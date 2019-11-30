@@ -70,3 +70,9 @@ https://stackoverflow.com/questions/400733/how-to-get-ascii-value-of-string-in-c
 1.7: Complete Contains() method. - 2019 Nov 26
 
 1.8: Complete Get() method. - 2019 Nov 26
+
+1.9: Add Split() method in RepeatedWord() method to split the words in a string into a string array. - 2019 Nov 29
+
+1.10: Complete RepeatedWord() method to be able to check each word in a string and return the first repeated word. - 2019 Nov 29
+
+1.11: Add an unit test. - 2019 Nov 30

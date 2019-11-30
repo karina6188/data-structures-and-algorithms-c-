@@ -40,7 +40,7 @@ namespace FindRepeatedWord
 
             if (Contains(key))
             {
-                Console.WriteLine($"\"{key}\" already exists in bucket No.{index}");
+                Console.WriteLine($"Word \"{key}\" already exists in bucket No.{index}\n");
             }
             else
             {
@@ -48,7 +48,7 @@ namespace FindRepeatedWord
                 {
                     Node newNode = new Node(key, value);
                     HashNode[index] = newNode;
-                    Console.WriteLine($"Add key/value \"{key}/{value}\" in bucket No.{index}");
+                    Console.WriteLine($"Add word \"{key}\" in bucket No.{index}");
                 }
                 else
                 {
@@ -59,7 +59,7 @@ namespace FindRepeatedWord
                         current = current.Next;
                     }
                     current.Next = newNode;
-                    Console.WriteLine($"Add key/value \"{key}/{value}\" in bucket No.{index}");
+                    Console.WriteLine($"Add word \"{key}\" in bucket No.{index}");
                 }
             }
         }
@@ -126,8 +126,8 @@ namespace FindRepeatedWord
             }
             else
             {
-                if (HashNode[index].Key == key) return true;
                 Node current = HashNode[index];
+                if (HashNode[index].Key == key) return true;
                 while (current.Next != null)
                 {
                     current = current.Next;
