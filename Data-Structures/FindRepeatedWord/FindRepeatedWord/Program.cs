@@ -7,27 +7,28 @@ namespace FindRepeatedWord
     {
         static void Main(string[] args)
         {
-            Hashtable hashtable = new Hashtable(1);
+            Hashtable hashtable = new Hashtable(5);
             hashtable.Add("applebee", "applebee");
-            hashtable.Add("beeapple", "beeapple");
-            hashtable.Add("eeeapplb", "eeeapplb");
-            hashtable.Add("peeaplbe", "leeappbe");
-            hashtable.Add("ppleeabe", "ppleeabe");
+            hashtable.Add("andy", "andy");
+            hashtable.Add("karina", "karina");
+            hashtable.Add("thomas", "thomas");
+            hashtable.Add("porkee", "porkee");
+            hashtable.Add("wendy", "wendy");
             Console.WriteLine();
-            Console.WriteLine(hashtable.Get("applebee"));
-            Console.WriteLine(hashtable.Get("beeapple"));
-            Console.WriteLine(hashtable.Get("eeeapplb"));
-            Console.WriteLine(hashtable.Get("leeappbe"));
-            Console.WriteLine(hashtable.Get("ppleeabe"));
-
-            //Console.WriteLine();
-            //Console.WriteLine(hashtable.Contains("applebee"));
-            //Console.WriteLine(hashtable.Contains("beeapple"));
-            //Console.WriteLine(hashtable.Contains("eeeapplb"));
-            //Console.WriteLine(hashtable.Contains("ppleeabe"));
-            //Console.WriteLine();
-            //Console.WriteLine(hashtable.Hash("elephant"));
-            //Console.WriteLine(hashtable.Hash("tiger"));
+            hashtable.Get("andy");
+            hashtable.Get("carrie");
+            hashtable.Get("wendy");
+            hashtable.Get("karina");
+            hashtable.Get("sylvia");
+            Console.WriteLine();
+            Console.WriteLine($"Hashtable contains key \"applebee\" ? {hashtable.Contains("applebee")}");
+            Console.WriteLine($"Hashtable contains key \"karina\" ? {hashtable.Contains("karina")}");
+            Console.WriteLine($"Hashtable contains key \"thomas\" ? {hashtable.Contains("thomas")}");
+            Console.WriteLine($"Hashtable contains key \"thomas\" ? {hashtable.Contains("thomas")}");
+            Console.WriteLine($"Hashtable contains key \"porkee\" ? {hashtable.Contains("porkee")}");
+            Console.WriteLine();
+            Console.WriteLine($"Hash \"elephant\" into bucket: {hashtable.Hash("elephant")}");
+            Console.WriteLine($"Hash \"tiger\" into bucket: {hashtable.Hash("tiger")}");
         }
 
         static string RepeatedWord(string text)

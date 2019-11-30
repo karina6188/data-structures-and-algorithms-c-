@@ -37,32 +37,31 @@ namespace FindRepeatedWord
         public void Add(string key, string value)
         {
             int index = Hash(key);
-            Node newNode = new Node(key, value);
 
-            if (!Contains(key))
+            if (Contains(key))
+            {
+                Console.WriteLine($"\"{key}\" already exists in bucket No.{index}");
+            }
+            else
             {
                 if (HashNode[index] == null)
                 {
+                    Node newNode = new Node(key, value);
                     HashNode[index] = newNode;
-                    Console.WriteLine($"Added new key/value pair \"{key}/{value}\" in bucket No.{index}");
+                    Console.WriteLine($"Add key/value \"{key}/{value}\" in bucket No.{index}");
                 }
                 else
                 {
-                    Console.WriteLine($"{HashNode[index].Key}");
+                    Node newNode = new Node(key, value);
                     Node current = HashNode[index];
                     while (current.Next != null)
                     {
                         current = current.Next;
                     }
                     current.Next = newNode;
-                    Console.WriteLine($"Added new key/value pair \"{key}/{value}\" in bucket No.{index}");
+                    Console.WriteLine($"Add key/value \"{key}/{value}\" in bucket No.{index}");
                 }
             }
-            else
-            {
-                Console.WriteLine($"The key \"{key}\" already exists in bucket No.{index}");
-            }
-
         }
 
         /// <summary>
@@ -77,25 +76,35 @@ namespace FindRepeatedWord
         /// <returns></returns>
         public string Get(string key)
         {
-            string returnedText = "The key cannot be found";
+            string returnedText = $"The key \"{key}\" cannot be found";
             int index = Hash(key);
-            if (HashNode[index] == null) return returnedText;
+            if (HashNode[index] == null)
+            {
+                Console.WriteLine(returnedText);
+                return returnedText;
+            }
             if (HashNode[index] != null)
             {
                 if (HashNode[index].Key == key)
                 {
+                    Console.WriteLine($"Found the key \"{key}\"");
                     return HashNode[index].Value;
                 }
                 else
                 {
-                    while (HashNode[index].Next != null)
+                    Node current = HashNode[index];
+                    while (current.Next != null)
                     {
-                        if (HashNode[index].Key == key) return HashNode[index].Value;
-                        HashNode[index] = HashNode[index].Next;
+                        current = current.Next;
+                        if (current.Key == key)
+                        {
+                            Console.WriteLine($"Found the key \"{key}\"");
+                            return current.Value;
+                        }
                     }
-                    if (HashNode[index].Key == key) return HashNode[index].Value;
                 }
             }
+            Console.WriteLine(returnedText);
             return returnedText;
         }
 
@@ -118,10 +127,11 @@ namespace FindRepeatedWord
             else
             {
                 if (HashNode[index].Key == key) return true;
-                while (HashNode[index].Next != null)
+                Node current = HashNode[index];
+                while (current.Next != null)
                 {
-                    HashNode[index] = HashNode[index].Next;
-                    if (HashNode[index].Key == key)
+                    current = current.Next;
+                    if (current.Key == key)
                     {
                         return true;
                     }
