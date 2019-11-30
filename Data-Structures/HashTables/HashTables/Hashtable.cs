@@ -63,10 +63,48 @@ namespace HashTables
             }
         }
 
-        static string Get(string key)
+        /// <summary>
+        /// Set default string to return if the key is not found.
+        /// Call Hash() method to get the index position inside the hashtable.
+        /// If the node list in the bucket is empty, return default string.
+        /// If the node list is not empty, check if the first node has the finding key. If yes, return the node's value.
+        /// If not, while the node.Next is not null, keep looping through the node list and look for the finding key. If finds it, return that node's value.
+        /// If not, return the default string.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>A string of either "the key is not found" or the value to the key if found</returns>
+        public string Get(string key)
         {
-            string value = "";
-            return value;
+            string returnedText = $"The key \"{key}\" cannot be found";
+            int index = Hash(key);
+            if (HashNode[index] == null)
+            {
+                Console.WriteLine(returnedText);
+                return returnedText;
+            }
+            if (HashNode[index] != null)
+            {
+                if (HashNode[index].Key == key)
+                {
+                    Console.WriteLine($"Found the key \"{key}\"");
+                    return HashNode[index].Value;
+                }
+                else
+                {
+                    Node current = HashNode[index];
+                    while (current.Next != null)
+                    {
+                        current = current.Next;
+                        if (current.Key == key)
+                        {
+                            Console.WriteLine($"Found the key \"{key}\"");
+                            return current.Value;
+                        }
+                    }
+                }
+            }
+            Console.WriteLine(returnedText);
+            return returnedText;
         }
 
         /// <summary>
