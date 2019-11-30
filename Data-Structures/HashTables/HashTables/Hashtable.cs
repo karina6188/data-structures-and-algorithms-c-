@@ -75,7 +75,7 @@ namespace HashTables
         /// <returns>A string of either "the key is not found" or the value to the key if found</returns>
         public string Get(string key)
         {
-            string returnedText = $"The key \"{key}\" cannot be found";
+            string returnedText = $"Cannot find key \"{key}\"";
             int index = Hash(key);
             if (HashNode[index] == null)
             {
