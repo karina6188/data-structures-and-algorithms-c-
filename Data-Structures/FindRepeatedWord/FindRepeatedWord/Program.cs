@@ -25,6 +25,7 @@ namespace FindRepeatedWord
             Console.WriteLine($"String 3:");
             Console.WriteLine($"\"{string3}\"\n");
             Console.WriteLine($"The first repeated word is: {RepeatedWord(string3)}\n==========================================");
+            Console.WriteLine($"String 4:");
             Console.WriteLine($"\"{string4}\"\n");
             Console.WriteLine($"The first repeated word is: {RepeatedWord(string4)}\n==========================================");
         }
