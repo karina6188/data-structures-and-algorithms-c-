@@ -64,3 +64,11 @@ Result
 1.4: Add a Node class. - 2019 Nov 29
 
 1.5. Add Add() method. - 2019 Nov 29
+
+1.6: Add Hash() method. - 2019 Nov 29
+
+1.7: Add Contains() method. - 2019 Nov 29
+
+1.8: Add Get() method. - 2019 Nov 29
+
+1.9: 

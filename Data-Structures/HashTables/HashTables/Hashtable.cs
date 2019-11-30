@@ -69,15 +69,54 @@ namespace HashTables
             return value;
         }
 
-        static bool Contains(string key)
+        /// <summary>
+        /// Call Hash() method first to get the index position inside the hashtable.
+        /// Check the node list at the index position. If the node list is empty, return false.
+        /// If not empty, check if the first node's key matches with the finding key. If yes, return true.
+        /// If not, while the node.Next is not empty, runs down the node list and check every node's key if it matches with the finding key. If yes, return true.
+        /// Otherwise, if all the nodes on the node list are checked and still not find the finding key, return false.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>A boolean if the hashtable contains the key</returns>
+        public bool Contains(string key)
         {
-            
-            return true;
+            int index = Hash(key);
+            if (HashNode[index] == null)
+            {
+                return false;
+            }
+            else
+            {
+                Node current = HashNode[index];
+                if (HashNode[index].Key == key) return true;
+                while (current.Next != null)
+                {
+                    current = current.Next;
+                    if (current.Key == key)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
         }
 
-        static int Hash(string key)
+        /// <summary>
+        /// Takes in a string key and get the ASCII numbers for the key and store the values into a byte array.
+        /// Loop through the byte array and adds up the values then times 1024 and modulus 1147 and modulus the number of buckets.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>An integer indicating the index position of the hashtable</returns>
+        public int Hash(string key)
         {
-            int index = 0;
+            int index;
+            byte[] asciiBytes = Encoding.ASCII.GetBytes(key);
+            int letterNumber = 0;
+            for (int i = 0; i < asciiBytes.Length; i++)
+            {
+                letterNumber += asciiBytes[i];
+            }
+            index = letterNumber * 1024 % 1147 % Buckets;
             return index;
         }
     }
