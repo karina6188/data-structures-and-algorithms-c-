@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace FindRepeatedWord
 {
@@ -6,17 +7,24 @@ namespace FindRepeatedWord
     {
         static void Main(string[] args)
         {
-            Hashtable hashtable = new Hashtable(5);
-            hashtable.Add("beeapple", "beeapple");
-            hashtable.Add("beeeappl", "beeeappl");
+            Hashtable hashtable = new Hashtable(1);
             hashtable.Add("applebee", "applebee");
-            //Console.WriteLine();
+            hashtable.Add("beeapple", "beeapple");
+            hashtable.Add("eeeapplb", "eeeapplb");
+            hashtable.Add("peeaplbe", "leeappbe");
+            hashtable.Add("ppleeabe", "ppleeabe");
+            Console.WriteLine();
             Console.WriteLine(hashtable.Get("applebee"));
             Console.WriteLine(hashtable.Get("beeapple"));
-            Console.WriteLine(hashtable.Get("beeeappl"));
+            Console.WriteLine(hashtable.Get("eeeapplb"));
+            Console.WriteLine(hashtable.Get("leeappbe"));
+            Console.WriteLine(hashtable.Get("ppleeabe"));
+
             //Console.WriteLine();
+            //Console.WriteLine(hashtable.Contains("applebee"));
             //Console.WriteLine(hashtable.Contains("beeapple"));
-            //Console.WriteLine(hashtable.Contains("abeeapple"));
+            //Console.WriteLine(hashtable.Contains("eeeapplb"));
+            //Console.WriteLine(hashtable.Contains("ppleeabe"));
             //Console.WriteLine();
             //Console.WriteLine(hashtable.Hash("elephant"));
             //Console.WriteLine(hashtable.Hash("tiger"));

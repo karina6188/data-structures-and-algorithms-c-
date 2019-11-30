@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -14,7 +15,7 @@ namespace FindRepeatedWord
         /// <summary>
         /// Create a Node array to store multitple key/value pairs in each bucket
         /// </summary>
-        public Node[] Node { get; set; }
+        public Node[] HashNode { get; set; }
 
         /// <summary>
         /// Hashtable constructor to set up the quantity for buckets and set up the same amount of node arrays to match the bucket quantity
@@ -23,8 +24,7 @@ namespace FindRepeatedWord
         public Hashtable(int buckets)
         {
             Buckets = buckets;
-            Node[] node = new Node[buckets];
-            Node = node;
+            HashNode = new Node[buckets];
         }
 
         /// <summary>
@@ -37,22 +37,24 @@ namespace FindRepeatedWord
         public void Add(string key, string value)
         {
             int index = Hash(key);
+            Node newNode = new Node(key, value);
 
             if (!Contains(key))
             {
-                Node newNode = new Node(key, value);
-                if (Node[index] == null)
+                if (HashNode[index] == null)
                 {
-                    Node[index] = newNode;
+                    HashNode[index] = newNode;
                     Console.WriteLine($"Added new key/value pair \"{key}/{value}\" in bucket No.{index}");
                 }
                 else
                 {
-                    while (Node[index].Next != null)
+                    Console.WriteLine($"{HashNode[index].Key}");
+                    Node current = HashNode[index];
+                    while (current.Next != null)
                     {
-                        Node[index] = Node[index].Next;
+                        current = current.Next;
                     }
-                    Node[index].Next = newNode;
+                    current.Next = newNode;
                     Console.WriteLine($"Added new key/value pair \"{key}/{value}\" in bucket No.{index}");
                 }
             }
@@ -60,6 +62,7 @@ namespace FindRepeatedWord
             {
                 Console.WriteLine($"The key \"{key}\" already exists in bucket No.{index}");
             }
+
         }
 
         /// <summary>
@@ -76,21 +79,21 @@ namespace FindRepeatedWord
         {
             string returnedText = "The key cannot be found";
             int index = Hash(key);
-            if (Node[index] == null) return returnedText;
-            if (Node[index] != null)
+            if (HashNode[index] == null) return returnedText;
+            if (HashNode[index] != null)
             {
-                if (Node[index].Key == key)
+                if (HashNode[index].Key == key)
                 {
-                    return Node[index].Value;
+                    return HashNode[index].Value;
                 }
                 else
                 {
-                    while (Node[index].Next != null)
+                    while (HashNode[index].Next != null)
                     {
-                        if (Node[index].Key == key) return Node[index].Value;
-                        Node[index] = Node[index].Next;
+                        if (HashNode[index].Key == key) return HashNode[index].Value;
+                        HashNode[index] = HashNode[index].Next;
                     }
-                    if (Node[index].Key == key) return Node[index].Value;
+                    if (HashNode[index].Key == key) return HashNode[index].Value;
                 }
             }
             return returnedText;
@@ -108,20 +111,20 @@ namespace FindRepeatedWord
         public bool Contains(string key)
         {
             int index = Hash(key);
-            if (Node[index] == null)
+            if (HashNode[index] == null)
             {
                 return false;
             }
             else
             {
-                if (Node[index].Key == key) return true;
-                while (Node[index].Next != null)
+                if (HashNode[index].Key == key) return true;
+                while (HashNode[index].Next != null)
                 {
-                    if (Node[index].Key == key)
+                    HashNode[index] = HashNode[index].Next;
+                    if (HashNode[index].Key == key)
                     {
                         return true;
                     }
-                    Node[index] = Node[index].Next;
                 }
                 return false;
             }
