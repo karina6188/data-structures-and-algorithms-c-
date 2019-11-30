@@ -46,9 +46,15 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 ## Visuals
 
+Whiteboarding
+
+![Alt app execution capture](/Assets/code31_1.jpg)
+
 Result
 
-![Alt app execution capture](/Assets/.JPG)
+![Alt app execution capture](/Assets/code31_2.JPG)
+
+![Alt app execution capture](/Assets/code31_3.JPG)
 
 ## Resource
 https://stackoverflow.com/questions/400733/how-to-get-ascii-value-of-string-in-c-sharp/400738
@@ -69,4 +75,10 @@ https://stackoverflow.com/questions/400733/how-to-get-ascii-value-of-string-in-c
 
 1.7: Complete Contains() method. - 2019 Nov 26
 
-1.8: Complete Get() method. - 2019 Nov 26
+1.8: Add Split() method in RepeatedWord() method to split the words in a string into a string array. - 2019 Nov 29
+
+1.9: Complete RepeatedWord() method to be able to check each word in a string and return the first repeated word. - 2019 Nov 29
+
+1.10: Add an unit test. - 2019 Nov 30
+
+1.11: Complete unit testing and pass all tests. - 2019 Nov 30
