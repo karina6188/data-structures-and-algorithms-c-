@@ -28,7 +28,7 @@ namespace FindRepeatedWord
         }
 
         /// <summary>
-        /// Takes in a lengthy string and a key.
+        /// Takes in a key and a value.
         /// First, it calls Hash() method and sends over the key to get an index position inside the hashtable.
         /// Check if the index position already has the key. If yes, print to console window that the key already exists. Otherwise, stores the key/value pair data to the corresponding bucket and into the next available node.
         /// </summary>
@@ -65,50 +65,6 @@ namespace FindRepeatedWord
         }
 
         /// <summary>
-        /// Set default string to return if the key is not found.
-        /// Call Hash() method to get the index position inside the hashtable.
-        /// If the node list in the bucket is empty, return default string.
-        /// If the node list is not empty, check if the first node has the finding key. If yes, return the node's value.
-        /// If not, while the node.Next is not null, keep looping through the node list and look for the finding key. If finds it, return that node's value.
-        /// If not, return the default string.
-        /// </summary>
-        /// <param name="key"></param>
-        /// <returns></returns>
-        public string Get(string key)
-        {
-            string returnedText = $"The key \"{key}\" cannot be found";
-            int index = Hash(key);
-            if (HashNode[index] == null)
-            {
-                Console.WriteLine(returnedText);
-                return returnedText;
-            }
-            if (HashNode[index] != null)
-            {
-                if (HashNode[index].Key == key)
-                {
-                    Console.WriteLine($"Found the key \"{key}\"");
-                    return HashNode[index].Value;
-                }
-                else
-                {
-                    Node current = HashNode[index];
-                    while (current.Next != null)
-                    {
-                        current = current.Next;
-                        if (current.Key == key)
-                        {
-                            Console.WriteLine($"Found the key \"{key}\"");
-                            return current.Value;
-                        }
-                    }
-                }
-            }
-            Console.WriteLine(returnedText);
-            return returnedText;
-        }
-
-        /// <summary>
         /// Call Hash() method first to get the index position inside the hashtable.
         /// Check the node list at the index position. If the node list is empty, return false.
         /// If not empty, check if the first node's key matches with the finding key. If yes, return true.
@@ -116,7 +72,7 @@ namespace FindRepeatedWord
         /// Otherwise, if all the nodes on the node list are checked and still not find the finding key, return false.
         /// </summary>
         /// <param name="key"></param>
-        /// <returns></returns>
+        /// <returns>A boolean if the hashtable contains the key</returns>
         public bool Contains(string key)
         {
             int index = Hash(key);
@@ -145,7 +101,7 @@ namespace FindRepeatedWord
         /// Loop through the byte array and adds up the values then times 1024 and modulus 1147 and modulus the number of buckets.
         /// </summary>
         /// <param name="key"></param>
-        /// <returns></returns>
+        /// <returns>An integer indicating the index position of the hashtable</returns>
         public int Hash(string key)
         {
             int index;
