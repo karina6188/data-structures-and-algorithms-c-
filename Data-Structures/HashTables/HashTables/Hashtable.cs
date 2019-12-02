@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HashTables
 {
-    class Hashtable
+    public class HashTable
     {
         /// <summary>
         /// Set how many buckets are there in the hashtable
@@ -20,7 +20,7 @@ namespace HashTables
         /// Hashtable constructor to set up the quantity for buckets and set up the same amount of node arrays to match the bucket quantity
         /// </summary>
         /// <param name="buckets"></param>
-        public Hashtable(int buckets)
+        public HashTable(int buckets)
         {
             Buckets = buckets;
             HashNode = new Node[buckets];
@@ -36,7 +36,6 @@ namespace HashTables
         public void Add(string key, string value)
         {
             int index = Hash(key);
-
             if (Contains(key))
             {
                 Console.WriteLine($"Key \"{key}\" already exists in bucket No.{index}\n");
@@ -75,7 +74,7 @@ namespace HashTables
         /// <returns>A string of either "the key is not found" or the value to the key if found</returns>
         public string Get(string key)
         {
-            string returnedText = $"The key \"{key}\" cannot be found";
+            string returnedText = $"Cannot find key \"{key}\"";
             int index = Hash(key);
             if (HashNode[index] == null)
             {

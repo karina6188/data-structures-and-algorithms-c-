@@ -71,4 +71,6 @@ Result
 
 1.8: Add Get() method. - 2019 Nov 29
 
-1.9: 
+1.9: Add an unit test. - 2019 Nov 30
+
+1.10: Pass all tests. The program is completed. - 2019 Dec 01
