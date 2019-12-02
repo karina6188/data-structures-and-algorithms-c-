@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HashTables
 {
-    class Node
+    public class Node
     {
         /// <summary>
         /// Key of the key/value pair
