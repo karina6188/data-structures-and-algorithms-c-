@@ -44,6 +44,8 @@ Author: Karina Chen
 
 08 Tree Intersection
 
+09 Graph Implementation
+
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
 
