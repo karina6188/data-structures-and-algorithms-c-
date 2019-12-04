@@ -7,6 +7,7 @@ namespace GraphImplementation
     class Edge<T>
     {
         public int Weight { get; set; }
+
         public Vertex<T> Vertex { get; set; }
     }
 }
