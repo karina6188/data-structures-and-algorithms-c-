@@ -59,4 +59,4 @@ https://stackoverflow.com/questions/400733/how-to-get-ascii-value-of-string-in-c
 
 1.2: Add desctiptions, approach, and efficiency to README. - 2019 Nov 27
 
-1.3: 
+1.3: Add Hashtable and Node classes.
