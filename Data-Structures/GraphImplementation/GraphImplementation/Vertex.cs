@@ -4,7 +4,10 @@ using System.Text;
 
 namespace GraphImplementation
 {
-    class Vertex<T>
+    /// <summary>
+    /// Create a vertex class with a generic data type
+    /// </summary>
+    public class Vertex<T>
     {
         public T Data { get; set; }
 
