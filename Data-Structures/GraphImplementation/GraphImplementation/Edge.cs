@@ -9,7 +9,7 @@ namespace GraphImplementation
     /// This class contains a Vertex class and a int Weight property
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    class Edge<T>
+    public class Edge<T>
     {
         public int Weight { get; set; }
 
