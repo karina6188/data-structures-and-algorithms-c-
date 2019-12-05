@@ -1,17 +1,12 @@
 ﻿using System;
 
-namespace TreeIntersection
+namespace TripRouteMap
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
-        }
-
-        static void TreeIntersection()
-        {
-
+            Console.WriteLine("Hello World!");
         }
     }
 }
