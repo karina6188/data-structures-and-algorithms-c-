@@ -1,12 +1,12 @@
 # data-structures-and-algorithms-c#
 
 ## About This Program
-Challenge - Graph Implementation
+Challenge - Trip Route Map
 
 Author: Karina Chen
 
 ## Description
-This is a daily code challenges. The task is to create multiple methods and implement a graph. Inside the graph, there should be vertices containing values. The vertices are connected with each other directly or undirected with weight on each edge.
+This is a daily code challenges. The task is to write a method called GetEdge() that takes in a graph and an array of cities and check if the trip is possible with direct flights. If yes, return how much total cost would be. If direct flight is impossible, return total cost to be zero.
  
 ## Approach & Efficiency
 ##### AddVertex():
@@ -58,12 +58,6 @@ Result
 
 ## Change Log
 
-1.1: Set up the program, add Table of Contents to README. - 2019 Dec 03
+1.1: Set up the program, add Table of Contents to README. - 2019 Dec 05
 
-1.2: Add desctiptions, approach, and efficiency to README. - 2019 Dec 03
-
-1.3: Add Graph class, Edge Class, Vertex class, and scaffold methods. - 2019 Dec 03
-
-1.4: Add methods and summary comments. - 2019 Dec 04
-
-1.5: 
+1.2: Add desctiptions, approach, and efficiency to README. - 2019 Dec 05
