@@ -71,4 +71,4 @@ Result
 
 1.7: Add LeftJoin() and PrintTable() methods. - 2019 Dec 08
 
-1.8: Add unit testing. - 2019 Dec 08
+1.8: Add unit testing. Pass all tests. The program is completed. - 2019 Dec 08

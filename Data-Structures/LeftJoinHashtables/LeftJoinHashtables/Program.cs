@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace LeftJoinHashtables
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -50,7 +50,7 @@ namespace LeftJoinHashtables
         /// <param name="table1"></param>
         /// <param name="table2"></param>
         /// <returns>Result table with all the key/value pairs from table 1 and table 2 if table 2 has the same keys with table 1</returns>
-        static HashTable LeftJoin(HashTable table1, HashTable table2)
+        public static HashTable LeftJoin(HashTable table1, HashTable table2)
         {
             HashTable result = new HashTable(table1.Buckets);
             for (int i = 0; i < table1.Buckets; i++)
@@ -82,7 +82,7 @@ namespace LeftJoinHashtables
         /// </summary>
         /// <param name="hashtable"></param>
         /// <returns></returns>
-        static bool PrintTable(HashTable hashtable)
+        public static bool PrintTable(HashTable hashtable)
         {
             Console.WriteLine($"There are {hashtable.Buckets} words in this table");
             Console.WriteLine("KEYS => VALUES");
