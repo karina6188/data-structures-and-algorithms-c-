@@ -47,9 +47,9 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 Whiteboarding
 
-![Alt app execution capture](/Assets/.jpg)
+![Alt app execution capture](/Assets/code33_2.jpg)
 
-![Alt app execution capture](/Assets/.jpg)
+![Alt app execution capture](/Assets/code33_3.jpg)
 
 Result
 
