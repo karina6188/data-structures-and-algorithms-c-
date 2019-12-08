@@ -69,3 +69,5 @@ Result
 1.5: Add method implementations to Main(). - 2019 Dec 07
 
 1.6: Add unit testing. - 2019 Dec 07
+
+1.7: Pass all tests. The program is completed. - 2019 Dec 07
