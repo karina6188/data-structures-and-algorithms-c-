@@ -26,7 +26,10 @@ namespace GraphImplementation
             AdjacencyList.AddDirectedEdge(MN, FM, 13);
 
             AdjacencyList.Print();
+            Console.WriteLine($"There are {AdjacencyList.Size()} neighborhoods");
 
+            Console.WriteLine(
+                );
             var listOfEdges = AdjacencyList.GetNeighbors(FM);
             Console.WriteLine("===== Get all destinations for Fremont ======");
             foreach (var destinations in listOfEdges)
