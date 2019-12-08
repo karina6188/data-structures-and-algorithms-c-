@@ -16,6 +16,13 @@ namespace LeftJoinHashtables
             HashNode = new Node[buckets];
         }
 
+        /// <summary>
+        /// Takes in a key and a value of string type then loop through the total number of buckets in a hash table
+        /// If the bucket is empty, add the key/value pair into the bucket
+        /// Otherwise, move to the next available bucket then add the new node into the bucket
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
         public void AddNode(string key, string value)
         {
             for (int i = 0; i < HashNode.Length; i++)
@@ -29,39 +36,25 @@ namespace LeftJoinHashtables
             }
         }
 
+        /// <summary>
+        /// Takes in a key then loop through all the buckets
+        /// If the bucket is empty, return -1 to indicate the key is not found
+        /// If the bucket has a node, check if the node's key matches with the finding key
+        /// If yes, return the current index position of the bucket where the key is found
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>The index position of the buckets where the key is found. If not found, return -1</returns>
         public int Contains(string key)
         {
             for (int i = 0; i < HashNode.Length; i++)
             {
+                if (HashNode[i] == null) return -1;
                 if (HashNode[i].Key == key)
                 {
                     return i;
                 }
             }
             return -1;
-        }
-
-        public string Get(string key)
-        {
-            for (int i = 0; i < HashNode.Length; i++)
-            {
-                if (HashNode[i].Key == key)
-                {
-                    return HashNode[i].Value;
-                }
-            }
-            return "null";
-        }
-
-        public void PrintTable(HashTable hashtable)
-        {
-            Console.WriteLine($"There are {hashtable.Buckets} words in this table");
-            Console.WriteLine("Keys:           Values:        ");
-            for (int i = 0; i < hashtable.Buckets; i++)
-            {
-                Console.WriteLine(hashtable.HashNode[i].Key);
-                Console.Write(hashtable.HashNode[i].Value);
-            }
         }
     }
 }

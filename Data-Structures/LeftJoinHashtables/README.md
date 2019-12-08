@@ -12,19 +12,16 @@ That means all the values in the first hash table are returned, and if values es
  
 ## Approach & Efficiency
 ##### LeftJoin():
+Takes in two data tables then creates a result table with the same numbers of table 1's buckets. Loop through the table 1's buckets to add all the nodes key/values into the result table. Then loop through the result table to find if table 2 has the keys that result table has. Using Contains method to check. If table 2 has keys that the result table has, Contains method returns the index position of the bucket where the key is found. If the key that result table has but table 2 does not have, Contains method returns -1 to indicate that the key is not found in any index position of the buckets. Then add "null" to the result table's value where the key is not found in table 2. If the key is found, go to the index position of the buckets and get the node's value then add it to the result's table where the keys are matched. The method outputs the result table with all the key/value pairs from table 1 and table 2 if table 2 has the same keys with table 1.
 
-
-##### Add():
-Accepts a key and a value. Then sends the key to Hash() method to generate a hash which is used to determine the index position where the key/value pair is to be stored in the hashtable. After Hash() method calculates the index, it returns an index to Add() method. Add() method then goes to the index position inside the hashtable and stores the key/value pair to the end of the linked list inside the bucket at the index position.
-
-##### Get():
-Takes in the key and returns the value from the hashtable. Get() method calls Hash() method and sends over the key to get the index of where the key/value pair is stored then goes to the stored location. Get() method then iterate through the linked list at the index position to find the key. If the key exists, return the value.
+##### AddNode():
+Takes in a key and a value of string type then loop through the total number of buckets in a hash table. If the bucket is empty, add the key/value pair into the bucket. Otherwise, move to the next available bucket then add the new node into the bucket.
 
 ##### Contains():
-Takes in the key and returns a boolean indicating if the key already exists in the hashtable. Contains() method calls Hash() method to get the index then goes to the index position to check if the key exists.
+Takes in a key then loop through all the buckets. If the bucket is empty, return -1 to indicate the key is not found. If the bucket has a node, check if the node's key matches with the finding key. If yes, return the current index position of the bucket where the key is found. The index position of the buckets where the key is found. If not found, return -1.
 
-##### Hash():
-Takes in a key and returns an index position of a hashtable. Hash() method uses the key to generate a hash. The hash is calculated and the result of it will be an integer that is smaller than the array size of the hashtable. The integer represents an index of the hashtable and is returned to the previous call stack.
+##### PrintTable();
+Takes in a hash table and console write how many data rows are in the table. Loop through the buckets of the table to print out each row of key/value pair. If the bucket is empty, console write "empty row" then exit the method. If the bucket has a node, console write the node's key and value.
 
 ##### Time and Space Complexity:
 Big O Time: O(n); Big O Space: O(n).
@@ -56,7 +53,7 @@ Whiteboarding
 
 Result
 
-![Alt app execution capture](/Assets/.JPG)
+![Alt app execution capture](/Assets/code33_1.JPG)
 
 ## Change Log
 
@@ -68,4 +65,10 @@ Result
 
 1.4: Add a Node class. - 2019 Dec 08
 
-1.5. 
+1.5. Add a HashTable class. - 2019 Dec 08
+
+1.6: Add AddNode() and Contains() methods. - 2019 Dec 08
+
+1.7: Add LeftJoin() and PrintTable() methods. - 2019 Dec 08
+
+1.8: Add unit testing. - 2019 Dec 08
