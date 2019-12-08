@@ -6,10 +6,14 @@ Challenge - Left Join Hash Tables
 Author: Karina Chen
 
 ## Description
-This is a daily code challenges. The task is to create a method called LeftJoin() that 
- hashtable and multitple methods to store the key and value pairs into the hashtable. A hashtable is a data structure that stores key/value pairs inside a hash map. Data is converted into a value for security or other purposes, then the key is used to generate a hash that determines the index position of where the key/value pair is to be stored inside the hashtable. Sometimes different key/value pairs are stored at the same index position in a hashtable; therefore a linked list is needed so when there are multiple pairs of key/value stored at the same bucket(when collision occurs), the older data is not overriden by the newer data.
+This is a daily code challenges. The task is to create a method called LeftJoin() that takes in 2 hash tables and join the data together as one single hash table according to Left Join logic. The first parameter is a hash table that has word strings as keys, and a synonym of the key as values. The second parameter is a hash table that has word strings as keys, and antonyms of the key as values. The method combines the key and the corresponding values into a new data structure according to Left Join logic.
+
+That means all the values in the first hash table are returned, and if values esitst in the second hash table, the values are appended together and show in the result table. If the values from the first hash table do not exist in the second hash table, null would be appended to the values.
  
 ## Approach & Efficiency
+##### LeftJoin():
+
+
 ##### Add():
 Accepts a key and a value. Then sends the key to Hash() method to generate a hash which is used to determine the index position where the key/value pair is to be stored in the hashtable. After Hash() method calculates the index, it returns an index to Add() method. Add() method then goes to the index position inside the hashtable and stores the key/value pair to the end of the linked list inside the bucket at the index position.
 
@@ -46,22 +50,22 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 Whiteboarding
 
-![Alt app execution capture](/Assets/code30_1.jpg)
+![Alt app execution capture](/Assets/.jpg)
 
-![Alt app execution capture](/Assets/code30_2.jpg)
+![Alt app execution capture](/Assets/.jpg)
 
 Result
 
-![Alt app execution capture](/Assets/code30_3.JPG)
+![Alt app execution capture](/Assets/.JPG)
 
 ## Change Log
 
-1.1: Set up the program, add Table of Contents to README. - 2019 Nov 24
+1.1: Set up the program, add Table of Contents to README. - 2019 Dec 08
 
-1.2: Add desctiptions, approach, and efficiency to README. - 2019 Nov 24
+1.2: Add desctiptions, approach, and efficiency to README. - 2019 Dec 08
 
-1.3: Add a Hashtable class and scaffold methods. - 2019 Nov 24
+1.3: Add a HashTable class and scaffold methods. - 2019 Dec 08
 
-1.4: Add a Node class. - 2019 Nov 29
+1.4: Add a Node class. - 2019 Dec 08
 
 1.5. 
