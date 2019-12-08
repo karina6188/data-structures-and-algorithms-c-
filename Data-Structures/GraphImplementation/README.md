@@ -54,7 +54,7 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 Result
 
-![Alt app execution capture](/Assets/.JPG)
+![Alt app execution capture](/Assets/code35_1.JPG)
 
 ## Change Log
 
