@@ -59,6 +59,10 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 ## Visuals
 
+Whiteboarding
+
+![Alt app execution capture](/Assets/.jpg)
+
 Result
 
 ![Alt app execution capture](/Assets/.JPG)
