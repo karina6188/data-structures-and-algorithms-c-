@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphImplementation", "GraphImplementation\GraphImplementation.csproj", "{DC884061-E575-43F5-92D3-C43C56A11621}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphImplementation", "GraphImplementation\GraphImplementation.csproj", "{DC884061-E575-43F5-92D3-C43C56A11621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphTests", "GraphTests\GraphTests.csproj", "{C6F3B614-4C9E-4C80-B277-D20D68D27C0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DC884061-E575-43F5-92D3-C43C56A11621}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC884061-E575-43F5-92D3-C43C56A11621}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC884061-E575-43F5-92D3-C43C56A11621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F3B614-4C9E-4C80-B277-D20D68D27C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F3B614-4C9E-4C80-B277-D20D68D27C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F3B614-4C9E-4C80-B277-D20D68D27C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F3B614-4C9E-4C80-B277-D20D68D27C0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
