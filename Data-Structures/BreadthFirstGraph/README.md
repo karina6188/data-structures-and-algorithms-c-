@@ -15,9 +15,6 @@ This is a daily code challenges. The task is to create a method called BreadthFi
 ##### AddVertex():
 
 
-##### AddEdge():
-
-
 ##### Size():
 
 
