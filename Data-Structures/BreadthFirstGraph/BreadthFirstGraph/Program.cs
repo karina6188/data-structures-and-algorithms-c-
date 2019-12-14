@@ -8,5 +8,10 @@ namespace BreadthFirstGraph
         {
             Console.WriteLine("Hello World!");
         }
+
+        static void BreadthFirstGraph()
+        {
+
+        }
     }
 }
