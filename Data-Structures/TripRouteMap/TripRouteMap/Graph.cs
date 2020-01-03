@@ -39,7 +39,7 @@ namespace TripRouteMap
         /// First create an edge by specifying the start city in the graph
         /// Then use Add() method to add the destination city with the cost to the new edge
         /// </summary>
-        /// <param name="source"></param>
+        /// <param name="startCity"></param>
         /// <param name="destination"></param>
         /// <param name="cost"></param>
         public void AddDirectedEdge(Vertex startCity, Vertex destination, int cost)
@@ -60,7 +60,7 @@ namespace TripRouteMap
         /// Similar to AddDirectedEdge() method to add an edge between the two cities and the cost on the edge
         /// Call AddDirectedEdge() method twice so both cities on the two sides of the edge can go to the other city
         /// </summary>
-        /// <param name="source"></param>
+        /// <param name="startCity"></param>
         /// <param name="destination"></param>
         /// <param name="cost"></param>
         public void AddUndirectedEdge(Vertex startCity, Vertex destination, int cost)

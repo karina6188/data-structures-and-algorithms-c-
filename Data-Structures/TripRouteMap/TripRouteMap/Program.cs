@@ -7,57 +7,64 @@ namespace TripRouteMap
     {
         static void Main(string[] args)
         {
-            Graph AdjacencyList = new Graph();
+            Graph RouteMap = new Graph();
 
-            var Pandora = AdjacencyList.AddCity("Pandora");
-            var Arendelle = AdjacencyList.AddCity("Arendelle");
-            var Metroville = AdjacencyList.AddCity("Metroville");
-            var Narnia = AdjacencyList.AddCity("Narnia");
-            var Naboo = AdjacencyList.AddCity("Naboo");
-            var Monstropolis = AdjacencyList.AddCity("Monstropolis");
+            var Pandora = RouteMap.AddCity("Pandora");
+            var Arendelle = RouteMap.AddCity("Arendelle");
+            var Metroville = RouteMap.AddCity("Metroville");
+            var Narnia = RouteMap.AddCity("Narnia");
+            var Naboo = RouteMap.AddCity("Naboo");
+            var Monstropolis = RouteMap.AddCity("Monstropolis");
 
-            AdjacencyList.AddUndirectedEdge(Pandora, Arendelle, 150);
-            AdjacencyList.AddUndirectedEdge(Pandora, Metroville, 82);
-            AdjacencyList.AddUndirectedEdge(Arendelle, Metroville, 99);
-            AdjacencyList.AddUndirectedEdge(Arendelle, Monstropolis, 42);
-            AdjacencyList.AddUndirectedEdge(Metroville, Narnia, 37);
-            AdjacencyList.AddUndirectedEdge(Metroville, Naboo, 26);
-            AdjacencyList.AddUndirectedEdge(Metroville, Monstropolis, 105);
-            AdjacencyList.AddUndirectedEdge(Monstropolis, Naboo, 73);
-            AdjacencyList.AddUndirectedEdge(Narnia, Naboo, 250);
+            RouteMap.AddUndirectedEdge(Pandora, Arendelle, 150);
+            RouteMap.AddUndirectedEdge(Pandora, Metroville, 82);
+            RouteMap.AddUndirectedEdge(Arendelle, Metroville, 99);
+            RouteMap.AddUndirectedEdge(Arendelle, Monstropolis, 42);
+            RouteMap.AddUndirectedEdge(Metroville, Narnia, 37);
+            RouteMap.AddUndirectedEdge(Metroville, Naboo, 26);
+            RouteMap.AddUndirectedEdge(Metroville, Monstropolis, 105);
+            RouteMap.AddUndirectedEdge(Monstropolis, Naboo, 73);
+            RouteMap.AddUndirectedEdge(Narnia, Naboo, 250);
+
+            Vertex[] trip = new Vertex[] { Arendelle, Monstropolis, Naboo };
+            //List<Edge> trip0 = RouteMap.GetDirectCities(trip[0]);
+            //foreach (var city in trip0)
+            //{
+            //    Console.Write($"{city.Vertex.City} -> ");
+            //}
+            //Console.Write("null");
+
+            Console.WriteLine(GetEdge(RouteMap, trip));
         }
 
-        public int GetEdge(Graph graph, string[] cities)
+        static string GetEdge(Graph map, Vertex[] cities)
         {
             int totalCost = 0;
-            Vertex start = new Vertex(cities[0]);
 
-            if (graph.GetDirectCities(start) != null)
+            if (map.GetDirectCities(cities[0]) != null)
             {
-                for
-                // get all the direct cities of the first city
-                List<Edge> route = graph.GetDirectCities(start);
-
-                // if the next city inside the array exists in the above direct cities, get the cost then move to the next city and get its direct cities
-                // keep doing this until reaching to the end of the array
-
-                foreach (string city in cities)
+                for (int x = 0; x < cities.Length - 1; x++)
                 {
+                    Vertex startCity = new Vertex(cities[x].City);
+                    List<Edge> route = map.GetDirectCities(startCity);
 
+                    Vertex nextCity = new Vertex(cities[x+1].City);
+
+                    if (map.IsDirectFlight(startCity, nextCity) == true)
+                    {
+                        foreach (var city in route)
+                        {
+                            if (city.Vertex == nextCity)
+                            {
+                                totalCost += city.Cost;
+                            }
+                        }
+                    }
+                    else return "False, $0";
                 }
-
-
-
-                //for (int i = 0; i < route.Length;  e city in route)
-                //{
-                //    totalCost += city.Cost;
-                //}
-                return totalCost;
+                return $"True, ${totalCost}";
             }
-            else
-            {
-                return totalCost;
-            }
+            else return "False, $0";
         }
     }
 }
