@@ -18,9 +18,18 @@ namespace TripRouteMap
             AdjacencyList.AddUndirectedEdge(Pandora, Arendelle, 150);
             AdjacencyList.AddUndirectedEdge(Pandora, Metroville, 82);
             AdjacencyList.AddUndirectedEdge(Arendelle, Metroville, 99);
-            AdjacencyList.AddUndirectedEdge(Arendelle, Metroville, 99);
-            AdjacencyList.AddUndirectedEdge(FM, BT, 10);
-            AdjacencyList.AddUndirectedEdge(ML, BT, 12);
+            AdjacencyList.AddUndirectedEdge(Arendelle, Monstropolis, 42);
+            AdjacencyList.AddUndirectedEdge(Metroville, Narnia, 37);
+            AdjacencyList.AddUndirectedEdge(Metroville, Naboo, 26);
+            AdjacencyList.AddUndirectedEdge(Metroville, Monstropolis, 105);
+            AdjacencyList.AddUndirectedEdge(Monstropolis, Naboo, 73);
+            AdjacencyList.AddUndirectedEdge(Narnia, Naboo, 250);
+        }
+
+        public int GetEdge(Graph graph, string[] cities)
+        {
+
+            return 0;
         }
     }
 }
