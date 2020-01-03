@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TripRouteMap
 {
@@ -28,8 +29,22 @@ namespace TripRouteMap
 
         public int GetEdge(Graph graph, string[] cities)
         {
+            int totalCost = 0;
+            Vertex start = new Vertex(cities[0]);
 
-            return 0;
+            if (graph.GetNeighbors(start) != null)
+            {
+                List<Edge> route = graph.GetNeighbors(start);
+                foreach (Edge city in route)
+                {
+                    totalCost += city.Cost;
+                }
+                return totalCost;
+            }
+            else
+            {
+                return totalCost;
+            }
         }
     }
 }
