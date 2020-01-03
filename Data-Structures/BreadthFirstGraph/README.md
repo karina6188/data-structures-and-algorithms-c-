@@ -15,9 +15,6 @@ This is a daily code challenges. The task is to create a method called BreadthFi
 ##### AddVertex():
 
 
-##### AddEdge():
-
-
 ##### Size():
 
 
@@ -58,6 +55,10 @@ Then select and open the project you want to view.
 Open the program using Visual Studio and click "Start" button to run this program.
 
 ## Visuals
+
+Whiteboarding
+
+![Alt app execution capture](/Assets/.jpg)
 
 Result
 

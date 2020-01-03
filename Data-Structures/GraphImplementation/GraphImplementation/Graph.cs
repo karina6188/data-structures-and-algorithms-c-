@@ -116,15 +116,17 @@ namespace GraphImplementation
         /// </summary>
         public void Print()
         {
+            Console.WriteLine("===== Ride Fare in Seattle =====");
             foreach (var vertex in AdjacencyList)
             {
-                Console.WriteLine($"Vertex: {vertex.Key.Data} -> ");
+                Console.Write($"{vertex.Key.Data} | ");
                 foreach (var edge in vertex.Value)
                 {
-                    Console.WriteLine($"{edge.Vertex.Data}, {edge.Weight} -> ");
+                    Console.Write($"{edge.Vertex.Data}, ${edge.Weight} -> ");
                 }
                 Console.WriteLine("null");
             }
+            Console.WriteLine();
         }
     }
 }

@@ -54,7 +54,7 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 Result
 
-![Alt app execution capture](/Assets/.JPG)
+![Alt app execution capture](/Assets/code35_1.JPG)
 
 ## Change Log
 
@@ -66,4 +66,8 @@ Result
 
 1.4: Add methods and summary comments. - 2019 Dec 04
 
-1.5: 
+1.5: Add method implementations to Main(). - 2019 Dec 07
+
+1.6: Add unit testing. - 2019 Dec 07
+
+1.7: Pass all tests. The program is completed. - 2019 Dec 07

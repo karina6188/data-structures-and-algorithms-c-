@@ -50,6 +50,10 @@ Author: Karina Chen
 
 11 Trip Route Map
 
+12 Depth First Traversal on Graph
+
+13 Left Join Hash Tables
+
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
 
