@@ -9,12 +9,12 @@ namespace TripRouteMap
         {
             Graph AdjacencyList = new Graph();
 
-            var Pandora = AdjacencyList.AddVertex("Pandora");
-            var Arendelle = AdjacencyList.AddVertex("Arendelle");
-            var Metroville = AdjacencyList.AddVertex("Metroville");
-            var Narnia = AdjacencyList.AddVertex("Narnia");
-            var Naboo = AdjacencyList.AddVertex("Naboo");
-            var Monstropolis = AdjacencyList.AddVertex("Monstropolis");
+            var Pandora = AdjacencyList.AddCity("Pandora");
+            var Arendelle = AdjacencyList.AddCity("Arendelle");
+            var Metroville = AdjacencyList.AddCity("Metroville");
+            var Narnia = AdjacencyList.AddCity("Narnia");
+            var Naboo = AdjacencyList.AddCity("Naboo");
+            var Monstropolis = AdjacencyList.AddCity("Monstropolis");
 
             AdjacencyList.AddUndirectedEdge(Pandora, Arendelle, 150);
             AdjacencyList.AddUndirectedEdge(Pandora, Metroville, 82);
@@ -32,13 +32,26 @@ namespace TripRouteMap
             int totalCost = 0;
             Vertex start = new Vertex(cities[0]);
 
-            if (graph.GetNeighbors(start) != null)
+            if (graph.GetDirectCities(start) != null)
             {
-                List<Edge> route = graph.GetNeighbors(start);
-                foreach (Edge city in route)
+                for
+                // get all the direct cities of the first city
+                List<Edge> route = graph.GetDirectCities(start);
+
+                // if the next city inside the array exists in the above direct cities, get the cost then move to the next city and get its direct cities
+                // keep doing this until reaching to the end of the array
+
+                foreach (string city in cities)
                 {
-                    totalCost += city.Cost;
+
                 }
+
+
+
+                //for (int i = 0; i < route.Length;  e city in route)
+                //{
+                //    totalCost += city.Cost;
+                //}
                 return totalCost;
             }
             else
