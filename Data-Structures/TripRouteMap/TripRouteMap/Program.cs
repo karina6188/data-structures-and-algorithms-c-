@@ -26,15 +26,16 @@ namespace TripRouteMap
             RouteMap.AddUndirectedEdge(Monstropolis, Naboo, 73);
             RouteMap.AddUndirectedEdge(Narnia, Naboo, 250);
 
-            Vertex[] trip = new Vertex[] { Arendelle, Monstropolis, Naboo };
-            //List<Edge> trip0 = RouteMap.GetDirectCities(trip[0]);
-            //foreach (var city in trip0)
-            //{
-            //    Console.Write($"{city.Vertex.City} -> ");
-            //}
-            //Console.Write("null");
+            Vertex[] trip = new Vertex[] { Metroville, Monstropolis, Naboo };
 
-            Console.WriteLine(GetEdge(RouteMap, trip));
+            List<Edge> trip0 = RouteMap.GetDirectCities(trip[0]);
+            foreach (var city in trip0)
+            {
+                Console.Write($"{city.Vertex.City} -> ");
+            }
+            Console.Write("null");
+
+            //Console.WriteLine(GetEdge(RouteMap, trip));
         }
 
         static string GetEdge(Graph map, Vertex[] cities)
