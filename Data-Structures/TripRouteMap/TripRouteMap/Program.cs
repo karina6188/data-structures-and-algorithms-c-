@@ -35,7 +35,7 @@ namespace TripRouteMap
             }
             Console.Write("null");
 
-            //Console.WriteLine(GetEdge(RouteMap, trip));
+            Console.WriteLine(GetEdge(RouteMap, trip));
         }
 
         static string GetEdge(Graph map, Vertex[] cities)
