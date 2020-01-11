@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -15,7 +14,7 @@ namespace FindRepeatedWord
         /// <summary>
         /// Create a Node array to store multitple key/value pairs in each bucket
         /// </summary>
-        public Node[] HashNode { get; set; }
+        public Node[] Node { get; set; }
 
         /// <summary>
         /// Hashtable constructor to set up the quantity for buckets and set up the same amount of node arrays to match the bucket quantity
@@ -24,11 +23,12 @@ namespace FindRepeatedWord
         public Hashtable(int buckets)
         {
             Buckets = buckets;
-            HashNode = new Node[buckets];
+            Node[] node = new Node[buckets];
+            Node = node;
         }
 
         /// <summary>
-        /// Takes in a key and a value.
+        /// Takes in a lengthy string and a key.
         /// First, it calls Hash() method and sends over the key to get an index position inside the hashtable.
         /// Check if the index position already has the key. If yes, print to console window that the key already exists. Otherwise, stores the key/value pair data to the corresponding bucket and into the next available node.
         /// </summary>
@@ -38,30 +38,62 @@ namespace FindRepeatedWord
         {
             int index = Hash(key);
 
-            if (Contains(key))
+            if (!Contains(key))
             {
-                Console.WriteLine($"Word \"{key}\" already exists in bucket No.{index}\n");
-            }
-            else
-            {
-                if (HashNode[index] == null)
+                Node newNode = new Node(key, value);
+                if (Node[index] == null)
                 {
-                    Node newNode = new Node(key, value);
-                    HashNode[index] = newNode;
-                    Console.WriteLine($"Add word \"{key}\" in bucket No.{index}");
+                    Node[index] = newNode;
+                    Console.WriteLine($"Added new key/value pair \"{key}/{value}\" in bucket No.{index}");
                 }
                 else
                 {
-                    Node newNode = new Node(key, value);
-                    Node current = HashNode[index];
-                    while (current.Next != null)
+                    while (Node[index].Next != null)
                     {
-                        current = current.Next;
+                        Node[index] = Node[index].Next;
                     }
-                    current.Next = newNode;
-                    Console.WriteLine($"Add word \"{key}\" in bucket No.{index}");
+                    Node[index].Next = newNode;
+                    Console.WriteLine($"Added new key/value pair \"{key}/{value}\" in bucket No.{index}");
                 }
             }
+            else
+            {
+                Console.WriteLine($"The key \"{key}\" already exists in bucket No.{index}");
+            }
+        }
+
+        /// <summary>
+        /// Set default string to return if the key is not found.
+        /// Call Hash() method to get the index position inside the hashtable.
+        /// If the node list in the bucket is empty, return default string.
+        /// If the node list is not empty, check if the first node has the finding key. If yes, return the node's value.
+        /// If not, while the node.Next is not null, keep looping through the node list and look for the finding key. If finds it, return that node's value.
+        /// If not, return the default string.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public string Get(string key)
+        {
+            string returnedText = "The key cannot be found";
+            int index = Hash(key);
+            if (Node[index] == null) return returnedText;
+            if (Node[index] != null)
+            {
+                if (Node[index].Key == key)
+                {
+                    return Node[index].Value;
+                }
+                else
+                {
+                    while (Node[index].Next != null)
+                    {
+                        if (Node[index].Key == key) return Node[index].Value;
+                        Node[index] = Node[index].Next;
+                    }
+                    if (Node[index].Key == key) return Node[index].Value;
+                }
+            }
+            return returnedText;
         }
 
         /// <summary>
@@ -72,25 +104,24 @@ namespace FindRepeatedWord
         /// Otherwise, if all the nodes on the node list are checked and still not find the finding key, return false.
         /// </summary>
         /// <param name="key"></param>
-        /// <returns>A boolean if the hashtable contains the key</returns>
+        /// <returns></returns>
         public bool Contains(string key)
         {
             int index = Hash(key);
-            if (HashNode[index] == null)
+            if (Node[index] == null)
             {
                 return false;
             }
             else
             {
-                Node current = HashNode[index];
-                if (HashNode[index].Key == key) return true;
-                while (current.Next != null)
+                if (Node[index].Key == key) return true;
+                while (Node[index].Next != null)
                 {
-                    current = current.Next;
-                    if (current.Key == key)
+                    if (Node[index].Key == key)
                     {
                         return true;
                     }
+                    Node[index] = Node[index].Next;
                 }
                 return false;
             }
@@ -101,7 +132,7 @@ namespace FindRepeatedWord
         /// Loop through the byte array and adds up the values then times 1024 and modulus 1147 and modulus the number of buckets.
         /// </summary>
         /// <param name="key"></param>
-        /// <returns>An integer indicating the index position of the hashtable</returns>
+        /// <returns></returns>
         public int Hash(string key)
         {
             int index;

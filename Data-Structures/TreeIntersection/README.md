@@ -6,7 +6,7 @@ Challenge - Tree Intersection
 Author: Karina Chen
 
 ## Description
-This is a daily code challenges. The task is to create a method that takes in two binary trees and return a set of values that are on both trees. A hashtable will need to be creeated in order to implement this method.
+This is a daily code challenges. The task is to create a method that takes in two binary trees and return a set of values that are on both trees. A hashtable will need to be created in order to implement this method.
  
 ## Approach & Efficiency
 ##### TreeIntersection():
@@ -59,4 +59,4 @@ https://stackoverflow.com/questions/400733/how-to-get-ascii-value-of-string-in-c
 
 1.2: Add desctiptions, approach, and efficiency to README. - 2019 Nov 27
 
-1.3: 
+1.3: Add Hashtable and Node classes.
