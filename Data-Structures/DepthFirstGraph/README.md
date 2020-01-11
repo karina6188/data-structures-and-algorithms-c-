@@ -69,5 +69,3 @@ Whiteboarding
 1.1: Set up the program, add Table of Contents to README. - 2019 Dec 03
 
 1.2: Add desctiptions, approach, and efficiency to README. - 2019 Dec 03
-
-1.3: 
