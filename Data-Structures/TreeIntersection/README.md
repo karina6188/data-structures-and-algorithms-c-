@@ -10,7 +10,7 @@ This is a daily code challenges. The task is to create a method that takes in tw
  
 ## Approach & Efficiency
 ##### TreeIntersection():
-Takes in two binary trees and returns a set of values that are on both trees.
+Takes in two binary trees and returns a set of values that are on both trees. This method traverses through both binary trees at the same time. While traversing, use Add() method to add the node values into the hash table. Use Contains() method to check if the node value already exists in the hash table. If no, keep traversing to the next node values. If yes, add the node value into a List that is going to be returned once all the node values have been traversed on both binary trees.
 
 ##### Add():
 Accepts a key and a value. Then sends the key to Hash() method to generate a hash which is used to determine the index position where the key/value pair is to be stored in the hashtable. After Hash() method calculates the index, it returns an index to Add() method. Add() method then goes to the index position inside the hashtable and stores the key/value pair to the end of the linked list inside the bucket at the index position.
@@ -20,9 +20,6 @@ Takes in the key and returns the value from the hashtable. Get() method calls Ha
 
 ##### Contains():
 Takes in the key and returns a boolean indicating if the key already exists in the hashtable. Contains() method calls Hash() method to get the index then goes to the index position to check if the key exists.
-
-##### Hash():
-Takes in a key and returns an index position of a hashtable. Hash() method uses the key to generate a hash. The hash is calculated and the result of it will be an integer that is smaller than the array size of the hashtable. The integer represents an index of the hashtable and is returned to the previous call stack.
 
 ##### Time and Space Complexity:
 Big O Time: O(n); Big O Space: O(n).
