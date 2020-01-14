@@ -34,7 +34,7 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 Program Result
 
-![Alt execution capture](/assets/binary_search_result.JPG)
+![Alt execution capture](/Assets/binary_search_result.JPG)
 
 White-Boarding
 
