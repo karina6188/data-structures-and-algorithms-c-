@@ -10,7 +10,7 @@ This is a daily code challenges. The task is to create a method that takes in tw
  
 ## Approach & Efficiency
 ##### TreeIntersection():
-Takes in two binary trees and returns a set of values that are on both trees.
+Takes in two binary trees and returns a set of values that are on both trees. This method traverses through both binary trees at the same time. While traversing, use Hash() method to hash the node values and use Add() method to add the node values into the hash table. Use Contains() method to check if the node value already exists in the hash table.
 
 ##### Add():
 Accepts a key and a value. Then sends the key to Hash() method to generate a hash which is used to determine the index position where the key/value pair is to be stored in the hashtable. After Hash() method calculates the index, it returns an index to Add() method. Add() method then goes to the index position inside the hashtable and stores the key/value pair to the end of the linked list inside the bucket at the index position.
