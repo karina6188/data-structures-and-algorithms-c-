@@ -4,13 +4,13 @@ using System.Text;
 
 namespace TreeIntersection
 {
-    public class BinaryTree
+    public class BinaryTree<T>
     {
-        public Node Root { get; set; }
+        public Node<T> Root { get; set; }
 
         public BinaryTree(int value)
         {
-            Root = new Node(value);
+            Root = new Node<T>(value);
         }
 
         public BinaryTree()
