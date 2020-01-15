@@ -47,6 +47,7 @@ namespace TreeIntersection
         static List<string> TreeIntersection(BinaryTree tree1, BinaryTree tree2)
         {
             List<string> commonValues = new List<string>();
+
             return commonValues;
         }
     }

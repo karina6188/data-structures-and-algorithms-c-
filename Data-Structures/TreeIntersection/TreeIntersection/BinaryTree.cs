@@ -8,6 +8,7 @@ namespace TreeIntersection
     {
         public Node<string> Root { get; set; }
 
+        // Constructor to assign the tree's Root value
         public BinaryTree(string value)
         {
             Root = new Node<string>(value);
@@ -16,14 +17,6 @@ namespace TreeIntersection
         public BinaryTree()
         {
 
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        static void TraverseBinaryTree()
-        {
-            
         }
     }
 }
