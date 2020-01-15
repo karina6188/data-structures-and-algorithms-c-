@@ -7,30 +7,44 @@ namespace TreeIntersection
     {
         static void Main(string[] args)
         {
-            BinaryTree binaryTree = new BinaryTree("START");
+            BinaryTree treeA = new BinaryTree("Tree-A");
 
-            Node<string> node2 = new Node<string>("A");
-            Node<string> node3 = new Node<string>("B");
-            Node<string> node4 = new Node<string>("C");
-            Node<string> node5 = new Node<string>("D");
-            Node<string> node6 = new Node<string>("E");
-            Node<string> node7 = new Node<string>("F");
-            Node<string> node8 = new Node<string>("G");
-            Node<string> node9 = new Node<string>("H");
-            Node<string> node10 = new Node<string>("I");
+            Node<string> nodeA2 = new Node<string>("A");
+            Node<string> nodeA3 = new Node<string>("B");
+            Node<string> nodeA4 = new Node<string>("C");
+            Node<string> nodeA5 = new Node<string>("D");
+            Node<string> nodeA6 = new Node<string>("E");
+            Node<string> nodeA7 = new Node<string>("F");
+            Node<string> nodeA8 = new Node<string>("G");
 
-            binaryTree.Root.LeftChild = node2;
-            binaryTree.Root.RightChild = node3;
-            node2.LeftChild = node4;
-            node2.RightChild = node5;
-            node3.LeftChild = node6;
-            node3.RightChild = node7;
-            node4.LeftChild = node8;
-            node4.RightChild = node9;
-            node5.LeftChild = node10;
+            treeA.Root.LeftChild = nodeA2;
+            treeA.Root.RightChild = nodeA3;
+            nodeA2.LeftChild = nodeA4;
+            nodeA2.RightChild = nodeA5;
+            nodeA3.LeftChild = nodeA6;
+            nodeA3.RightChild = nodeA7;
+            nodeA4.LeftChild = nodeA8;
+
+            BinaryTree treeB = new BinaryTree("Tree-B");
+
+            Node<string> nodeB2 = new Node<string>("H");
+            Node<string> nodeB3 = new Node<string>("D");
+            Node<string> nodeB4 = new Node<string>("F");
+            Node<string> nodeB5 = new Node<string>("D");
+            Node<string> nodeB6 = new Node<string>("B");
+            Node<string> nodeB7 = new Node<string>("K");
+            Node<string> nodeB8 = new Node<string>("Y");
+
+            treeB.Root.LeftChild = nodeB2;
+            treeB.Root.RightChild = nodeB3;
+            nodeB2.LeftChild = nodeB4;
+            nodeB2.RightChild = nodeB5;
+            nodeB3.LeftChild = nodeB6;
+            nodeB3.RightChild = nodeB7;
+            nodeB4.LeftChild = nodeB8;
         }
 
-        static List<string> TreeIntersection(BinaryTree binaryTree1, BinaryTree binaryTree2)
+        static List<string> TreeIntersection(BinaryTree tree1, BinaryTree tree2)
         {
             List<string> commonValues = new List<string>();
             return commonValues;
