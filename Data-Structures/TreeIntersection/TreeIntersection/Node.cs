@@ -4,13 +4,15 @@ using System.Text;
 
 namespace TreeIntersection
 {
-    public class Node
+    public class Node<T>
     {
-        public string Value { get; set; }
-        public Node LeftChild { get; set; }
-        public Node RightChild { get; set; }
+        public T Value { get; set; }
 
-        public Node(string value)
+        public Node<T> LeftChild { get; set; }
+
+        public Node<T> RightChild { get; set; }
+
+        public Node(T value)
         {
             Value = value;
         }
