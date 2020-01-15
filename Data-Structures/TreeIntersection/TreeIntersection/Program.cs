@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TreeIntersection
 {
@@ -9,8 +10,9 @@ namespace TreeIntersection
             
         }
 
-        static void TreeIntersection()
+        static List<string> TreeIntersection()
         {
+            List<string> commonValues = new List<string>();
 
         }
     }

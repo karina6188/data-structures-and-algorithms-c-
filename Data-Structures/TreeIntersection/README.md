@@ -43,7 +43,6 @@ Open the program using Visual Studio and click "Start" button to run this progra
 ![Alt app execution capture](/Assets/code32_1.jpg)
 ![Alt app execution capture](/Assets/code32_2.jpg)
 
-
 ## Resource
 https://stackoverflow.com/questions/400733/how-to-get-ascii-value-of-string-in-c-sharp/400738
 
