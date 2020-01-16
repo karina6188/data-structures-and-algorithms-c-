@@ -42,10 +42,19 @@ namespace TreeIntersection
             nodeB3.LeftChild = nodeB6;
             nodeB3.RightChild = nodeB7;
             nodeB4.LeftChild = nodeB8;
+
+            TreeIntersection(treeA, treeB);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="tree1"></param>
+        /// <param name="tree2"></param>
+        /// <returns></returns>
         static List<string> TreeIntersection(BinaryTree tree1, BinaryTree tree2)
         {
+            // Traverse both trees
             List<string> commonValues = new List<string>();
 
             return commonValues;
