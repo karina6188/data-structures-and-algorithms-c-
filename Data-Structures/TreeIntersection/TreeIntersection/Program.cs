@@ -27,7 +27,7 @@ namespace TreeIntersection
 
             BinaryTree treeB = new BinaryTree("Tree-B");
 
-            Node<string> nodeB2 = new Node<string>("H");
+            Node nodeB2 = new Node<string>("H");
             Node<string> nodeB3 = new Node<string>("D");
             Node<string> nodeB4 = new Node<string>("F");
             Node<string> nodeB5 = new Node<string>("D");
@@ -55,6 +55,11 @@ namespace TreeIntersection
         static List<string> TreeIntersection(BinaryTree tree1, BinaryTree tree2)
         {
             // Traverse both trees
+            while (tree1.Root != null)
+            {
+
+            }
+
             List<string> commonValues = new List<string>();
 
             return commonValues;

@@ -4,17 +4,17 @@ using System.Text;
 
 namespace TreeIntersection
 {
-    public class Node<T>
+    public class Node
     {
         // Property - Node's value of a generic type
-        public T Value { get; set; }
+        public string Value { get; set; }
 
-        public Node<T> LeftChild { get; set; }
+        public Node LeftChild { get; set; }
 
-        public Node<T> RightChild { get; set; }
+        public Node RightChild { get; set; }
 
         // Node class constructor
-        public Node(T value)
+        public Node(string value)
         {
             Value = value;
         }
