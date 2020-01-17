@@ -44,13 +44,13 @@ namespace TreeIntersection
             {
                 if (HashNode[index] == null)
                 {
-                    Node newNode = new Node(key, value);
+                    Node newNode = new Node(key);
                     HashNode[index] = newNode;
                     Console.WriteLine($"Add key/value \"{key}/{value}\" in bucket No.{index}");
                 }
                 else
                 {
-                    Node newNode = new Node(key, value);
+                    Node newNode = new Node(key);
                     Node current = HashNode[index];
                     while (current.Next != null)
                     {
