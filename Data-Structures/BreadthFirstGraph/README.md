@@ -69,5 +69,3 @@ Result
 1.2: Add desctiptions, approach, and efficiency to README. - 2019 Dec 03
 
 1.3: Add Graph class, Edge Class, Vertex class, and scaffold methods. - 2019 Dec 03
-
-1.4: 

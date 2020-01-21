@@ -6,31 +6,17 @@ namespace TreeIntersection
 {
     public class Node
     {
-        // <summary>
-        /// Key of the key/value pair
-        /// </summary>
-        public string Key { get; set; }
-
-        /// <summary>
-        /// Value of the key/value pair
-        /// </summary>
+        // Property - Node's value of a generic type
         public string Value { get; set; }
 
-        /// <summary>
-        /// Node's reference to the next node
-        /// </summary>
-        public Node Next { get; set; }
+        public Node LeftChild { get; set; }
 
-        /// <summary>
-        /// Node constructor to specify the data stored on the node and a reference to the next node
-        /// </summary>
-        /// <param name="key"></param>
-        /// <param name="value"></param>
-        public Node(string key, string value)
+        public Node RightChild { get; set; }
+
+        // Node class constructor
+        public Node(string value)
         {
-            Key = key;
             Value = value;
-            Next = null;
         }
     }
 }
