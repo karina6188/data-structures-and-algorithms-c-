@@ -58,11 +58,9 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 Whiteboarding
 
-![Alt app execution capture](/Assets/.jpg)
 
 Result
 
-![Alt app execution capture](/Assets/.JPG)
 
 ## Change Log
 
@@ -71,5 +69,3 @@ Result
 1.2: Add desctiptions, approach, and efficiency to README. - 2019 Dec 03
 
 1.3: Add Graph class, Edge Class, Vertex class, and scaffold methods. - 2019 Dec 03
-
-1.4: 
