@@ -89,7 +89,7 @@ namespace LinkedLists
 
         /// <summary>
         /// This method takes in two arguments, one integer of value and one integer of new value.
-        /// Create a new node with the new value.
+        /// Create a new node with the new value from the argument.
         /// If the linked list is empty, assign the Head of the linked list to be the new node with the new value and return true to break out the method.
         /// If the linked list is not empty, traverse the linked list by assigning a tracker node of Head and Head's Next node.
         /// While the node is not null and the current node's value is not the value that you are inserting after, move the tracker to the next node.
