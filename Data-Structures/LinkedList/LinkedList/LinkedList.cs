@@ -46,6 +46,14 @@ namespace LinkedLists
             }
         }
 
+        /// <summary>
+        /// This method takes in two arguments, one integer of value and one integer of new value.
+        /// Create a new node with the new value.
+        /// If the linked list is empty
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="newVal"></param>
+        /// <returns></returns>
         public bool InsertBefore(int value, int newVal)
         {
             Node newNode = new Node(newVal);
