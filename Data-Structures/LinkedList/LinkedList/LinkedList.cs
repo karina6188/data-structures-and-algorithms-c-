@@ -87,6 +87,20 @@ namespace LinkedLists
             }
         }
 
+        /// <summary>
+        /// This method takes in two arguments, one integer of value and one integer of new value.
+        /// Create a new node with the new value.
+        /// If the linked list is empty, assign the Head of the linked list to be the new node with the new value and return true to break out the method.
+        /// If the linked list is not empty, traverse the linked list by assigning a tracker node of Head and Head's Next node.
+        /// While the node is not null and the current node's value is not the value that you are inserting after, move the tracker to the next node.
+        /// Keep doing this until you either find the value you are looking for or you reach to the end of the linked list which means the value you are looking for does not exist.
+        /// Then you will break out of the while loop.
+        /// If the value is found, assign the current node's Next to be the new node, and the new node's Next value to be the current node's Next node.
+        /// Now the new node has been inserted.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="newVal"></param>
+        /// <returns>A boolean to tell if a new node is being inserted</returns>
         public bool InsertAfter(int value, int newVal)
         {
             Node newNode = new Node(newVal);
