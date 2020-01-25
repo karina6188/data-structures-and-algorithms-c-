@@ -127,6 +127,13 @@ namespace LinkedLists
             }
         }
 
+        /// <summary>
+        /// This method takes in a node and returns a boolean if a new node is appended
+        /// If the node's Next is null which means the node is at the end of the linked list, return true. This means the node has been appended to the end of the linked list.
+        /// If the node's Next is not null then return false that means the node is not appended to the end of the linked list
+        /// </summary>
+        /// <param name="newNode"></param>
+        /// <returns>A boolean if a node is appended</returns>
         public bool TestAppend(Node newNode)
         {
             if (newNode.Next == null)
