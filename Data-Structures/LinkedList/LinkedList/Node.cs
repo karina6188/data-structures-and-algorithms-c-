@@ -10,6 +10,7 @@ namespace LinkedLists
 
         public Node Next { get; set; }
 
+        // Constructor
         public Node(int data)
         {
             Data = data;
