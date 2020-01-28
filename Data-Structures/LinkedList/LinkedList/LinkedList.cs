@@ -168,6 +168,13 @@ namespace LinkedLists
             }
         }
 
+        /// <summary>
+        /// The method takes in three arguments, two node data type and one integer data type 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="current"></param>
+        /// <param name="newNode"></param>
+        /// <returns>A boolean to indicate if a node has been inserted after a selected node</returns>
         public bool TestInsertAfter(int value, Node current, Node newNode)
         {
             if (current.Data == value)

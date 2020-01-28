@@ -5,16 +5,22 @@ namespace LinkedLists
 {
     public class Program
     {
+        /// <summary>
+        /// First create an empty LinkedList named linkedlist
+        /// Then use Append method to add new nodes to linkedlist
+        /// Finally, use InsertBefore method to insert a new node with a value of 10 before the node with a value of 5
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
-            LinkedList linklist = new LinkedList();
-            linklist.Append(1);
-            linklist.Append(2);
-            linklist.Append(3);
-            linklist.Append(4);
-            linklist.Append(5);
-            linklist.Append(6);
-            linklist.InsertBefore(5, 10);
+            LinkedList linkedlist = new LinkedList();
+            linkedlist.Append(1);
+            linkedlist.Append(2);
+            linkedlist.Append(3);
+            linkedlist.Append(4);
+            linkedlist.Append(5);
+            linkedlist.Append(6);
+            linkedlist.InsertBefore(5, 10);
         }
     }
 }
