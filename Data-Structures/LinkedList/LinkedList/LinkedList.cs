@@ -146,6 +146,14 @@ namespace LinkedLists
             }
         }
 
+        /// <summary>
+        /// The method takes in four arguments, three node data type and one integer data type 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="previous"></param>
+        /// <param name="current"></param>
+        /// <param name="newNode"></param>
+        /// <returns>A boolean to indicate if a node has been inserted before a selected node</returns>
         public bool TestInsertBefore(int value, Node previous, Node current, Node newNode)
         {
             if (current.Data == value)
