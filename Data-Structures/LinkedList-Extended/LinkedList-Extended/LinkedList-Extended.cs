@@ -45,6 +45,15 @@ namespace LinkedList_Extended
             }
         }
 
+        /// <summary>
+        /// This method takes in an argument of an integer data type
+        /// If the integer is less than 0, return "Not valid" and exit the method
+        /// If the integer is equal to 0, which means it's the last node's value.
+        /// If the integer is greater than 0, traverse through the linked list and count how many nodes are in the linked list. Then deduct the argument value to find out the node's index number.
+        /// Traverse through the linked list again to find out the node's value then return it.
+        /// </summary>
+        /// <param name="k"></param>
+        /// <returns>A string data type of the node's value</returns>
         public string ReadValueFromEnd(int k)
         {
             if(k > 0)
