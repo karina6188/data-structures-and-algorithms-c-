@@ -170,6 +170,16 @@ namespace LinkedListImplementation
             }
         }
 
+        /// <summary>
+        /// This method takes in no argument and returns an integer
+        /// First assign a node named current to have the Head's value
+        /// Have a number tracker of an integer data type and assign it to be 1, this is used to track how many nodes are there in the linked list
+        /// While the current node's Next value is not null, which means the node is not the last node of the linked list, assign the node current to be current's Next and add one to the node tracker
+        /// Keep doing this until it reaches to the last node of the linked list
+        /// After exit the while loop, return the node number tracker that is the number of the total nodes in the linked list
+        /// While traversing through the linked list, use Console.Write and Console.WriteLine to print out each node's value in the correct order
+        /// </summary>
+        /// <returns></returns>
         public int PrintList()
         {
             try
