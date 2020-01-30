@@ -71,6 +71,18 @@ namespace LinkedListImplementation
             }
         }
 
+        /// <summary>
+        /// This method takes in an argument of an integer data type and returns a boolean
+        /// If the linked list is empty, return false then exit the method
+        /// If the linked list is not empty, assign a node named current to have the linked list' Head value
+        /// While the current's Next value is not null, which means the node is not the last node of the linked list
+        /// Check if the current node's data matches with the value from the argument, if yes, return true.
+        /// If not, assign the current to be the current' Next value to move the tracker to the following node
+        /// Keep traversing through each node and check if the node's value matches with the value from the argument
+        /// If reach to the end of the linked list, that menas the value is not found. Return false
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>A boolean to indicate if the linked list contains a node that has the value of the argument</returns>
         public bool Includes(int value)
         {
             try
