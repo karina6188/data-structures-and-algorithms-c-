@@ -23,6 +23,19 @@ namespace BinarySearch
             }
         }
 
+        /// <summary>
+        /// This method takes in two arguments. One sorted integer array and one integer number.
+        /// The method is to keep dividing the integer array into two portions and look for the search key.
+        /// The array will be divided until all the integers in the array have been divided into a sub array that has only one integer.
+        /// Have various variable integers to track the start point, end point, the index number of the array, the mid point of the array, and the length of the array (sub-array).
+        /// While the start point of the array is less than or equal to the end point of the array, keep dividing the array into smaller sub-array.
+        /// While doing this, check if the search key is greater or less than the first or the last number of the array. This is to check if the search key is outside of the array numbers range.
+        /// When all the numbers in the array have been checked and excluded, and when the binary search reaches to the head or the end of the array, break out from the while loop.
+        /// Finally, check the first or the last number of the array to see if it is equal to the search key. If yes, the search key is found. If not, the search key does not exist in the array.
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public static int Binary_Search(int[] array, int key)
         {
             int start = 0;
