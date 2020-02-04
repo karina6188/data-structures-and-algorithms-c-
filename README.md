@@ -17,12 +17,42 @@ Author: Karina Chen
 
 05 Animal Shelter
 
+06 Multi-Bracket Validation
+
+07 Fizz Buzz Tree
+
+08 Insertion Sort
+
+09 Merge Sort
+
+10 Quick Sort
+
 ### Data Structures and Algorithms
 01 Linked List
 
 02 Linked List Extended
 
 03 Linked List Implementation
+
+04 Stacks and Queues
+
+05 Binary Tree and Binary Search Tree
+
+06 Hash Tables
+
+07 Find Repeated Word
+
+08 Tree Intersection
+
+09 Graph Implementation
+
+10 Breadth First Traversal on Graph
+
+11 Trip Route Map
+
+12 Depth First Traversal on Graph
+
+13 Left Join Hash Tables
 
 ## Description
 This is a daily code challenges project that includes various challenges. See Table of Contents above.
@@ -43,4 +73,3 @@ Then select and open the program you want to view.
 
 ## To Run This Program
 Open the program using Visual Studio and click "Start" button to run this program.
-

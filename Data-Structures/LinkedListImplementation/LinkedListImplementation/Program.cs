@@ -4,6 +4,14 @@ namespace LinkedListImplementation
 {
     class Program
     {
+        /// <summary>
+        /// First create an empty LinkedList named list1
+        /// Then use Append method to add new nodes to list1
+        /// Finally, use WriteLine and PrintList methods to print out the values in the linked list
+        /// Use Includes method to check if a value exists in the linked list
+        /// Use Insert method to add a value to the head of the linked list
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             LinkedList list1 = new LinkedList();
@@ -14,14 +22,12 @@ namespace LinkedListImplementation
             list1.Append(5);
 
             Console.WriteLine("Use toString() method to represent all values: ");
-            list1.toString();
             Console.WriteLine(list1.toString());
             Console.WriteLine("");
 
-            Console.WriteLine("Find 23 in linked list? ");
+            Console.WriteLine("Find 3 in linked list? ");
             list1.PrintList();
-            list1.Includes(23);
-            Console.WriteLine(list1.Includes(23));
+            Console.WriteLine(list1.Includes(3));
 
             Console.WriteLine("");
             Console.WriteLine("Linked List: ");
