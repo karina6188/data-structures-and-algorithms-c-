@@ -35,15 +35,15 @@ Open the program using Visual Studio and click "Start" button to run this progra
 
 Program Result
 
-![Alt execution capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/array_shift_result.JPG)
+![Alt execution capture](/Assets/array_shift_result.JPG)
 
 White-Boarding
 
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/code02_1.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/code02_2.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/code02_3.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/code02_4.jpg)
-![Alt whiteboarding capture](https://github.com/karina6188/data-structures-and-algorithms-c-/blob/master/assets/code02_5.jpg)
+![Alt whiteboarding capture](/Assets/code02_1.jpg)
+![Alt whiteboarding capture](/Assets/code02_2.jpg)
+![Alt whiteboarding capture](/Assets/code02_3.jpg)
+![Alt whiteboarding capture](/Assets/code02_4.jpg)
+![Alt whiteboarding capture](/Assets/code02_5.jpg)
 
 ## Change Log
 

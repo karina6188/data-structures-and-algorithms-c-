@@ -13,6 +13,15 @@ namespace LinkedListImplementation
             Head = null;
         }
 
+        /// <summary>
+        /// This method takes in an argument of a integer data type, which represents a node's value
+        /// Create a new node with the value from the argument
+        /// If the linked list is empty, assign the Head of the linked list to be the new node, then return the Head's data and exit the method
+        /// If the linked list is not empty, assign a node tracker named current to be the Head, so the Head's value is saved in this node
+        /// Then assign the Head to be the new node with the value from the argument, and assign the Head's Next to be the old Head which is node "current"
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>An integer of the linked list' Head data to indicate if a new value is actually inserted to the Head of the linked list</returns>
         public int Insert(int value)
         {
             try
@@ -29,10 +38,6 @@ namespace LinkedListImplementation
                     Node current = Head;
                     Head = newNode;
                     Head.Next = current;
-                    while (current.Next != null)
-                    {
-                        current = current.Next;
-                    }
                     return Head.Data;
                 }
             }
@@ -66,6 +71,18 @@ namespace LinkedListImplementation
             }
         }
 
+        /// <summary>
+        /// This method takes in an argument of an integer data type and returns a boolean
+        /// If the linked list is empty, return false then exit the method
+        /// If the linked list is not empty, assign a node named current to have the linked list' Head value
+        /// While the current's Next value is not null, which means the node is not the last node of the linked list
+        /// Check if the current node's data matches with the value from the argument, if yes, return true.
+        /// If not, assign the current to be the current' Next value to move the tracker to the following node
+        /// Keep traversing through each node and check if the node's value matches with the value from the argument
+        /// If reach to the end of the linked list, that menas the value is not found. Return false
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>A boolean to indicate if the linked list contains a node that has the value of the argument</returns>
         public bool Includes(int value)
         {
             try
@@ -124,6 +141,16 @@ namespace LinkedListImplementation
             }
         }
 
+        /// <summary>
+        /// This method takes in an integer value that is to be appended to the linked list
+        /// Create a new node with the value
+        /// If the linked list is empty, assign the linked list's head to be the new node then return true to terminate the method
+        /// If the linked list is not empty, use a tracker to track the node on the linked list starting from Head
+        /// Traverse the linked list until the node's next value is null, which means it reaches to the end of the linked list
+        /// Then add the new node to the last node's Next of the linked list
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>A boolean that shows if a new node is appended to the linked list</returns>
         public bool Append(int value)
         {
             try
@@ -155,6 +182,16 @@ namespace LinkedListImplementation
             }
         }
 
+        /// <summary>
+        /// This method takes in no argument and returns an integer
+        /// First assign a node named current to have the Head's value
+        /// Have a number tracker of an integer data type and assign it to be 1, this is used to track how many nodes are there in the linked list
+        /// While the current node's Next value is not null, which means the node is not the last node of the linked list, assign the node current to be current's Next and add one to the node tracker
+        /// Keep doing this until it reaches to the last node of the linked list
+        /// After exit the while loop, return the node number tracker that is the number of the total nodes in the linked list
+        /// While traversing through the linked list, use Console.Write and Console.WriteLine to print out each node's value in the correct order
+        /// </summary>
+        /// <returns></returns>
         public int PrintList()
         {
             try

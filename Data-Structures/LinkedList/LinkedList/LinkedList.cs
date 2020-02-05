@@ -8,11 +8,22 @@ namespace LinkedLists
     {
         public Node Head { get; set; }
 
+        // Constructor
         public LinkedList()
         {
             Head = null;
         }
 
+        /// <summary>
+        /// This method takes in an integer value that is to be appended to the linked list
+        /// Create a new node with the value
+        /// If the linked list is empty, assign the linked list's head to be the new node then return true to terminate the method
+        /// If the linked list is not empty, use a tracker to track the node on the linked list starting from Head
+        /// Traverse the linked list until the node's next value is null, which means it reaches to the end of the linked list
+        /// Then add the new node to the last node's Next of the linked list
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>A boolean that shows if a new node is appended to the linked list</returns>
         public bool Append(int value)
         {
             Node newNode = new Node(value);
@@ -35,6 +46,20 @@ namespace LinkedLists
             }
         }
 
+        /// <summary>
+        /// This method takes in two arguments, one integer of value and one integer of new value.
+        /// Create a new node with the new value.
+        /// If the linked list is empty, assign the Head of the linked list to be the new node with the new value and return true to break out the method.
+        /// If the linked list is not empty, traverse the linked list by assigning a tracker node of Head and Head's Next node.
+        /// While the node is not null and the current node's value is not the value that you are inserting before, move the tracker to the next node.
+        /// Keep doing this until you either find the value you are looking for or you reach to the end of the linked list which means the value you are looking for does not exist.
+        /// Then you will break out of the while loop.
+        /// If the value is found, assign the current node's Next to be the new node, and the new node's Next value to be nextUp.
+        /// Now the new node has been inserted.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="newVal"></param>
+        /// <returns>A boolean if a new node is being inserted</returns>
         public bool InsertBefore(int value, int newVal)
         {
             Node newNode = new Node(newVal);
@@ -46,22 +71,36 @@ namespace LinkedLists
             }
             else
             {
-                Node previous = Head;
-                Node current = Head.Next;
-                while (current!= null && current.Data != value)
+                Node current = Head;
+                Node nextUp = Head.Next;
+                while (nextUp!= null && nextUp.Data != value)
                 {
-                    current = current.Next;
+                    nextUp = nextUp.Next;
                 }
-                if (current.Data == value)
+                if (nextUp.Data == value)
                 {
-                    previous.Next = newNode;
-                    newNode.Next = current;
+                    current.Next = newNode;
+                    newNode.Next = nextUp;
                 }
-                TestInsertBefore(value, previous, current, newNode);
-                return TestInsertBefore(value, previous, current, newNode);
+                TestInsertBefore(value, current, nextUp, newNode);
+                return TestInsertBefore(value, current, nextUp, newNode);
             }
         }
 
+        /// <summary>
+        /// This method takes in two arguments, one integer of value and one integer of new value.
+        /// Create a new node with the new value from the argument.
+        /// If the linked list is empty, assign the Head of the linked list to be the new node with the new value and return true to break out the method.
+        /// If the linked list is not empty, traverse the linked list by assigning a tracker node of Head and Head's Next node.
+        /// While the node is not null and the current node's value is not the value that you are inserting after, move the tracker to the next node.
+        /// Keep doing this until you either find the value you are looking for or you reach to the end of the linked list which means the value you are looking for does not exist.
+        /// Then you will break out of the while loop.
+        /// If the value is found, assign the current node's Next to be the new node, and the new node's Next value to be the current node's Next node.
+        /// Now the new node has been inserted.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="newVal"></param>
+        /// <returns>A boolean to tell if a new node is being inserted</returns>
         public bool InsertAfter(int value, int newVal)
         {
             Node newNode = new Node(newVal);
@@ -88,6 +127,13 @@ namespace LinkedLists
             }
         }
 
+        /// <summary>
+        /// This method takes in a node and returns a boolean if a new node is appended
+        /// If the node's Next is null which means the node is at the end of the linked list, return true. This means the node has been appended to the end of the linked list.
+        /// If the node's Next is not null then return false that means the node is not appended to the end of the linked list
+        /// </summary>
+        /// <param name="newNode"></param>
+        /// <returns>A boolean if a node is appended</returns>
         public bool TestAppend(Node newNode)
         {
             if (newNode.Next == null)
@@ -100,6 +146,14 @@ namespace LinkedLists
             }
         }
 
+        /// <summary>
+        /// The method takes in four arguments, three node data type and one integer data type 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="previous"></param>
+        /// <param name="current"></param>
+        /// <param name="newNode"></param>
+        /// <returns>A boolean to indicate if a node has been inserted before a selected node</returns>
         public bool TestInsertBefore(int value, Node previous, Node current, Node newNode)
         {
             if (current.Data == value)
@@ -114,6 +168,13 @@ namespace LinkedLists
             }
         }
 
+        /// <summary>
+        /// The method takes in three arguments, two node data type and one integer data type 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="current"></param>
+        /// <param name="newNode"></param>
+        /// <returns>A boolean to indicate if a node has been inserted after a selected node</returns>
         public bool TestInsertAfter(int value, Node current, Node newNode)
         {
             if (current.Data == value)
