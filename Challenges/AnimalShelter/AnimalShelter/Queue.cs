@@ -71,6 +71,17 @@ namespace AnimalShelter
             }
         }
 
+        /// <summary>
+        /// This method takes in a parameter of a string data type
+        /// This is to take either a dog or a cat out from a stack. If the parameter is neither a dog or a cat, return a string "null" and exit the method
+        /// If stack 1 is empty, write to the console "There is no animal in the shelter"
+        /// If stack 1 is not empty, keep popping the animals from stack 1 and pushing to stack 2 until all the animals from stack 1 are in stack 2
+        /// Now peek stack 2's animal one by one. If the animal is not the same as the animal from the parameter, pop the animal from stack 2 and peek the next one
+        /// Keep doing this until the animal from the parameter is found or until all the animals from stack 2 have been popped
+        /// Then use foreach to loop through all the animals in stack 1 and return the remaining animals from stack 1
+        /// </summary>
+        /// <param name="pref"></param>
+        /// <returns></returns>
         public string dequeue(string pref)
         {
             if (pref != "dog" && pref != "cat")
