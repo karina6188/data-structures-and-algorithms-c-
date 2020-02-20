@@ -17,15 +17,12 @@ namespace DictionaryHashMap
             Dictionary<int, int> dictionary = new Dictionary<int, int> { };
             for (int i = 0; i < nums.Length; i++)
             {
-                dictionary.Add(i, nums[i]);
-            }
-
-            for (int i = 0; i < nums.Length; i++)
-            {
                 int complement = target - nums[i];
-                if (hashTable.ContainsKey[])
+                if (!dictionary.ContainsValue(complement))
+                {
+                    dictionary.Add(i, nums[i]);
+                }
             }
-
         }
     }
 }
