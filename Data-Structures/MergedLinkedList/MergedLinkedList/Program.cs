@@ -5,6 +5,11 @@ namespace MergedLinkedList
 {
     class Program
     {
+        /// <summary>
+        /// Create two linked lists in a sorted order and print out both linked lists to the console
+        /// Call the MergeLists() method to merge the two linked lists together in a sorted order then print out the merged linked list to the console
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             LinkedList<int> list1 = new LinkedList<int>();
@@ -47,6 +52,18 @@ namespace MergedLinkedList
             Console.WriteLine("x");
         }
 
+        /// <summary>
+        /// Takes in two linked lists with int data types and returns a single merged linked list at the end
+        /// Check if the linked lists are empty
+        /// Assign a linked list node to the head of both linked lists as a tracker
+        /// Create an empty linked list called merged. This will be returned at the end once all the nodes from both lists are added in here in a sorted order
+        /// While both linked lists have not yet reach to the end of the list, compare both linked lists' node values and add the smaller one to the merged linked list
+        /// Keep doing this until either one of the linked list has reach to its end
+        /// Check which linked list reaches to the end, and add all the nodes from the other linked list to the merged linked list
+        /// </summary>
+        /// <param name="listA"></param>
+        /// <param name="listB"></param>
+        /// <returns>A single merged linked list that the nodes values are sorted</returns>
         static LinkedList<int> MergeLists(LinkedList<int> listA, LinkedList<int> listB)
         {
             if (listA.First == null)
