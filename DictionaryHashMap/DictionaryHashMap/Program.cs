@@ -36,7 +36,7 @@ namespace DictionaryHashMap
                 {
                     return new int[] {dictionary[target - nums[i]], i };
                 }
-                dictionary.Add(nums[i], i);
+                dictionary.TryAdd(nums[i], i); //TryAdd is different from Add. TryAdd does not throw an exception when the key already exist in the dictionary.
             }
             return null;
         }
