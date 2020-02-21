@@ -35,8 +35,16 @@ namespace MergedLinkedList
                 Console.Write($"{number} -> ");
             }
             Console.WriteLine("x");
+            Console.WriteLine();
 
-            //MergeLists(list1, list2);
+            LinkedList<int> merged = MergeLists(list1, list2);
+
+            Console.WriteLine("Merged linked list:");
+            foreach (int number in merged)
+            {
+                Console.Write($"{number} -> ");
+            }
+            Console.WriteLine("x");
         }
 
         static LinkedList<int> MergeLists(LinkedList<int> listA, LinkedList<int> listB)
@@ -53,13 +61,38 @@ namespace MergedLinkedList
             }
             LinkedListNode<int> currentA = listA.First;
             LinkedListNode<int> currentB = listB.First;
+            LinkedList<int> merged = new LinkedList<int>();
 
-            while (currentA.Next != null && currentB.Next != null)
+            while (currentA != null && currentB != null)
             {
-
+                if (currentA.Value <= currentB.Value)
+                {
+                    merged.AddLast(currentA.Value);
+                    currentA = currentA.Next;
+                }
+                else
+                {
+                    merged.AddLast(currentB.Value);
+                    currentB = currentB.Next;
+                }
             }
-
-            return null;
+            if (currentA == null)
+            {
+                while (currentB != null)
+                {
+                    merged.AddLast(currentB.Value);
+                    currentB = currentB.Next;
+                }
+            }
+            if (currentB == null)
+            {
+                while (currentA != null)
+                {
+                    merged.AddLast(currentA.Value);
+                    currentA = currentA.Next;
+                }
+            }
+            return merged;
         }
     }
 }
