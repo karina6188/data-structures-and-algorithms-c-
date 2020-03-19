@@ -6,8 +6,8 @@ namespace BinarySearch
     {
         static int Main(string[] args)
         {
-            int[] array = new int[] { 15, 32, 37, 41, 58 };
-            int key = 41;
+            int[] array = new int[] { 1, 2 };
+            int key = 8;
 
             if (array.Length < 1)
             {
@@ -25,53 +25,34 @@ namespace BinarySearch
 
         public static int Binary_Search(int[] array, int key)
         {
-            int start = 0;
-            int end = array.Length - 1;
-            int index = -1;
-            int lastItem = array[array.Length - 1];
-            int midAtEnd = array.Length - 2;
-            int length = array.Length - 1;
-
-            while (start <= end)
+            int endIndex = array.Length - 1;
+            int middleIndex = endIndex / 2;
+            int startIndex = 0;
+            while (middleIndex != endIndex && startIndex != middleIndex)
             {
-                int mid = (start + end) / 2;
-                if (array[mid] > key)
+                if (array[middleIndex] > key)
                 {
-                    end = mid;
+                    endIndex = middleIndex;
+                    middleIndex = endIndex / 2;
                 }
-                else if (array[mid] == key)
+                if (array[middleIndex] < key)
                 {
-                    index = mid;
-                    break;
+                    startIndex = middleIndex;
+                    middleIndex = (endIndex + startIndex + 1) / 2;
                 }
-                else
+                if (array[middleIndex] == key)
                 {
-                    start = mid;
-                }
-                if (start == midAtEnd)
-                {
-                    break;
-                }
-                if (array[0] > key)
-                {
-                    break;
-                }
-                if (lastItem < key)
-                {
-                    break;
+                    return middleIndex;
                 }
             }
-
-            if (array[0] == key)
+            if (array.Length < 3)
             {
-                return 0;
+                for (int i = 0; i < array.Length; i++)
+                {
+                    if (array[i] == key) return i;
+                }
             }
-
-            if (lastItem == key)
-            {
-                return length;
-            }
-            return index;
+            return -1;
         }
     }
 }
